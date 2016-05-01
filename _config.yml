@@ -1,7 +1,7 @@
 markdown: kramdown
 permalink: /:title
 url: "http://nodeschool.io/toronto"
-timezone: America/Toronto
+timezone: America/Montreal
 
 kramdown:
   input: GFM

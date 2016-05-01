@@ -1,10 +1,10 @@
 {
-  "name": "NodeSchool Toronto",
-  "description": "The NodeSchool Toronto Website",
+  "name": "NodeSchool Montréal",
+  "description": "The NodeSchool Montréal Website",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nodeschool/toronto"
+    "url": "https://github.com/nodeschool/montreal"
   },
   "devDependencies": {
     "async": "^1.5.0",

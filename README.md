@@ -1,4 +1,4 @@
-![NodeSchool Montréal Logo](http://nodeschool.io/toronto/i/nodeschool-toronto-logo.svg)
+![NodeSchool Montréal Logo](http://nodeschool.io/toronto/i/NodeSchoolMTL.svg)
 
 ### Development
 

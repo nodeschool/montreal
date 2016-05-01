@@ -55,43 +55,66 @@
       <section class="panel text">
         <div class="container">
           <div class="header">
-            <a class="logo" href="https://ti.to/nodeschool-toronto/april-2016"><img src="i/nodeschool-toronto-logo.svg" alt="NodeSchool Montréal Logo"></a>
+            <a class="logo" href="https://ti.to/nodeschool-toronto/april-2016"><img src="i/NodeSchoolMTL.svg" alt="NodeSchool Montréal Logo"></a>
             <h1>NodeSchool Montréal</h1>
           </div>
-          <p class="about"><strong>NodeSchool</strong> is a selection of open source workshops that teach web software skills. You can do them on your own or at one of the monthly <strong>NodeSchool Montréal</strong> workshops.</p>
+          <p class="about"><strong>NodeSchool</strong> is a selection of open source workshops that teach web software skills. You can do them on your own or in the company of peers and mentors, right here in <strong>Montréal</strong>.</p>
           <p>
             <script async defer src="https://nodeschool-toronto-slackin.herokuapp.com/slackin.js"></script>
             <a href="https://twitter.com/NodeSchoolMTL" class="twitter-follow-button" data-show-count="false">Follow @NodeSchoolMTL</a>
           </p>
-          <div class="mailinglist">
-            <form action="https://nodeschool.us11.list-manage.com/subscribe/post?u=62145c918d78960a0c95987c2&amp;id=ec5cf6637f" method="post" target="_blank">
-              <label class="email">
-                <input type="email" value="" name="EMAIL" class="required email" placeholder="Email address">
-              </label>
-              <div style="position: absolute; left: -5000px;"><input type="text" name="b_62145c918d78960a0c95987c2_ec5cf6637f" tabindex="-1" value=""></div>
-              <input type="submit" value="Get notified" name="subscribe">
-            </form>
+          <div class="event">
+            <p class="title">
+              Next workshop: <strong>First Day of NodeSchool</strong>
+            </p>
+            <p class="register">
+              Monday <strong>May 16<sup>th</sup></strong> at 5:30pm
+            </p>
+            <p class="location">
+              <strong><a href="http://tempslibre.coop/">Temps Libre</a></strong>, 5605 avenue de Gaspé, local 106, Montréal, QC H2T 2A4
+            </p>
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.0944391154517!2d-73.60023448437062!3d45.52830507910178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9196f8d691e3d%3A0x45df797a1e695f5e!2s5605+Avenue+de+Gasp%C3%A9%2C+Montr%C3%A9al%2C+QC+H2T+2A4!5e0!3m2!1sen!2sca!4v1462125098770" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <p class="schedule">
+              <strong>Agenda</strong>
+            </p>
+            <ul class="timeline">
+              <li>
+                5:30pm Registration and Node environment setup
+              </li>
+              <li>
+                5:50pm Node basic principles presentation by <a href="http://twitter.com/pcuci"><strong>@pcuci</strong></a>
+              </li>
+              <li>
+                6:00pm
+                Complete any <a href="http://nodeschool.io/#workshoppers">workshopper</a> or work on your own web projects
+              </li>
+              <li>
+                8:00pm Demo your solutions, then networking
+              </li>
+            </ul>
+            <tito-widget event="nodeschoolmtl/first-day-of-nodeschool"></tito-widget>
           </div>
-          <h2 id="events">Workshops</h2>
-          <p><strong>NodeSchool Montréal</strong> workshops are run by volunteers, you too can be an organizer.</p>
-          <p>The events offer a low-key environment to learn and practice Node and are generally three hours long.</p>
-          <h2 id="faq">Frequently Asked Questions</h2>
+          <p>Workshops are run by volunteers, you too can become an organizer and <a href='https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor'>mentor</a>.</p>
+          <p>See all <a href="https://ti.to/nodeschoolmtl/">NodeSchoolMTL workshops</a>.</p>
           <h3>"What should I expect?"</h3>
-          <p>NodeSchool is a self-directed learning environment, where you bring your own laptop to learn. The intention is for attendees to work on the Node workshops from <a href="http://nodeschool.io/#workshopper-list" target="_blank">nodeschool.io</a>. But if you have a personal project you are working on, do it! The goal of NodeSchool is to help people explore and learn Node. There will be mentors on hand at the events to help you when you hit any road blocks.</p>
+          <p>NodeSchool is a self-directed learning environment, where you bring your own laptop to learn. Attendees work on the Node workshops from <a href="http://nodeschool.io/#workshopper-list" target="_blank">nodeschool.io</a>, but if you have a personal project you are working on, do it! The goal of NodeSchool is to help people explore and learn Node. Mentors can help you when you hit any road blocks.</p>
           <h3>"How do I install Node?"</h3>
           <p>Our recommended way to install Node is through something called "Homebrew".</p>
           <p class="indent"><strong>1.</strong> Install Homebrew by copying the following command into a terminal/bash prompt:</p>
-          <code class="terminal"><pre>$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</pre>
+          <code class="terminal">
+            <pre>$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</pre>
           </code>
           <p class="indent"><strong>2.</strong> Once installed, run <code>brew install node</code> which should install the latest version of Node.</p>
-          <p>If you have any issues installing either Homebrew or Node no worries. We'll do our best to help you get set up once you arrive at an event.</p>
-          <h3>"What is a Workshopper?"</h3>
-          <p>Workshopper is the name used for the open source lesson modules associated with NodeSchool. All are self guided (you don't need to attend a workshop to do one) and most work offline.</p>
-          <h3>"How do I run a Workshopper?"</h3>
-          <p> To get started with a Workshopper tutorial you'll have to install and then run that program in terminal/bash. Here's an example of how to install and run the Beginner Node Workshopper:</p>
+          <p>Having trouble installing Homebrew or Node? No worries - we'll do our best to help you get set up once you arrive at a workshop.</p>
+          <h3>"What is a workshopper?"</h3>
+          <p>Workshoppers are the open source lesson modules used by NodeSchool. All are self guided (you don't need to join us in person to do one) and most work offline.</p>
+          <h3>"How do I run a workshopper?"</h3>
+          <p> You need to install and then run the workshoppers you want. For example, to set up and run the Beginner Node Workshopper, open a terminal and type:</p>
           <code class="terminal">
-            <pre>$ npm install -g learnyounode</pre>
-            <pre>$ learnyounode</pre>
+            <pre>$ npm install -g learnyounode
+$ learnyounode</pre>
           </code>
           <h2 id="photos">Photos</h2>
           <div class="list-photos cf">
@@ -105,17 +128,12 @@
               {% cycle '', '', '', '', '</div>' %}
             {% endfor %}
           </div>
-          <h2 id="codeofconduct">Code of Conduct</h2>
-          <p>Please keep the NodeSchool Montreal community inclusive and harrassment-free, and immediately report problems to organizers. Please respect and uphold the <a href="http://confcodeofconduct.com/">code of conduct</a>.</p>
+          <p>We promise a safe, harrassment-free learning environment. Please report any concerns immediately to organizers. We follow the <a href="http://confcodeofconduct.com/">conference code of conduct</a>.</p>
           <div class="footer">
             <p class="links">
-              <a href="https://ti.to/NodeSchoolMTL" title="NodeSchool Montréal Event">Events</a>
-              <span class="divider">|</span>
-              <a href="https://twitter.com/NodeSchoolMTL" title="NodeSchool Montréal Twitter">Twitter</a>
+              Forked from <a href="nodeschool.io/toronto">NodeSchool Toronto</a>
               <span class="divider">|</span>
               <a href="https://github.com/nodeschool/montreal" title="NodeSchool Montréal GitHub">GitHub</a>
-              <span class="divider">|</span>
-              <a href="http://nodeschool.io/" title="NodeSchool">NodeSchool.io</a>
             </p>
           </div>
         </div>
@@ -124,46 +142,17 @@
         <div class="container">
           <div class="inner">
             <img src="i/schoolhouse-beige.svg" alt="NodeSchool Logo">
-            <div class="event">
-              <p class="register">
-                <strong>Register</strong> for our event on <strong>Saturday, April 16th</strong>
-              </p>
-              <tito-widget event="nodeschool-toronto/april-2016"></tito-widget>
-              <p class="location">
-                <strong>Location:</strong>&nbsp; DevHub, 4th Floor - 46 Spadina Avenue, Montréal
-              </p>
-              <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.1693571182395!2d-79.39718738461575!3d43.6446446791215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d9722eda7b%3A0x4f8d732be5859e7f!2s46+Spadina+Ave%2C+Montréal%2C+ON+M5V+2H8!5e0!3m2!1sen!2sca!4v1460000052614" frameborder="0" style="border:0" allowfullscreen></iframe>
-              </div>
-              <p class="schedule">
-                <strong>Schedule</strong>
-              </p>
-              <ul class="timeline">
-                <li class="row">
-                  <span class="time">5:30pm</span>
-                  <span class="name">Registration and Node environment setup</span>
-                </li>
-                <li class="row">
-                  <span class="time">5:50pm</span>
-                  <span class="name">
-                    Node basic principles presentation by <a href="http://twitter.com/pcuci"><strong>@pcuci</strong></a>
-                  </span>
-                </li>
-                <li class="row">
-                  <span class="time">6:00pm</span>
-                  <span class="name">Work on a workshop or on your own projects</span>
-                </li>
-                <li class="row">
-                  <span class="time">8:00pm</span>
-                  <span class="name">Demo your solutions followed by networking</span>
-                </li>
-              </ul>
-              <p class="additional">
-                <strong>NodeSchool</strong> strives to be a welcoming and safe event for all attendees. Attendees should follow the <a href="#codeofconduct">code of conduct</a>. If you need further information about an event, please contact: <strong><a href="mailto:nodeschoolmtl@bettermtl.com" target="_blank">nodeschoolmtl@bettermtl.com</a></strong>
-              </p>
+            <div class="mailinglist">
+              <form action="https://nodeschool.us11.list-manage.com/subscribe/post?u=62145c918d78960a0c95987c2&amp;id=ec5cf6637f" method="post" target="_blank">
+                <label class="email">
+                  <input type="email" value="" name="EMAIL" class="required email" placeholder="Your email to receive news">
+                </label>
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_62145c918d78960a0c95987c2_ec5cf6637f" tabindex="-1" value=""></div>
+                <input type="submit" value="Get notified" name="subscribe">
+              </form>
             </div>
-            <h2 id="mentors">Become a mentor</h2>
-            <p>Help teach or contribute. Make a <strong><a href='https://github.com/nodeschool/montreal/pulls'>pull request</a></strong> to add your name to the list of mentors. Please read the <a href='https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor'>"On Being a Mentor"</a> tips to prepare.</p>
+
+            <h2 id="mentors">NodeSchool Mentors</h2>
             <div class="list-mentors cf">
               {% for mentor in site.mentors %}
                 {% cycle '<div class="row">', '', '', '', '' %}
@@ -175,7 +164,9 @@
                 {% cycle '', '', '', '', '</div>' %}
               {% endfor %}
             </div>
+            <p>To become a mentor please add your name to the list, send a <strong><a href='https://github.com/nodeschool/montreal/pulls'>pull request</a></strong>. Please also study the <a href='https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor'>"On Being a Mentor"</a> tips to prepare before a workshop.</p>
             <h2 id="attendees">Attendees</h2>
+            <p>Show up at any of our workshops and become part of Montreal's vibrant web developer community!</p>
             <div class="list-attendees cf">
               {% for value in site.data.attendees %}
                 {% for attendee in value[1] %}
@@ -190,12 +181,11 @@
                 {% endfor %}
               {% endfor %}
             </div>
-          </div>
-          <h2 id="sponsors">Sponsors</h2>
-          <div class="list-sponsors cf">
-            <p>
-              Interested in being a sponsor, reach out!
-            </p>
+            <h2 id="sponsors">Sponsors</h2>
+            <div class="list-sponsors cf">
+              <p>The best way to sponsor NodeSchool Montréal is to become a mentor and share your knowFledge and expertise.</p>
+              <p>To double down your support, we welcome small cash contributions, regular meeting space, and technical speakers. You get no special mentions or speak-time during workshops; contact <a href="mailto:nodeschoolmtl@bettermtl.com">nodeschoolmtl@bettermtl.com</a>.</p>
+            </div>
           </div>
         </div>
       </aside>

@@ -16,6 +16,7 @@ If you want to help teach or contribute in anyway, make a [Pull Request](https:/
 - Paul Cuciureanu: [@pcuci](http://github.com/pcuci)
 - David Rowley: [@David-Ro](http://github.com/David-Ro)
 - Cassie L. Rhéaume: [@CassieLR](https://github.com/CassieLR)
+- Valeri Vicneanschi: [@vicneanschi](https://github.com/vicneanschi)
 - _your name here as mentor, send pull request_
 
 ### Code of Conduct

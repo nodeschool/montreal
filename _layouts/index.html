@@ -60,9 +60,8 @@
           </div>
           <p class="about"><strong>NodeSchool</strong> is a selection of open source workshops that teach web software skills. You can do them on your own or in the company of peers and mentors, right here in <strong>Montréal</strong>.</p>
           <p>
-            <a href="https://gitter.im/nodeschool/montreal">Chat on Gitter</a>
-          </p>
-          <p>
+            <a href="https://gitter.im/nodeschool/montreal"><img src="https://camo.githubusercontent.com/fed5b5512498193ce4bba599fd94cd12b9f56491/68747470733a2f2f696d672e736869656c64732e696f2f6769747465722f726f6f6d2f6e776a732f6e772e6a732e737667"/></a>
+
             <a href="https://twitter.com/NodeSchoolMTL" class="twitter-follow-button" data-show-count="false">Follow @NodeSchoolMTL</a>
           </p>
           <div class="event">
@@ -122,13 +121,13 @@ $ learnyounode</pre>
           <h2 id="photos">Photos</h2>
           <div class="list-photos cf">
             {% for i in (30..30) %}
-              {% cycle '<div class="row">', '', '', '', '' %}
+              <div class="row">
                 <a href="i/photos/{{i}}.jpg" target="_blank" class="image-wrapper">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 300" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <polygon class="hex" points="250,75 250,225 125,300 0,225 0,75 125,0" fill="url('#photo-{{i}}')"></polygon>
                   </svg>
                 </a>
-              {% cycle '', '', '', '', '</div>' %}
+              </div>
             {% endfor %}
           </div>
           <p>We promise a safe, harrassment-free learning environment. Please report any concerns immediately to organizers. We follow the <a href="http://confcodeofconduct.com/">conference code of conduct</a>.</p>
@@ -187,7 +186,7 @@ $ learnyounode</pre>
             <h2 id="sponsors">Sponsors</h2>
             <div class="list-sponsors cf">
               <p>The best way to sponsor NodeSchool Montréal is to become a mentor and share your knowledge and expertise.</p>
-              <p>To double down your support, we welcome small cash contributions, regular meeting space, and technical speakers. You get no special mentions or extra speak-time during workshops: contact <a href="mailto:nodeschoolmtl@bettermtl.com">nodeschoolmtl@bettermtl.com</a>.</p>
+              <p>To double down your support, we welcome small cash contributions, regular meeting space, and technical speakers. You receive no special mentions or extra speak-time during workshops. Contact <a href="mailto:nodeschoolmtl@bettermtl.com">nodeschoolmtl@bettermtl.com</a>.</p>
             </div>
           </div>
         </div>

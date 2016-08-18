@@ -9,7 +9,7 @@ You are encouraged to do the [workshoppers](http://nodeschool.io/#workshoppers) 
 
 ## Attend
 
-Check out our [website](http://nodeschool.io/montreal/), [event listing](https://ti.to/nodeschoolmtl).
+Check out our [website](http://nodeschool.io/montreal/) and RSVP to the next event.
 
 ## Mentor or help out
 

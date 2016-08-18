@@ -1,5 +1,5 @@
 [![NodeSchoolMTL](https://img.shields.io/badge/NodeSchool-MTL-yellow.svg)](http://nodeschool.io/montreal) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/nodeschool/montreal) [![Stories in progress](https://img.shields.io/waffle/label/nodeschool/montreal/in%20progress.svg)](https://waffle.io/nodeschool/montreal)
-[![NodeSchool Montreal Logo]](http://nodeschool.io/montreal/i/NodeSchoolMTL.svg)](http://nodeschool.io/montreal | width=300)
+[![NodeSchool Montreal Logo](http://nodeschool.io/montreal/i/NodeSchoolMTL.svg | width=300)](http://nodeschool.io/montreal)
 
 # [NodeSchool Montreal](http://nodeschool.io/montreal/)
 

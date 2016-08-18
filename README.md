@@ -3,7 +3,7 @@
 
 ## Test MD
 
-![](http://i.imgur.com/4hNczjc.png =250x250)
+![](http://i.imgur.com/4hNczjc.png | width=150)
 
 # [NodeSchool Montreal](http://nodeschool.io/montreal/)
 

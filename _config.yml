@@ -1,6 +1,6 @@
 markdown: kramdown
 permalink: /:title
-url: "http://nodeschool.io/toronto"
+url: "http://nodeschool.io/montreal"
 timezone: America/Montreal
 
 kramdown:

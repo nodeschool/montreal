@@ -2,7 +2,7 @@
 
 ### Development
 
-We use [Jekyll](https://jekyllrb.com/) to build [http://nodeschool.io/toronto](http://nodeschool.io/toronto). If you want to run the site or develop it locally you'll have to install [Jekyll](https://github.com/jekyll/jekyll) and [Jekyll-Sitemap](https://github.com/jekyll/jekyll-sitemap).
+We use [Jekyll](https://jekyllrb.com/) to build [http://nodeschool.io/montreal](http://nodeschool.io/montreal). If you want to run the site or develop it locally you'll have to install [Jekyll](https://github.com/jekyll/jekyll) and [Jekyll-Sitemap](https://github.com/jekyll/jekyll-sitemap).
 
 `gem install jekyll`
 

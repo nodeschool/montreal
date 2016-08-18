@@ -55,7 +55,7 @@
       <section class="panel text">
         <div class="container">
           <div class="header">
-            <a class="logo" href="https://ti.to/nodeschool-toronto/april-2016"><img src="i/NodeSchoolMTL.svg" alt="NodeSchool Montréal Logo"></a>
+            <a class="logo" href="https://ti.to/nodeschoolmtl"><img src="i/NodeSchoolMTL.svg" alt="NodeSchool Montréal Logo"></a>
             <h1>NodeSchool Montréal</h1>
           </div>
           <p class="about"><strong>NodeSchool</strong> is a selection of open source workshops that teach web software skills. You can do them on your own or in the company of peers and mentors, right here in <strong>Montréal</strong>.</p>
@@ -131,7 +131,7 @@ $ learnyounode</pre>
           <p>We promise a safe, harrassment-free learning environment. Please report any concerns immediately to organizers. We follow the <a href="http://confcodeofconduct.com/">conference code of conduct</a>.</p>
           <div class="footer">
             <p class="links">
-              Forked from <a href="nodeschool.io/toronto">NodeSchool Toronto</a>
+              Credits: fork of <a href="nodeschool.io/toronto">NodeSchool Toronto</a>
               <span class="divider">|</span>
               <a href="https://github.com/nodeschool/montreal" title="NodeSchool Montréal GitHub">GitHub</a>
             </p>
@@ -151,7 +151,6 @@ $ learnyounode</pre>
                 <input type="submit" value="Get notified" name="subscribe">
               </form>
             </div>
-
             <h2 id="mentors">NodeSchool Mentors</h2>
             <div class="list-mentors cf">
               {% for mentor in site.mentors %}
@@ -164,11 +163,11 @@ $ learnyounode</pre>
                 {% cycle '', '', '', '', '</div>' %}
               {% endfor %}
             </div>
-            <p>To become a mentor please add your name to the list, send a <strong><a href='https://github.com/nodeschool/montreal/pulls'>pull request</a></strong>. Please also study the <a href='https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor'>"On Being a Mentor"</a> tips to prepare before a workshop.</p>
+            <p>To become a mentor please add your name to the mentor list above: send a <strong><a href='https://github.com/nodeschool/montreal/pulls'>pull request</a></strong>. Please also study the <a href='https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor'>"On Being a Mentor"</a> tips to prepare before a workshop.</p>
             <h2 id="attendees">Attendees</h2>
             <p>Show up at any of our workshops and become part of Montreal's vibrant web developer community!</p>
             <div class="list-attendees cf">
-              {% for value in site.data.attendees %}
+              <!--{% for value in site.data.attendees %}
                 {% for attendee in value[1] %}
                 {% cycle '<div class="row">', '', '', '', '', '', '', '' %}
                   <div class="image-wrapper">
@@ -180,11 +179,12 @@ $ learnyounode</pre>
                 {% cycle '', '', '', '', '', '', '', '</div>' %}
                 {% endfor %}
               {% endfor %}
+            -->
             </div>
             <h2 id="sponsors">Sponsors</h2>
             <div class="list-sponsors cf">
-              <p>The best way to sponsor NodeSchool Montréal is to become a mentor and share your knowFledge and expertise.</p>
-              <p>To double down your support, we welcome small cash contributions, regular meeting space, and technical speakers. You get no special mentions or speak-time during workshops; contact <a href="mailto:nodeschoolmtl@bettermtl.com">nodeschoolmtl@bettermtl.com</a>.</p>
+              <p>The best way to sponsor NodeSchool Montréal is to become a mentor and share your knowledge and expertise.</p>
+              <p>To double down your support, we welcome small cash contributions, regular meeting space, and technical speakers. You get no special mentions or extra speak-time during workshops: contact <a href="mailto:nodeschoolmtl@bettermtl.com">nodeschoolmtl@bettermtl.com</a>.</p>
             </div>
           </div>
         </div>

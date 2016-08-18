@@ -3,15 +3,15 @@
 
 # [NodeSchool Montreal](http://nodeschool.io/montreal/)
 
-**NodeSchool** is focused around open source workshops that teach web software skills. Individuals are encouraged to do the [workshoppers](http://nodeschool.io/#workshoppers) on their own or at one of the NodeSchool events. The workshopper tutorials are used as the course curriculum while mentors are here to help attendees work through challenges. Participating in one of the events is easy:
+**NodeSchool** is open source workshops that teach web software skills. Individuals are encouraged to do the [workshoppers](http://nodeschool.io/#workshoppers) on their own or in person at a NodeSchool event. The workshopper tutorials are used as the course curriculum while mentors help attendees work through challenges. 
 
-### Want to Attend?
+## Want to attend?
 
 Check out our [website](http://nodeschool.io/montreal/), [event listing](https://ti.to/nodeschoolmtl).
 
-### Wanna mentoring or Helping Out?
+## Want to mentor or help out?
 
-If you want to help teach or contribute in anyway, make a [Pull Request](https://github.com/nodeschool/montreal/pulls) and add your name to the list below with relevant contact details; And/or contact [@pcuci](http://github.com/pcuci) or [@David-Ro](http://github.com/David-Ro) for further information. Mentors and volunteers are currently contacted and confirmed, before each event, on our [Gitter Channel](https://gitter.im/nodeschool/montreal).
+If you want to help teach or contribute in anyway, make a [pull request](https://github.com/nodeschool/montreal/pulls) and add your name to the list below with relevant contact details; and/or contact [@pcuci](http://github.com/pcuci) or [@David-Ro](http://github.com/David-Ro) for further information. Mentors and volunteers are currently contacted and confirmed, before each event, on our [Gitter Channel](https://gitter.im/nodeschool/montreal).
 
 - Paul Cuciureanu: [@pcuci](http://github.com/pcuci)
 - David Rowley: [@David-Ro](http://github.com/David-Ro)
@@ -19,10 +19,11 @@ If you want to help teach or contribute in anyway, make a [Pull Request](https:/
 - Valeri Vicneanschi: [@vicneanschi](https://github.com/vicneanschi)
 - _your name here as mentor, send pull request_
 
-#### Intermediate
-Upload your photo to http://nodeschool.io/montreal/ (see the (`gh-pages`)[http://nodeschool.io/montreal/] branch)
+#### Take it up a notch!
 
+1. Upload your photo to http://nodeschool.io/montreal/ (see the [`gh-pages`](http://nodeschool.io/montreal/) branch)
+2. Complete the essential [workshoppers](http://nodeschool.io/#workshoppers)
 
-### Code of Conduct
+### Code of conduct
 
 Please read our [code of conduct](http://confcodeofconduct.com/) before contributing to or attending one of our events.

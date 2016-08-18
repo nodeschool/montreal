@@ -7,11 +7,11 @@
 
 You are encouraged to do the [workshoppers](http://nodeschool.io/#workshoppers) on your own or in person at a NodeSchool event. The workshopper tutorials are used as the course curriculum while mentors help attendees work through challenges.
 
-## Want to attend?
+## Attend
 
 Check out our [website](http://nodeschool.io/montreal/), [event listing](https://ti.to/nodeschoolmtl).
 
-## Want to mentor or help out?
+## Mentor or help out
 
 If you want to help teach or contribute in anyway, make a [pull request](https://github.com/nodeschool/montreal/pulls) and add your name to the list below with relevant contact details; and/or contact [@pcuci](http://github.com/pcuci) or [@David-Ro](http://github.com/David-Ro) for further information. Mentors and volunteers are currently contacted and confirmed, before each event, on our [Gitter Channel](https://gitter.im/nodeschool/montreal).
 

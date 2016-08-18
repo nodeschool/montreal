@@ -21,11 +21,12 @@ If you want to help teach or contribute in anyway, make a [pull request](https:/
 - Valeri Vicneanschi: [@vicneanschi](https://github.com/vicneanschi)
 - _your name here as mentor, send pull request_
 
-#### Take it up a notch!
+## Take it up a notch!
 
+1. Report bugs or improvements in [issues](https://github.com/nodeschool/montreal/issues), we appreciate all sorts of feedback!
 1. Upload your photo to http://nodeschool.io/montreal/ (see the [`gh-pages`](http://nodeschool.io/montreal/) branch)
-2. Complete the essential [workshoppers](http://nodeschool.io/#workshoppers)
+1. Complete the essential [workshoppers](http://nodeschool.io/#workshoppers)
 
-### Code of conduct
+## Code of conduct
 
 Please read our [code of conduct](http://confcodeofconduct.com/) before contributing to or attending one of our events.

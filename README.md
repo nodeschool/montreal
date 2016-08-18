@@ -3,7 +3,7 @@
 
 ## Test MD
 
-![](http://nodeschool.io/montreal/i/NodeSchoolMTL.svg | width=300)
+![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
 
 # [NodeSchool Montreal](http://nodeschool.io/montreal/)
 

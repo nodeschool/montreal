@@ -9,7 +9,7 @@ You are encouraged to do the [workshoppers](http://nodeschool.io/#workshoppers) 
 
 ## Attend
 
-Check out our [website](http://nodeschool.io/montreal/) and RSVP to the next event.
+Check out the [NodeSchoolMTL website](http://nodeschool.io/montreal/) and RSVP to the next event.
 
 ## Mentor or help out
 
@@ -24,7 +24,7 @@ If you want to help teach or contribute in anyway, make a [pull request](https:/
 ## Take it up a notch!
 
 1. Report bugs or improvements in [issues](https://github.com/nodeschool/montreal/issues), we appreciate all sorts of feedback!
-1. Upload your photo to http://nodeschool.io/montreal/ (see the [`gh-pages`](http://nodeschool.io/montreal/) branch)
+1. Upload your photo to http://nodeschool.io/montreal/ (see the [`gh-pages`](https://github.com/nodeschool/montreal/tree/gh-pages) branch)
 1. Complete the essential [workshoppers](http://nodeschool.io/#workshoppers)
 
 ## Code of conduct

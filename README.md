@@ -9,15 +9,19 @@
 
 Check out our [website](http://nodeschool.io/montreal/), [event listing](https://ti.to/nodeschoolmtl).
 
-### Interested in Mentoring or Helping Out?
+### Wanna mentoring or Helping Out?
 
-If you want to help teach or contribute in anyway, make a [Pull Request](https://github.com/nodeschool/montreal/pulls) and add your name to the list below with relevant contact details; And/or contact [@pcuci](http://github.com/pcuci) or [@David-Ro](http://github.com/David-Ro) for further information. Mentors and Volunteers are currently contacted and confirmed, before each event, via our [Gitter Channel](https://gitter.im/nodeschool/montreal).
+If you want to help teach or contribute in anyway, make a [Pull Request](https://github.com/nodeschool/montreal/pulls) and add your name to the list below with relevant contact details; And/or contact [@pcuci](http://github.com/pcuci) or [@David-Ro](http://github.com/David-Ro) for further information. Mentors and volunteers are currently contacted and confirmed, before each event, on our [Gitter Channel](https://gitter.im/nodeschool/montreal).
 
 - Paul Cuciureanu: [@pcuci](http://github.com/pcuci)
 - David Rowley: [@David-Ro](http://github.com/David-Ro)
 - Cassie L. Rhéaume: [@CassieLR](https://github.com/CassieLR)
 - Valeri Vicneanschi: [@vicneanschi](https://github.com/vicneanschi)
 - _your name here as mentor, send pull request_
+
+#### Intermediate
+Upload your photo to http://nodeschool.io/montreal/ (see the (`gh-pages`)[http://nodeschool.io/montreal/] branch)
+
 
 ### Code of Conduct
 

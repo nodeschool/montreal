@@ -3,7 +3,9 @@
 
 # [NodeSchool Montreal](http://nodeschool.io/montreal/)
 
-**NodeSchool** is open source workshops that teach web software skills. Individuals are encouraged to do the [workshoppers](http://nodeschool.io/#workshoppers) on their own or in person at a NodeSchool event. The workshopper tutorials are used as the course curriculum while mentors help attendees work through challenges. 
+**NodeSchool** is open source workshops that teach web software skills.
+
+You are encouraged to do the [workshoppers](http://nodeschool.io/#workshoppers) on your own or in person at a NodeSchool event. The workshopper tutorials are used as the course curriculum while mentors help attendees work through challenges.
 
 ## Want to attend?
 

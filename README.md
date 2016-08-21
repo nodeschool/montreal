@@ -19,7 +19,8 @@ If you want to help teach or contribute in anyway, make a [pull request](https:/
 - David Rowley: [@David-Ro](http://github.com/David-Ro)
 - Cassie L. Rhéaume: [@CassieLR](https://github.com/CassieLR)
 - Valeri Vicneanschi: [@vicneanschi](https://github.com/vicneanschi)
-- _your name here as mentor, send pull request_
+- Shawn Thmpson: [@shawnthompson](https://github.com/shawnthompson)
+- _Add your name here with a pull request_
 
 ## Take it up a notch!
 
@@ -27,6 +28,6 @@ If you want to help teach or contribute in anyway, make a [pull request](https:/
 1. Upload your photo to http://nodeschool.io/montreal/ (see the [`gh-pages`](https://github.com/nodeschool/montreal/tree/gh-pages) branch)
 1. Complete the essential [workshoppers](http://nodeschool.io/#workshoppers)
 
-## Code of conduct
+## Inclusive and respectful
 
 Please read our [code of conduct](http://confcodeofconduct.com/) before contributing to or attending one of our events.

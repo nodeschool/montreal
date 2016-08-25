@@ -22,8 +22,11 @@
   display: block
   float: left
 
+  .tito-checkbox
+    margin-top: 17px
+
 .tito-ticket-name-wrapper
-  width: 60%
+  width: 80%
   padding: 20px 0 20px 90px
   position: relative
 
@@ -44,7 +47,8 @@
     padding: 0 0 0 30px
 
 .tito-ticket-price-quantity-wrapper
-  width: 40%
+  width: 20%
+  margin-top: 17px
 
   @media (screen and max-width: 800px)
     width: 100%
@@ -76,16 +80,20 @@
   padding: 15px 25px
 
 .tito-submit
-  color: $tertiary
-  background: darken($secondary, 10%)
+  width: 100%
+  color: $highlight
+  background: $accent
   border: none
-  border-radius: 3px
+  font-size: 20px
   font-weight: 600
   transition: background 0.2s, color 0.2s
+  padding: 15px 30px
+  border-bottom-right-radius: 3px
+  border-bottom-left-radius: 3px
 
   &:hover
     color: $secondary
-    background: $tertiary
+    background: $base
 
 .tito-ticket-price
   font-weight: 600
@@ -96,16 +104,16 @@
 
 .tito-ticket-name
   font-weight: 600
-  font-size: 18px
+  font-size: 20px
 
 .tito-ticket-description
-  font-size: 14px
+  font-size: 16px
   line-height: 160%
   font-weight: 100
 
 .tito-tickets-remaining
   display: block
-  font-size: 14px
+  font-size: 16px
 
 .tito-badge-link
   display: block

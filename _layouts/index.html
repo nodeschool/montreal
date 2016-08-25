@@ -42,11 +42,9 @@
     <nav class="nav">
       <ul>
         <li><a href="#" class="ir home" data-text="Home">Home</a></li>
-        <li><a href="#community" class="ir community" data-text="Community">Community</a></li>
-        <li><a href="#events" class="ir events" data-text="Events">Events</a></li>
-        <li><a href="#faq" class="ir faq" data-text="FAQ">Frequently Asked Questions</a></li>
+        <li><a href="#events" class="ir events" data-text="Next Workshop">Next Workshop</a></li>
         <li><a href="#mentors" class="ir mentors" data-text="Mentors">Mentors</a></li>
-        <li><a href="#attendees" class="ir attendees" data-text="Attendees">Attendees</a></li>
+        <li><a href="#participants" class="ir participants" data-text="Participants">Attendees</a></li>
         <li><a href="#photos" class="ir photos" data-text="Photos">Photos</a></li>
         <li><a href="#codeofconduct" class="ir code" data-text="Code of Conduct">Code of Conduct</a></li>
       </ul>
@@ -65,8 +63,27 @@
             <a href="https://twitter.com/NodeSchoolMTL" class="twitter-follow-button" data-show-count="false">Follow @NodeSchoolMTL</a>
           </p>
           <div class="event">
-            <p class="title">
-              Next workshop: <strong>First Day NodeSchool</strong>
+            <p id="events" class="title">
+              Next Workshop: <strong>First Day NodeSchool</strong>
+            </p>
+            <p class="schedule">
+              <strong>Agenda</strong>
+              <ul class="timeline">
+                <li>
+                  <em>5:30pm</em> Registration and Node environment setup, get your laptop ready!
+                </li>
+                <li>
+                  <em>5:50pm</em> Node basic principles presented by <a
+                  href="https://twitter.com/cassierheaume"><strong>@cassierheaume</strong></a> and <a
+                  href="https://twitter.com/pcuci"><strong>@pcuci</strong></a>
+                </li>
+                <li>
+                  <em>6:00pm</em> Complete any <a href="http://nodeschool.io/#workshoppers">workshopper</a> or work on your own web project, mentors walk around to help
+                </li>
+                <li>
+                  <em>8:00pm</em> Demo your solutions, networking
+                </li>
+              </ul>
             </p>
             <p class="register">
               Wednesday <strong>September 14<sup>th</sup></strong> at 5:30pm
@@ -77,26 +94,7 @@
             <div class="map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.0944391154517!2d-73.60023448437062!3d45.52830507910178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9196f8d691e3d%3A0x45df797a1e695f5e!2s5605+Avenue+de+Gasp%C3%A9%2C+Montr%C3%A9al%2C+QC+H2T+2A4!5e0!3m2!1sen!2sca!4v1462125098770" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
-            <p class="schedule">
-              <strong>Agenda</strong>
-            </p>
-            <ul class="timeline">
-              <li>
-                <em>5:30pm</em> Registration and Node environment setup, get your laptop ready!
-              </li>
-              <li>
-                <em>5:50pm</em> Node basic principles presented by <a
-                href="https://twitter.com/cassierheaume"><strong>@cassierheaume</strong></a> and <a
-                href="https://twitter.com/pcuci"><strong>@pcuci</strong></a>
-              </li>
-              <li>
-                <em>6:00pm</em> Complete any <a href="http://nodeschool.io/#workshoppers">workshopper</a> or work on your own web project, mentors walk around to help
-              </li>
-              <li>
-                <em>8:00pm</em> Demo your solutions, networking
-              </li>
-            </ul>
-            <tito-widget event="nodeschoolmtl/first-day-of-nodeschool"></tito-widget>
+            <tito-widget event="nodeschoolmtl/first-day-nodeschool"></tito-widget>
           </div>
           <p>Workshops are run by volunteers, you too can become an organizer and <a href='https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor'>mentor</a>.</p>
           <p>See all <a href="https://ti.to/nodeschoolmtl/">NodeSchoolMTL workshops</a>.</p>
@@ -130,6 +128,7 @@ $ learnyounode</pre>
               </div>
             {% endfor %}
           </div>
+          <h2 id="codeofconduct">Code of Conduct</h2>
           <p>We promise a safe, harrassment-free learning environment. Please report any concerns immediately to organizers. We follow the <a href="http://confcodeofconduct.com/">conference code of conduct</a>.</p>
           <div class="footer">
             <p class="links">
@@ -153,7 +152,7 @@ $ learnyounode</pre>
                 <input type="submit" value="Get notified" name="subscribe">
               </form>
             </div>
-            <h2 id="mentors">NodeSchool Mentors</h2>
+            <h2 id="mentors">Mentors</h2>
             <div class="list-mentors cf">
               {% for mentor in site.mentors %}
                 {% cycle '<div class="row">', '', '', '', '' %}
@@ -166,7 +165,7 @@ $ learnyounode</pre>
               {% endfor %}
             </div>
             <p>To become a mentor please add your name to the mentor list above: send a <strong><a href='https://github.com/nodeschool/montreal/pulls'>pull request</a></strong>. Please also study the <a href='https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor'>"On Being a Mentor"</a> tips to prepare before a workshop.</p>
-            <h2 id="attendees">Attendees</h2>
+            <h2 id="participants">Participants</h2>
             <p>Show up at any of our workshops and become part of Montreal's vibrant web developer community!</p>
             <div class="list-attendees cf">
               <!--{% for value in site.data.attendees %}

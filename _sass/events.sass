@@ -1,4 +1,6 @@
 .event
+  border-top-left-radius: 3px
+  border-top-right-radius: 3px
   margin: 0
   background: $secondary
   color: $tertiary
@@ -63,12 +65,13 @@
       font-size: 32px
 
   .schedule, .location
-    line-height: 100%
+    line-height: 180%
     padding: 30px 20px 20px 90px
     margin: 0 0 10px 0
     position: relative
     font-size: 18px
     font-weight: 100
+    border-top: 1px solid rgba($tertiary, 0.35)
 
     &:before
       content: '\e693'
@@ -81,7 +84,6 @@
 
   .schedule
     border-top: 1px solid rgba($tertiary, 0.35)
-    border-bottom: 1px solid rgba($tertiary, 0.35)
     padding-bottom: 30px
     margin: 0
 
@@ -89,10 +91,10 @@
       content: '\e702'
 
   .timeline
-    margin: 0
+    margin-top: 0
+    padding: 0 15px 0 90px
     width: 100%
     display: block
-
 
     .row
       @extend .cf

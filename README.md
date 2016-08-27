@@ -32,4 +32,4 @@ To help teach or contribute please send a [pull request](https://github.com/node
 
 ## Inclusive and respectful
 
-Please observe the [code of conduct](http://confcodeofconduct.com/) to attend a NodeSchool workshop.
+Please observe the [code of conduct](http://confcodeofconduct.com/) while attending NodeSchool.

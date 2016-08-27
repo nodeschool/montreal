@@ -14,7 +14,7 @@ Check out the [NodeSchoolMTL website](http://nodeschool.io/montreal/) and RSVP t
 
 ## Mentor or help out
 
-If you want to help teach or contribute in anyway, make a [pull request](https://github.com/nodeschool/montreal/pulls) and add your name to the list below with relevant contact details; and/or contact [@pcuci](http://github.com/pcuci) or [@David-Ro](http://github.com/David-Ro) for further information. Mentors and volunteers are currently contacted and confirmed, before each event, on our [Gitter Channel](https://gitter.im/nodeschool/montreal).
+To help teach or contribute please send a [pull request](https://github.com/nodeschool/montreal/pulls) to add your name to the list below, and/or contact [@pcuci](http://github.com/pcuci) or [@David-Ro](http://github.com/David-Ro) for further information. Mentors and volunteers are currently contacted and confirmed, before each event, on our [Gitter Channel](https://gitter.im/nodeschool/montreal).
 
 - Paul Cuciureanu: [@pcuci](http://github.com/pcuci)
 - David Rowley: [@David-Ro](http://github.com/David-Ro)
@@ -25,11 +25,11 @@ If you want to help teach or contribute in anyway, make a [pull request](https:/
 
 ## Take it up a notch!
 
-1. Star the repo
+1. Star the repo ⭐
 1. Report bugs or improvements in [issues](https://github.com/nodeschool/montreal/issues), we appreciate all sorts of feedback!
 1. Upload your photo to http://nodeschool.io/montreal/ (see the [`gh-pages`](https://github.com/nodeschool/montreal/tree/gh-pages) branch)
-1. Complete a [core workshopper](http://nodeschool.io/#workshopper-list) on your own before the next in-person workshop
+1. Complete a [core workshopper](http://nodeschool.io/#workshopper-list) on your own before the next event
 
 ## Inclusive and respectful
 
-Please read our [code of conduct](http://confcodeofconduct.com/) before contributing to or attending one of our events.
+Please observe the [code of conduct](http://confcodeofconduct.com/) to attend a NodeSchool workshop.

@@ -1,11 +1,12 @@
 [![NodeSchoolMTL](https://img.shields.io/badge/NodeSchool-MTL-yellow.svg)](http://nodeschool.io/montreal) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/nodeschool/montreal) [![Stories in progress](https://img.shields.io/waffle/label/nodeschool/montreal/in%20progress.svg)](https://waffle.io/nodeschool/montreal)
-[![NodeSchool Montreal Logo](http://nodeschool.io/montreal/i/NodeSchoolMTL.svg)](http://nodeschool.io/montreal)
 
 # NodeSchool Montreal
 
 **NodeSchool** is open source workshops that teach web software skills: [http://nodeschool/montreal](http://nodeschool.io/montreal/)
 
 You are encouraged to do the [workshoppers](http://nodeschool.io/#workshoppers) on your own or in person at a NodeSchool event. The workshopper tutorials are used as the course curriculum while mentors help attendees work through challenges.
+
+[![NodeSchool Montreal Logo](http://nodeschool.io/montreal/i/NodeSchoolMTL.svg)](http://nodeschool.io/montreal)
 
 ## Attend
 
@@ -27,7 +28,7 @@ If you want to help teach or contribute in anyway, make a [pull request](https:/
 1. Star the repo
 1. Report bugs or improvements in [issues](https://github.com/nodeschool/montreal/issues), we appreciate all sorts of feedback!
 1. Upload your photo to http://nodeschool.io/montreal/ (see the [`gh-pages`](https://github.com/nodeschool/montreal/tree/gh-pages) branch)
-1. Complete the core [workshoppers](http://nodeschool.io/#workshopper-list)
+1. Complete a [core workshopper](http://nodeschool.io/#workshopper-list) on your own before the next in-person workshop
 
 ## Inclusive and respectful
 

@@ -20,6 +20,7 @@ If you want to help teach or contribute in anyway, make a [pull request](https:/
 - Cassie L. Rhéaume: [@CassieLR](https://github.com/CassieLR)
 - Valeri Vicneanschi: [@vicneanschi](https://github.com/vicneanschi)
 - Shawn Thmpson: [@shawnthompson](https://github.com/shawnthompson)
+- Harris Robin Kalash [@harrisrobin](https://github.com/harrisrobin)
 - _Add your name here with a pull request_
 
 ## Take it up a notch!

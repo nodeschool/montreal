@@ -21,6 +21,7 @@ To help teach or contribute please send a [pull request](https://github.com/node
 - Cassie L. Rhéaume: [@CassieLR](https://github.com/CassieLR)
 - Valeri Vicneanschi: [@vicneanschi](https://github.com/vicneanschi)
 - Shawn Thmpson: [@shawnthompson](https://github.com/shawnthompson)
+- Andre John Mas: [@ajmas](https://github.com/ajmas)
 - _Add your name here with a pull request_
 
 ## Take it up a notch!

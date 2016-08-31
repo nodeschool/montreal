@@ -22,6 +22,7 @@ To help teach or contribute please send a [pull request](https://github.com/node
 - Valeri Vicneanschi: [@vicneanschi](https://github.com/vicneanschi)
 - Shawn Thmpson: [@shawnthompson](https://github.com/shawnthompson)
 - Andre John Mas: [@ajmas](https://github.com/ajmas)
+- Harris Robin Kalash [@harrisrobin](https://github.com/harrisrobin)
 - _Add your name here with a pull request_
 
 ## Take it up a notch!

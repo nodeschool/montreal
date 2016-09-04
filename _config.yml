@@ -24,20 +24,28 @@ exclude:
 
 mentors:
   - name: pcuci
+    display: 'Paul Cuciureanu'
     twitter: pcuci
   - name: cassie
+    display: 'Cassie L. Rhéaume'
     twitter: cassierheaume
   - name: david
+    display: 'David Rowley'
     twitter: davidrowley514
   - name: valeri
+    display: 'Valeri Vicneanschi'
     twitter: vicneanschi
   - name: andre-john
+    display: 'André John Mas'
     twitter: ajmas
   - name: harris
+    display: 'Harris Robin Kalash'
     twitter: LulzHRK
   - name: shawn
+    display: 'Shawn Thmpson'
     twitter: plansmash
   - name: nicolas
+    display: 'Nicolas Géré'
     twitter: nicolasgere
   - name: fharper
     twitter: fharper

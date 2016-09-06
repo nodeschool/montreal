@@ -34,20 +34,6 @@
           </image>
         </pattern>
         {% endfor %}
-        {% for i in (1..30) %}
-        <pattern id="photo-{{i}}" width="300" height="300" patternUnits="userSpaceOnUse">
-          <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="i/photos/{{i}}.jpg" width="250" height="300" preserveAspectRatio="xMidYMid slice">
-          </image>
-        </pattern>
-        {% endfor %}
-        {% for value in site.data.attendees %}
-        {% for attendee in value[1] %}
-        <pattern id="attendee-{{attendee[0]}}" width="300" height="300" patternUnits="userSpaceOnUse">
-          <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{attendee[1]}}" width="250" height="300" preserveAspectRatio="xMidYMid slice">
-          </image>
-        </pattern>
-        {% endfor %}
-        {% endfor %}
       </defs>
     </svg>
     <nav class="nav">

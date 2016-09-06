@@ -13,7 +13,7 @@
     & + main
       transform: translate3d(200px, 0, 0)
 
-  @media (screen and max-width: 800px)
+  @media (screen and max-width: $responsive-width)
     display: none
 
   ul, li
@@ -29,7 +29,7 @@
       display: block
       position: relative
       transition: background ease-in-out 0.2s
-      border-bottom: 1px solid rgba($highlight,0.15)
+      border-bottom: 1px solid rgba($highlight, 0.15)
 
       &:hover
         background: $highlight

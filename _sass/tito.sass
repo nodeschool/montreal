@@ -2,6 +2,11 @@
   border-top: 1px solid rgba($tertiary, 0.35)
   margin: 0
   padding: 0
+  p
+    padding: 5px 30px
+
+.tito-ticket-status
+  padding: 20px 5px
 
 .tito-ticket
   @extend .cf
@@ -26,12 +31,9 @@
     margin-top: 17px
 
 .tito-ticket-name-wrapper
-  width: 80%
+  width: 70%
   padding: 20px 0 20px 90px
   position: relative
-
-  @media (screen and max-width: 800px)
-    width: 100%
 
   &:before
     content: '\e66f'
@@ -47,11 +49,8 @@
     padding: 0 0 0 30px
 
 .tito-ticket-price-quantity-wrapper
-  width: 20%
+  width: 30%
   margin-top: 17px
-
-  @media (screen and max-width: 800px)
-    width: 100%
 
 .tito-ticket-price,
 .tito-ticket-quantity
@@ -59,19 +58,11 @@
 
 .tito-ticket-price
   padding: 25px 0 0
-  width: 40%
-
-  @media (screen and max-width: 800px)
-    padding: 20px
-    width: 50%
+  width: 60%
 
 .tito-ticket-quantity
   padding: 25px 20px 0 0
-  width: 60%
-
-  @media (screen and max-width: 800px)
-    padding: 20px
-    width: 50%
+  width: 40%
 
 .tito-ticket-price span,
 .tito-ticket-quantity .tito-submit

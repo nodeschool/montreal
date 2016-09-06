@@ -16,13 +16,15 @@
   </head>
   <body>
     <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7&appId=848503051856877";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7&appId=848503051856877";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <svg class="svgs" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
       <defs>
         {% for mentor in site.mentors %}
@@ -130,11 +132,6 @@ $ learnyounode</pre>
           </div>
           <h2 id="codeofconduct">Code of Conduct</h2>
           <p>We promise a safe, harrassment-free learning environment. Please report any concerns immediately to organizers. We follow the <a href="http://confcodeofconduct.com/" target="_blank">conference code of conduct</a>.</p>
-          <footer>
-            <p class="links">
-              Credits: <a href="nodeschool.io/toronto">NodeSchool Toronto</a>
-            </p>
-          </footer>
         </div>
       </section>
       <aside class="panel side">
@@ -178,6 +175,11 @@ $ learnyounode</pre>
               <p>We welcome small cash contributions, regular meeting space, and technical speakers. You receive no mentions or speak-time during workshops. Write to <a href="mailto:nodeschoolmtl@bettermtl.com">nodeschoolmtl@bettermtl.com</a></p>
             </div>
           </div>
+          <footer>
+            <p class="links">
+              Credits: <a href="http://nodeschool.io/toronto">NodeSchool Toronto</a>
+            </p>
+          </footer>
         </div>
       </aside>
     </main>

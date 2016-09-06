@@ -27,7 +27,7 @@ h2
   padding: 0 0 0.5em 0
   border-bottom: 1px solid rgba($accent, 0.15)
 
-  @media (screen and max-width: 800px)
+  @media (screen and max-width: $responsive-width)
     font-size: 24px
 
 img
@@ -101,15 +101,15 @@ a
   transform: translate3d(0,0,0)
   transition: transform 0.2s
 
-  @media (screen and max-width: 800px)
+  @media (screen and max-width: $responsive-width)
     display: block
 
   .panel
     display: flex
     flex: 1 1 50%
-    max-width: 50%
+    max-width: 60%
 
-    @media (screen and max-width: 800px)
+    @media (screen and max-width: $responsive-width)
       display: block
       clear: both
       width: 100%
@@ -126,6 +126,7 @@ a
     background: $accent
     position: relative
     color: $highlight
+    max-width: 40%
 
     p
       a
@@ -150,7 +151,7 @@ a
         left: 10%
         top: 10%
 
-        @media (screen and max-width: 800px)
+        @media (screen and max-width: $responsive-width)
           width: 90%
           left: 5%
           top: 5%
@@ -190,7 +191,7 @@ a
       background: white
       padding: 60px 80px 60px 160px
 
-      @media (screen and max-width: 800px)
+      @media (screen and max-width: $responsive-width)
         padding: 40px 20px
 
       .header
@@ -215,7 +216,7 @@ a
           letter-spacing: -1px
           color: $accent
 
-          @media (screen and max-width: 800px)
+          @media (screen and max-width: $responsive-width)
             font-size: 32px
             margin: 0 auto 20px
 

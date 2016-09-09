@@ -24,6 +24,7 @@ To help teach or contribute please send a [pull request](https://github.com/node
 - Andre John Mas: [@ajmas](https://github.com/ajmas)
 - Harris Robin Kalash: [@harrisrobin](https://github.com/harrisrobin)
 - Jeff Marshall: [@jeffmarshall](https://github.com/jeffmarshall)
+- Rami Sayar: [@sayar](https://github.com/sayar)
 - _Add your name here with a pull request_
 
 ## Take it up a notch!

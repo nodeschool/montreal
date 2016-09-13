@@ -25,6 +25,7 @@ To help teach or contribute please send a [pull request](https://github.com/node
 - Harris Robin Kalash: [@harrisrobin](https://github.com/harrisrobin)
 - Jeff Marshall: [@jeffmarshall](https://github.com/jeffmarshall)
 - Rami Sayar: [@sayar](https://github.com/sayar)
+- Frédéric Harper: [@fharper](https://github.com/fharper)
 - _Add your name here with a pull request_
 
 ## Take it up a notch!

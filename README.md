@@ -26,6 +26,7 @@ To help teach or contribute please send a [pull request](https://github.com/node
 - Jeff Marshall: [@jeffmarshall](https://github.com/jeffmarshall)
 - Rami Sayar: [@sayar](https://github.com/sayar)
 - Frédéric Harper: [@fharper](https://github.com/fharper)
+- Matan Kushner: [@matchai](https://github.com/matchai)
 - _Add your name here with a pull request_
 
 ## Take it up a notch!

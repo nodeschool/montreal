@@ -135,8 +135,16 @@ $ learnyounode</pre>
             </div>
             <h2 id="mentors">Mentors</h2>
             <div class="list-mentors cf">
+              {% assign row = 0 %}
+              {% assign rowElemIdx = 1 %}
+              {% assign linelen = 5 %}
+
               {% for mentor in site.mentors %}
-                {% cycle '<div class="row">', '', '', '', '' %}
+
+                {% if rowElemIdx == 1 %}
+                <div class="row">
+                {% endif %}
+
                   <a href="https://twitter.com/{{mentor.twitter}}" target="_blank" class="image-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 300" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <polygon class="hex" points="250,75 250,225 125,300 0,225 0,75 125,0" fill="url('#mentor-{{forloop.index}}')">
@@ -144,7 +152,22 @@ $ learnyounode</pre>
                       </polygon>
                     </svg>
                   </a>
-                {% cycle '', '', '', '', '</div>' %}
+
+                {% if rowElemIdx < linelen %}
+                   {% assign rowElemIdx = rowElemIdx | plus: 1%}                  
+                {% else %}                
+                   {% assign row = row | plus: 1%}
+                   {% assign rowElemIdx = 1 %}                                                    
+                   {% assign mod = row | modulo: 2 %}
+                
+                   {% if mod == 0 %}
+                     {% assign linelen = 5 %}
+                   {% else %}
+                     {% assign linelen = 4 %}
+                   {% endif %}                     
+                   </div>
+                {% endif %}
+
               {% endfor %}
             </div>
             <p>To become a mentor please <a href="https://github.com/nodeschool/montreal/issues/15">add your name to the mentors list</a>, and even better, send a <strong><a href='https://github.com/nodeschool/montreal/pulls' target="_blank">pull request</a></strong> to add your photo here. You can prepare for the workshop by studying the <a href='https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor' target="_blank">"On Being a Mentor"</a> tips.</p>

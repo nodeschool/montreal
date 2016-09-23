@@ -50,7 +50,7 @@
       <section class="panel text">
         <div class="container">
           <div class="header">
-            <a class="logo"><img src="http://i.imgur.com/M0Mh3PZ.jpg" alt="NodeSchool Montréal Logo"></a>
+            <a class="logo pull-right"><img src="http://i.imgur.com/M0Mh3PZ.jpg" alt="NodeSchool Montréal Logo"></a>
             <h1>NodeSchool Montréal</h1>
           </div>
           <p class="about"><strong>NodeSchool</strong> is a selection of open source <a href="http://nodeschool.io/#workshoppers" target="_blank">workshops</a> that teach web software skills. You can do them on your own or in the company of peers and mentors, right here in <strong>Montréal</strong>.</p>
@@ -154,17 +154,17 @@ $ learnyounode</pre>
                   </a>
 
                 {% if rowElemIdx < linelen %}
-                   {% assign rowElemIdx = rowElemIdx | plus: 1%}                  
-                {% else %}                
+                   {% assign rowElemIdx = rowElemIdx | plus: 1%}
+                {% else %}
                    {% assign row = row | plus: 1%}
-                   {% assign rowElemIdx = 1 %}                                                    
+                   {% assign rowElemIdx = 1 %}
                    {% assign mod = row | modulo: 2 %}
-                
+
                    {% if mod == 0 %}
                      {% assign linelen = 5 %}
                    {% else %}
                      {% assign linelen = 4 %}
-                   {% endif %}                     
+                   {% endif %}
                    </div>
                 {% endif %}
 

@@ -2,9 +2,11 @@
 
 # NodeSchool Montreal
 
-**NodeSchool** is open source workshops that teach web software skills: [http://nodeschool.io/montreal](http://nodeschool.io/montreal/)
+**NodeSchool** is open source workshops for you to learn web software skills: [http://nodeschool.io/montreal](http://nodeschool.io/montreal/)
 
-You are encouraged to do the [workshoppers](http://nodeschool.io/#workshoppers) on your own or in person at a NodeSchool event. The workshopper tutorials are used as the course curriculum while mentors help attendees work through challenges.
+Do the [workshoppers](http://nodeschool.io/#workshoppers) on your own or in person at the [next NodeSchool event](http://nodeschool.io/montreal/). Experienced helpful mentors will help you through challenges.
+
+Done with the workshops? Start a project or join a team and develop your skills to the next level!
 
 [![NodeSchool Montreal Logo](http://nodeschool.io/montreal/i/NodeSchoolMTL.svg)](http://nodeschool.io/montreal)
 
@@ -14,7 +16,7 @@ Check out the [NodeSchoolMTL website](http://nodeschool.io/montreal/) and RSVP t
 
 ## Mentor or help out
 
-To help teach or contribute please send a [pull request](https://github.com/nodeschool/montreal/pulls) to add your name to the list below, and/or contact [@pcuci](http://github.com/pcuci) or [@David-Ro](http://github.com/David-Ro) for further information. Mentors and volunteers are currently contacted and confirmed, before each event, on our [Gitter Channel](https://gitter.im/nodeschool/montreal).
+Become a better teacher of complicated magical concepts or simply contribute back to open source. You know the drill.
 
 - Paul Cuciureanu: [@pcuci](http://github.com/pcuci)
 - David Rowley: [@David-Ro](http://github.com/David-Ro)
@@ -27,14 +29,16 @@ To help teach or contribute please send a [pull request](https://github.com/node
 - Rami Sayar: [@sayar](https://github.com/sayar)
 - Frédéric Harper: [@fharper](https://github.com/fharper)
 - Matan Kushner: [@matchai](https://github.com/matchai)
-- _Add your name here with a pull request_
+- _Add your name here with a [pull request](https://github.com/nodeschool/montreal/pulls)_
 
 ## Take it up a notch!
 
 1. Star the repo ⭐
-1. Report bugs or improvements in [issues](https://github.com/nodeschool/montreal/issues), we appreciate all sorts of feedback!
-1. Upload your photo to http://nodeschool.io/montreal/ (see the [`gh-pages`](https://github.com/nodeschool/montreal/tree/gh-pages) branch)
-1. Complete a [core workshopper](http://nodeschool.io/#workshopper-list) on your own before the next event
+2. Report bugs or improvements in [issues](https://github.com/nodeschool/montreal/issues), we appreciate all sorts of feedback!
+3. Upload your photo to http://nodeschool.io/montreal/ (see the [`gh-pages`](https://github.com/nodeschool/montreal/tree/gh-pages) branch)
+4. Complete a [core workshopper](http://nodeschool.io/#workshopper-list) on your own before the next event
+5. Join a team, see the list of [active projects](http://nodeschool.io/montreal/)
+6. [Start](https://docs.google.com/forms/d/e/1FAIpQLSekmFlMoBA9VCd7d38QgyBnxfz8HNduNkt44PpDR41SfUczmw/viewform) your own project!
 
 ## Inclusive and respectful
 

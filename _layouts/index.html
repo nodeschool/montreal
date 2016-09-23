@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Nodeschool Montréal Chapter">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script type="text/javascript" src='js/jquery.js '></script>
+    <script type="text/javascript" src='js/tabletop1.3.4.js'></script>
+    <script type="text/javascript" src='js/sheetsee.js'></script>
+    <script type="text/javascript" src='js/leaflet.markercluster.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.css' rel='stylesheet' />
     <title>Nodeschool Montréal</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
     <link href="styles.css" rel="stylesheet">
@@ -201,5 +206,243 @@ $ learnyounode</pre>
       }}();
     </script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <div class="projects">
+      <div id="wrapper">
+        <h1>NodeSchool Projects</h1>
+        <div>
+          <ul class="nav">
+            <li><strong>Themed teams, real <span title="Web projects built with Node and JavaScript">projects</span>.</strong></li>
+            <li><a href="http://jlord.github.com/sheetsee.js" target="_blank">POWERED BY SHEETSEE.JS</a> -</li>
+            <li><a href="http://www.github.com/pcuci/nodeschool-theams" target="_blank">GITHUB</a> -</li>
+            <li><a href="http://www.twitter.com/pcuci" target="_blank">@pcuci</a></li>
+          </ul>
+        </div>
+        <div class="container">
+          <div id="rightSide">
+            <div id="latestSpot"></div>
+            <div id="selectedSpot"></div>
+            <div id="map"></div>
+          </div>
+        </div>
+        <div class="container">
+          <input id="tableFilter" type="text" placeholder="Filter by"></input>
+          <span class="clear button">Clear</span> <span class="resetMap button">Reset Map</span>
+          <span class="noMatches">no matches</span>
+          <div id="hackSpotsTable"></div>
+        </div>
+        <div id="info" class="container">
+          <div id="theNumberofSpots"></div>
+          <p>This website is hooked up to <a href="https://docs.google.com/spreadsheets/d/1uY_V0bpagVhy8df9-feNH3XXYHNEQbRRXcb1NcSVCu4/edit?usp=sharing" target="_blank">this Google Spreadsheet</a>, which I've shared, so click and add your favorite community project to the bottom of the list! For the map you'll need to <strong>get the lat and long</strong> of the location where that teams usually meets to hack together, you can get that <a href="http://www.latlong.net/" target="_blank">here</a>. Locating of these places is helpful, so please try to fill out all the columns.</p>
+
+          <h3>Motivation</h3>
+          <p>NodeSchool participants have ambitions to develop their own projects. Today, it is difficult to coordinate learning+dev activities in the wider community. Where do I find someone who can help my team, how do I discover a project worth contributing to? This listing is an attempt to keep ephemeral projects active and shared amongst the community of learners, mentors, but also non-tech business co-founders wishing to stay plugged with the tech learning community.</p>
+
+          <p>Besides being a list I've wanted to have, it's a fantastic (or I think so) way of using <a href="http://jlord.github.io/sheetsee.js" target="_blank">sheetsee.js</a>, which is a little JavaScript library <a href="http://www.twitter.com/jlord" target="_blank">@jlord</a>'s been working on. Sheetsee.js helps you hook a Google Spreadsheet (awesome for data and collaboration!) to a website to make data more visual (maps, tables, charts).</p>
+
+          <h3>Theamed?</h3>
+          <p>As learning vehicles, projects die quickly. A team advancing their collective skills across multiple similarly themed projects sticks together. A team working on a theme to advance a project, a themed team, a theam.</p>
+
+          <h3>Fork-n-Go</h3>
+          <p>There is just a <a href="https://github.com/pcuci/nodeschool-theams" target="_blank">gh-pages branch in GitHub</a> for this project so when you fork it, you've got a live and hosted website instantly. BAM! Just copy the spreadsheet headers and create your own spreadsheet, swap out the spreadsheet key in index.html and commit those changes: you've got a live and hosted site with a spreadsheet you control. More on the <a href="http://www.github.com/pcuci/nodeschool-theams" target="_blank">readme</a>.</p>
+        </div>
+      </div><!-- end wrapper -->
+
+      <script id="hackSpotsTable" type="text/html">
+        <table>
+          <tr>
+            <th class="tHeader">Problem</th>
+            <th class="tHeader">Who</th>
+            <th class="tHeader">Help Wanted</th>
+            <th class="tHeader">Theam</th>
+            <th class="tHeader">Neighbourhood</th>
+            <th></th>
+          </tr>
+          {{"{{#rows"}}}}
+            <tr id='{{"{{rowNumber"}}}}' class="spotRow">
+              <td>{{"{{problem"}}}}</td>
+              <td>{{"{{forwhom"}}}}</td>
+              <td>{{"{{helpwanted"}}}}</td>
+              <td>{{"{{theamname"}}}}</td>
+              <td>{{"{{neighbourhood"}}}}</td>
+              <td>
+                <a class="button" href="https://maps.google.com/maps?q={{"{{address"}}}},{{"{{city"}}}},{{"{{state"}}}}" target="_blank">Map</a>
+              </td>
+            </tr>
+          {{"{{/rows"}}}}
+        </table>
+      </script>
+
+      <script id="latestSpot" type="text/html">
+        {{"{{#rows"}}}}
+          <div><img src="{{"{{photo"}}}}"></div>
+          <h4 class="fauxButton">Newest Theam</h4>
+          <h2>{{"{{theamname"}}}}</h2>
+          <p class="colorText">{{"{{address"}}}}<p>
+          <p class="colorText">{{"{{city"}}}}{{"{{#state"}}}}, {{"{{state"}}}}{{"{{/state"}}}}{{"{{#postcode"}}}}, {{"{{postcode"}}}}{{"{{/postcode"}}}}</p>
+          <ul>
+            <li><span class="category">Problem:</span> {{"{{problem"}}}}</li>
+            <li><span class="category">Who:</span> {{"{{forwhom"}}}}</li>
+            <li><span class="category">Benefit:</span> {{"{{benefit"}}}}</li>
+            <li><span class="category">Help Wanted:</span> {{"{{helpwanted"}}}}</li>
+            <li><span class="category">Solution:</span> <a href="{{"{{more"}}}}">{{"{{solution"}}}}</a></li>
+            <li><span class="category">Tech:</span> {{"{{tech"}}}}</li>
+            <li><span class="category">Lang:</span> {{"{{lang"}}}}</li>
+            <li>
+              <span class="category">Lead By:</span> <a href="http://www.twitter.com/{{"{{leadtwitter"}}}}" target="_blank">@{{"{{leadtwitter"}}}}</a>
+            </li>
+          </ul>
+        {{"{{/rows"}}}}
+      </script>
+
+      <script id="theNumberofSpots" type="text/html">
+        <p><strong><span class="red-text">{{"{{numberOfSpots"}}}}</span> theamed projects strong!</p>
+      </script>
+
+      <script id="selectedSpot" type="text/html">
+        {{"{{#rows"}}}}
+          <div><img src="{{"{{photo"}}}}"></div>
+          <h4 class="fauxButton">Selected Theam</h4>
+          <h2>{{"{{theamname"}}}}</h2>
+          <p class="colorText">{{"{{address"}}}}<p>
+          <p class="colorText">{{"{{city"}}}}{{"{{#state"}}}}, {{"{{state"}}}}{{"{{/state"}}}}{{"{{#postcode"}}}}, {{"{{postcode"}}}}{{"{{/postcode"}}}}</p>
+          <ul>
+            <li><span class="category">Problem:</span> {{"{{problem"}}}}</li>
+            <li><span class="category">Who:</span> {{"{{forwhom"}}}}</li>
+            <li><span class="category">Benefit:</span> {{"{{benefit"}}}}</li>
+            <li><span class="category">Looking for:</span> {{"{{helpwanted"}}}}</li>
+            <li><span class="category">Solution:</span> <a href="{{"{{more"}}}}">{{"{{solution"}}}}</a></li>
+            <li><span class="category">Tech:</span> {{"{{tech"}}}}</li>
+            <li><span class="category">Lang:</span> {{"{{lang"}}}}</li>
+          </ul>
+        {{"{{/rows"}}}}
+      </script>
+
+      <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+          var gData;
+          var URL = "1uY_V0bpagVhy8df9-feNH3XXYHNEQbRRXcb1NcSVCu4";
+          Tabletop.init({
+            key: URL,
+            callback: showInfo,
+            simpleSheet: true
+          });
+        });
+
+        // so long, so messy
+        function showInfo(gData) {
+          console.log('Spreadsheets', gData);
+          tableOptions = {
+            "data": gData,
+            "tableDiv": "#hackSpotsTable",
+            "filterDiv": "#tableFilter"
+          }
+          // make the table, and the search bar
+          Sheetsee.makeTable(tableOptions);
+          Sheetsee.initiateTableFilter(tableOptions);
+
+          // create geoJSON with coordinates and other
+          // useful bits from the original data
+          var optionsJSON = ["theamname", "address", "city", "rowNumber"];
+          var geoJSON = Sheetsee.createGeoJSON(gData, optionsJSON);
+
+          // create map, tilelayer (map background), markers and popups
+          var map = Sheetsee.loadMap("map");
+          Sheetsee.addTileLayer(map, 'jllord.n7aml2bc');
+          var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, '<h2>{{"{{ theamname "}}}}</h2>', true);
+
+          // find the latest spot with the most important
+          // info filled in (to prevent map breaking if
+          // someone is currently editing spreadsheet)
+          var newestTheam = findLatestCompleteSpot(gData);
+          var latestSpot = Sheetsee.ich.latestSpot({
+            rows: newestTheam
+          });
+
+          // set it and pan to it
+          $('#latestSpot').html(latestSpot);
+          console.log('newestTheam', newestTheam);
+          map.setView([newestTheam.lat, newestTheam.long], 14);
+
+          // when someone clicks on a row, highlight it and
+          // re-center the map
+          // TODO show popup, change marker color
+          $('.spotRow').live("click", function(event) {
+            $('.spotRow').removeClass("selectedRow")
+            var rowNumber = $(this).closest("tr").attr("id")
+            $('#' + rowNumber).addClass("selectedRow")
+            var dataElement = Sheetsee.getMatches(gData, rowNumber, "rowNumber")
+            var selectedSpot = Sheetsee.ich.selectedSpot({
+              rows: dataElement
+            })
+            $('#latestSpot').css("display", "none")
+            $('#selectedSpot').html(selectedSpot).css("display", "inline")
+            var selectedCoords = [dataElement[0].lat, dataElement[0].long]
+            map.setView(selectedCoords, 14)
+          });
+
+          // so that the first map and info that loads
+          // is complete and doesn't show rows that are
+          // actively being edited by folk
+          function findLatestCompleteSpot(data) {
+            var latestCompleteSpot = [];
+            var startWithLatestRow = data.reverse();
+            startWithLatestRow.forEach(function(row) {
+              if (!row.lat || !row.long || !row.theamname || !row.address || !row.city || !row.state ) {
+                return
+              } else {
+                latestCompleteSpot.push(row);
+              }
+            });
+            return latestCompleteSpot[0];
+          }
+
+          // Add click listener to the markerLayer
+          markerLayer.on('click', function(e) {
+            // clear any selected rows
+            $('.spotRow').removeClass("selectedRow");
+            // get row number of selected marker
+            var rowNumber = e.layer.feature.opts.rowNumber;
+            // find that row in the table and make consider it selected
+            $('#' + rowNumber).addClass("selectedRow");
+            // using row number, get the data for the selected spot
+            var dataElement = Sheetsee.getMatches(gData, rowNumber.toString(), "rowNumber");
+            // take those details and re-write the selected spot section
+            var selectedSpot = Sheetsee.ich.selectedSpot({
+              rows: dataElement
+            })
+            // center the map on the selected element
+            map.panTo([dataElement[0].lat, dataElement[0].long]);
+            // update the spot listing
+            $('#latestSpot').css("display", "none");
+            $('#selectedSpot').html(selectedSpot).css("display", "inline");
+          })
+
+          // reset the map, zoom out, and recenter on 0,0
+          $('.resetMap').click(function() {
+            $('.spotRow').removeClass("selectedRow");
+            $('#latestSpot').css("display", "inline");
+            $('#selectedSpot').css("display", "none");
+            map.setView([0, 0], 1);
+          })
+
+          // find total number of spots added
+          var theNumberofSpots = Sheetsee.ich.theNumberofSpots({
+            numberOfSpots: gData.length
+          });
+          $('#theNumberofSpots').html(theNumberofSpots);
+
+          if(window.location.hash) {
+            $('#tableFilter').val(window.location.hash.substring(1)).keyup();
+            $('.spotRow').first().click();
+          }
+        }
+
+        $(document).on('keyup', '#tableFilter', function() {
+          window.location.hash = $(this).val();
+          $('.spotRow').first().click();
+        })
+      </script>
+    </div>
   </body>
 </html>

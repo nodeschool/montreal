@@ -6,15 +6,18 @@
   width: 80px
   transition: width 0.2s
   overflow: hidden
+  @media (screen and max-width: $responsive-width)
+    width: 80px
 
   &:hover
     width: 280px
+    @media (screen and max-width: $responsive-width)
+      width: 80px
 
     & + main
       transform: translate3d(200px, 0, 0)
-
-  @media (screen and max-width: $responsive-width)
-    display: none
+      @media (screen and max-width: $responsive-width)
+        transform: translate3d(0, 0, 0)
 
   ul, li
     margin: 0
@@ -29,7 +32,7 @@
       display: block
       position: relative
       transition: background ease-in-out 0.2s
-      border-bottom: 1px solid rgba($highlight, 0.15)
+      border-bottom: 1px solid rgba($highlight, 0.10)
 
       &:hover
         background: $highlight

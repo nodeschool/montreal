@@ -133,7 +133,7 @@ $ learnyounode</pre>
             <div class="mailinglist">
               <form action="//sana.us1.list-manage.com/subscribe/post?u=a16929a7d86b16ecfc960cd42&amp;id=8e533856ad" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <label class="email">
-                  <input type="email" value="" name="EMAIL" class="required email" placeholder="Your email to receive news">
+                  <input type="email" value="" name="EMAIL" class="required email" placeholder="Your email for news">
                 </label>
                 <div style="position: absolute; left: -5000px;"><input type="text" name="b_a16929a7d86b16ecfc960cd42_8e533856ad" tabindex="-1" value=""></div>
                 <input type="submit" value="Get notified" name="subscribe">
@@ -208,7 +208,8 @@ $ learnyounode</pre>
           <p>Besides being a list we've wanted to have, it's a fantastic (or so we think) way of using <a href="http://jlord.github.io/sheetsee.js" target="_blank">sheetsee.js</a>. Sheetsee.js helps you hook a Google Spreadsheet (awesome for data and collaboration!) to a website to make data more visual (maps, tables, charts). Fork the <a href="https://github.com/jlord/hack-spots">Hack Spots</a> repo and use in your own projects.</p>
 
           <h3>Theamed?</h3>
-          <p>As learning vehicles, projects die quickly. A team, however, advances their collective skill across multiple small projects. Members stick together, longer. A team who cares about a theme over a series of projects &mdash; a themed team &mdash; is a theam. Do not underestimate a theams' change-the-world potential!</p>
+          <p>Projects tend to die quickly. A team, however, advances their collective skill across multiple small projects. Members stick together, longer. A team who cares about a theme over a series of projects &mdash; a themed team &mdash; is a theam.</p>
+          <p>Do not underestimate theams' ability to change the world!</p>
           <footer>
             <p class="links">
               Happy fork of <a href="http://nodeschool.io/toronto">NodeSchool Toronto</a> merged with <a href="http://jlord.github.io/hack-spots">Hack Spots</a>
@@ -254,9 +255,9 @@ $ learnyounode</pre>
 
       <script id="latestSpot" type="text/html">
         {{"{{#rows"}}}}
+          <h3>{{"{{theamname"}}}}</h3>
           <div><img src="{{"{{photo"}}}}"></div>
           <h4 class="fauxButton">Newest Theam</h4>
-          <h2>{{"{{theamname"}}}}</h2>
           <ul>
             <li><span class="category">Problem</span> {{"{{problem"}}}}</li>
             <li><span class="category">For Whom</span> {{"{{forwhom"}}}}</li>
@@ -291,8 +292,7 @@ $ learnyounode</pre>
             <li><span class="category">Tech</span> {{"{{tech"}}}}</li>
             <li><span class="category">Lang</span> {{"{{lang"}}}}</li>
           </ul>
-          <p>{{"{{address"}}}}<br>
-            {{"{{city"}}}}{{"{{#state"}}}}, {{"{{state"}}}}{{"{{/state"}}}}{{"{{#postcode"}}}}, {{"{{postcode"}}}}{{"{{/postcode"}}}}</p>
+          <p>{{"{{address"}}}}, {{"{{city"}}}}{{"{{#state"}}}}, {{"{{state"}}}}{{"{{/state"}}}}{{"{{#postcode"}}}}, {{"{{postcode"}}}}{{"{{/postcode"}}}}</p>
         {{"{{/rows"}}}}
       </script>
 

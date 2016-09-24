@@ -20,6 +20,7 @@
     <![endif]-->
   </head>
   <body>
+    <script type="text/javascript" src="https://js.tito.io/v1" async></script>
     <div id="fb-root"></div>
     <script>
       (function(d, s, id) {
@@ -65,7 +66,7 @@
           <a class="github-button" href="https://github.com/nodeschool/montreal" data-count-href="/nodeschool/montreal/stargazers" data-count-api="/repos/nodeschool/montreal#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star nodeschool/montreal on GitHub">Star</a>
           <div class="event">
             <p id="events" class="title">
-              Next Workshop: <strong>First Day NodeSchool</strong>
+              Next Workshop: <strong>2nd Day NodeSchool</strong>
             </p>
             <p class="schedule">
               <strong>Agenda</strong>
@@ -95,7 +96,7 @@
             <div class="map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.0944391154517!2d-73.60023448437062!3d45.52830507910178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9196f8d691e3d%3A0x45df797a1e695f5e!2s5605+Avenue+de+Gasp%C3%A9%2C+Montr%C3%A9al%2C+QC+H2T+2A4!5e0!3m2!1sen!2sca!4v1462125098770" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
-            <tito-widget event="nodeschoolmtl/first-day-nodeschool"></tito-widget>
+            <tito-widget event="nodeschoolmtl/2nd-day-nodeschool"></tito-widget>
           </div>
           <p>Workshops are run by volunteers, you too can become an organizer and <a href='https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor' target="_blank">mentor</a>.</p>
           <h3>"What should I expect?"</h3>
@@ -139,13 +140,13 @@ $ learnyounode</pre>
               </form>
             </div>
             <h2 id="mentors">Mentors</h2>
+            <p>To become a mentor please <a href="https://github.com/nodeschool/montreal/edit/master/README.md">add your name to the mentors list</a>, and your photo here.</p>
             <div class="list-mentors cf">
               {% assign row = 0 %}
               {% assign rowElemIdx = 1 %}
               {% assign linelen = 5 %}
 
               {% for mentor in site.mentors %}
-
                 {% if rowElemIdx == 1 %}
                 <div class="row">
                 {% endif %}
@@ -172,87 +173,65 @@ $ learnyounode</pre>
                    {% endif %}
                    </div>
                 {% endif %}
-
               {% endfor %}
             </div>
-            <p>To become a mentor please <a href="https://github.com/nodeschool/montreal/issues/15">add your name to the mentors list</a>, and even better, send a <strong><a href='https://github.com/nodeschool/montreal/pulls' target="_blank">pull request</a></strong> to add your photo here. You can prepare for the workshop by studying the <a href='https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor' target="_blank">"On Being a Mentor"</a> tips.</p>
+            <p>You can prepare for the workshops by studying the <a href='https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor' target="_blank">"On Being a Mentor"</a> tips.</p>
             <h2 id="community">Community</h2>
-            <p>Show up at any of our workshops and become part of Montreal's vibrant web developer community!</p>
+            <p>Just show up and become part of Montreal's vibrant web developer community!</p>
             <div class="fb-page" data-href="https://www.facebook.com/Nodeschoolmtl/" data-tabs="timeline,events" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
               <blockquote cite="https://www.facebook.com/Nodeschoolmtl/" class="fb-xfbml-parse-ignore">
                 <a href="https://www.facebook.com/Nodeschoolmtl/">NodeSchoolMTL</a>
               </blockquote></div>
             <h2 id="sponsors">Sponsors</h2>
             <div class="list-sponsors cf">
-              <p>The best way to sponsor NodeSchool Montréal is with your time: become a mentor and share your knowledge and expertise.</p>
+              <p>The best way to sponsor NodeSchool Montréal is with your time &mdash; become a mentor and share your knowledge and expertise. The opportunity cost for 2+ hours per mentor totals to over $2000 invested in NodeSchool, each month. Thank you.</p>
               <a href="http://tempslibre.coop/" target="_blank"><img src="i/sponsors/tempslibre.png" width="30%" height="30%"/></a>
               <p>We welcome small cash contributions, regular meeting space, and technical speakers. You receive no mentions or speak-time during workshops. Write to <a href="mailto:nodeschoolmtl@bettermtl.com">nodeschoolmtl@bettermtl.com</a></p>
             </div>
           </div>
-          <footer>
-            <p class="links">
-              Happily forked from <a href="http://nodeschool.io/toronto">NodeSchool Toronto</a>
-            </p>
-          </footer>
         </div>
       </aside>
     </main>
-    <script type="text/javascript" src="https://js.tito.io/v1" async></script>
-    <script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-    <script type="text/javascript">
-      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
-        analytics.load("rJ1NNJ4fWsQFYAmQ6BZ6q8ZyLHGZGBj1");
-        analytics.page()
-      }}();
-    </script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-    <div class="projects">
-      <div id="wrapper">
-        <h1>NodeSchool Projects</h1>
-        <div>
-          <ul class="nav">
-            <li><strong>Themed teams, real <span title="Web projects built with Node and JavaScript">projects</span>.</strong></li>
-            <li><a href="http://jlord.github.com/sheetsee.js" target="_blank">POWERED BY SHEETSEE.JS</a> -</li>
-            <li><a href="http://www.github.com/pcuci/nodeschool-theams" target="_blank">GITHUB</a> -</li>
-            <li><a href="http://www.twitter.com/pcuci" target="_blank">@pcuci</a></li>
-          </ul>
-        </div>
+    <main class="main projects">
+      <div class="panel text">
         <div class="container">
-          <div id="rightSide">
-            <div id="latestSpot"></div>
-            <div id="selectedSpot"></div>
-            <div id="map"></div>
-          </div>
-        </div>
-        <div class="container">
-          <input id="tableFilter" type="text" placeholder="Filter by"></input>
-          <span class="clear button">Clear</span> <span class="resetMap button">Reset Map</span>
-          <span class="noMatches">no matches</span>
-          <div id="hackSpotsTable"></div>
-        </div>
-        <div id="info" class="container">
-          <div id="theNumberofSpots"></div>
-          <p>This website is hooked up to <a href="https://docs.google.com/spreadsheets/d/1uY_V0bpagVhy8df9-feNH3XXYHNEQbRRXcb1NcSVCu4/edit?usp=sharing" target="_blank">this Google Spreadsheet</a>, which I've shared, so click and add your favorite community project to the bottom of the list! For the map you'll need to <strong>get the lat and long</strong> of the location where that teams usually meets to hack together, you can get that <a href="http://www.latlong.net/" target="_blank">here</a>. Locating of these places is helpful, so please try to fill out all the columns.</p>
+          <h2>Projects</h2>
+          <p>Another way to accelerate your learning at NodeSchool is to work on real <span title="Web projects built with Node and JavaScript">projects</span>, of course, while in the company of helpful experienced mentors.</p>
+          <div id="latestSpot"></div>
+          <div id="selectedSpot"></div>
+          <div id="map"></div>
+          <span class="resetMap button">Reset Map</span>
 
           <h3>Motivation</h3>
-          <p>NodeSchool participants have ambitions to develop their own projects. Today, it is difficult to coordinate learning+dev activities in the wider community. Where do I find someone who can help my team, how do I discover a project worth contributing to? This listing is an attempt to keep ephemeral projects active and shared amongst the community of learners, mentors, but also non-tech business co-founders wishing to stay plugged with the tech learning community.</p>
+          <p>Where do I find someone who can help my team? How do I discover a project worth contributing to? Introducing NodeSchool theams! This listing is an attempt to keep ephemeral projects active and shared amongst the web dev apprentices, the mentors, but also the non-tech business co-founders wishing to stay plugged into the tech community.</p>
 
-          <p>Besides being a list I've wanted to have, it's a fantastic (or I think so) way of using <a href="http://jlord.github.io/sheetsee.js" target="_blank">sheetsee.js</a>, which is a little JavaScript library <a href="http://www.twitter.com/jlord" target="_blank">@jlord</a>'s been working on. Sheetsee.js helps you hook a Google Spreadsheet (awesome for data and collaboration!) to a website to make data more visual (maps, tables, charts).</p>
+          <p>Besides being a list we've wanted to have, it's a fantastic (or so we think) way of using <a href="http://jlord.github.io/sheetsee.js" target="_blank">sheetsee.js</a>. Sheetsee.js helps you hook a Google Spreadsheet (awesome for data and collaboration!) to a website to make data more visual (maps, tables, charts). Fork the <a href="https://github.com/jlord/hack-spots">Hack Spots</a> repo and use in your own projects.</p>
 
           <h3>Theamed?</h3>
-          <p>As learning vehicles, projects die quickly. A team advancing their collective skills across multiple similarly themed projects sticks together. A team working on a theme to advance a project, a themed team, a theam.</p>
-
-          <h3>Fork-n-Go</h3>
-          <p>There is just a <a href="https://github.com/pcuci/nodeschool-theams" target="_blank">gh-pages branch in GitHub</a> for this project so when you fork it, you've got a live and hosted website instantly. BAM! Just copy the spreadsheet headers and create your own spreadsheet, swap out the spreadsheet key in index.html and commit those changes: you've got a live and hosted site with a spreadsheet you control. More on the <a href="http://www.github.com/pcuci/nodeschool-theams" target="_blank">readme</a>.</p>
+          <p>As learning vehicles, projects die quickly. A team, however, advances their collective skill across multiple small projects. Members stick together, longer. A team who cares about a theme over a series of projects &mdash; a themed team &mdash; is a theam. Do not underestimate a theams' change-the-world potential!</p>
+          <footer>
+            <p class="links">
+              Happy fork of <a href="http://nodeschool.io/toronto">NodeSchool Toronto</a> merged with <a href="http://jlord.github.io/hack-spots">Hack Spots</a>
+            </p>
+          </footer>
         </div>
-      </div><!-- end wrapper -->
+      </div>
+      <div class="panel side">
+        <div class="container">
+          <input id="tableFilter" type="text" placeholder="Filter by"></input>
+          <span class="clear button">Clear</span>
+          <span class="noMatches">no matches</span>
+          <div id="hackSpotsTable"></div>
+          <div id="theNumberofSpots"></div>
+          <p>This table is hooked up to <a href="https://docs.google.com/spreadsheets/d/1uY_V0bpagVhy8df9-feNH3XXYHNEQbRRXcb1NcSVCu4/edit?usp=sharing" target="_blank">this Google Spreadsheet</a>, which is shared, so you can <a href="https://docs.google.com/forms/d/e/1FAIpQLSekmFlMoBA9VCd7d38QgyBnxfz8HNduNkt44PpDR41SfUczmw/viewform">add your project</a>! For the map you'll need to <a href="http://www.latlong.net/" target="_blank">get the latitude and longitude</a> of where the team usually meets to hack together. Complete information is best, so please try to fill out all the fields.</p>
+        </div>
+      </div>
 
       <script id="hackSpotsTable" type="text/html">
         <table>
           <tr>
             <th class="tHeader">Problem</th>
-            <th class="tHeader">Who</th>
+            <th class="tHeader">For Whom</th>
             <th class="tHeader">Help Wanted</th>
             <th class="tHeader">Theam</th>
             <th class="tHeader">Neighbourhood</th>
@@ -278,25 +257,24 @@ $ learnyounode</pre>
           <div><img src="{{"{{photo"}}}}"></div>
           <h4 class="fauxButton">Newest Theam</h4>
           <h2>{{"{{theamname"}}}}</h2>
-          <p class="colorText">{{"{{address"}}}}<p>
-          <p class="colorText">{{"{{city"}}}}{{"{{#state"}}}}, {{"{{state"}}}}{{"{{/state"}}}}{{"{{#postcode"}}}}, {{"{{postcode"}}}}{{"{{/postcode"}}}}</p>
           <ul>
-            <li><span class="category">Problem:</span> {{"{{problem"}}}}</li>
-            <li><span class="category">Who:</span> {{"{{forwhom"}}}}</li>
-            <li><span class="category">Benefit:</span> {{"{{benefit"}}}}</li>
-            <li><span class="category">Help Wanted:</span> {{"{{helpwanted"}}}}</li>
-            <li><span class="category">Solution:</span> <a href="{{"{{more"}}}}">{{"{{solution"}}}}</a></li>
-            <li><span class="category">Tech:</span> {{"{{tech"}}}}</li>
-            <li><span class="category">Lang:</span> {{"{{lang"}}}}</li>
+            <li><span class="category">Problem</span> {{"{{problem"}}}}</li>
+            <li><span class="category">For Whom</span> {{"{{forwhom"}}}}</li>
+            <li><span class="category">Benefit</span> {{"{{benefit"}}}}</li>
+            <li><span class="category">Help Wanted</span> {{"{{helpwanted"}}}}</li>
+            <li><span class="category">Solution</span> <a href="{{"{{more"}}}}">{{"{{solution"}}}}</a></li>
+            <li><span class="category">Tech</span> {{"{{tech"}}}}</li>
+            <li><span class="category">Lang</span> {{"{{lang"}}}}</li>
             <li>
               <span class="category">Lead By:</span> <a href="http://www.twitter.com/{{"{{leadtwitter"}}}}" target="_blank">@{{"{{leadtwitter"}}}}</a>
             </li>
           </ul>
+          <p>{{"{{address"}}}}, {{"{{city"}}}}{{"{{#state"}}}}, {{"{{state"}}}}{{"{{/state"}}}}{{"{{#postcode"}}}}, {{"{{postcode"}}}}{{"{{/postcode"}}}}</p>
         {{"{{/rows"}}}}
       </script>
 
       <script id="theNumberofSpots" type="text/html">
-        <p><strong><span class="red-text">{{"{{numberOfSpots"}}}}</span> theamed projects strong!</p>
+        <p><strong><span class="red-text">{{"{{numberOfSpots"}}}}</span> projects strong!</p>
       </script>
 
       <script id="selectedSpot" type="text/html">
@@ -304,17 +282,17 @@ $ learnyounode</pre>
           <div><img src="{{"{{photo"}}}}"></div>
           <h4 class="fauxButton">Selected Theam</h4>
           <h2>{{"{{theamname"}}}}</h2>
-          <p class="colorText">{{"{{address"}}}}<p>
-          <p class="colorText">{{"{{city"}}}}{{"{{#state"}}}}, {{"{{state"}}}}{{"{{/state"}}}}{{"{{#postcode"}}}}, {{"{{postcode"}}}}{{"{{/postcode"}}}}</p>
           <ul>
-            <li><span class="category">Problem:</span> {{"{{problem"}}}}</li>
-            <li><span class="category">Who:</span> {{"{{forwhom"}}}}</li>
-            <li><span class="category">Benefit:</span> {{"{{benefit"}}}}</li>
-            <li><span class="category">Looking for:</span> {{"{{helpwanted"}}}}</li>
-            <li><span class="category">Solution:</span> <a href="{{"{{more"}}}}">{{"{{solution"}}}}</a></li>
-            <li><span class="category">Tech:</span> {{"{{tech"}}}}</li>
-            <li><span class="category">Lang:</span> {{"{{lang"}}}}</li>
+            <li><span class="category">Problem</span> {{"{{problem"}}}}</li>
+            <li><span class="category">For Whom</span> {{"{{forwhom"}}}}</li>
+            <li><span class="category">Benefit</span> {{"{{benefit"}}}}</li>
+            <li><span class="category">Help Wanted</span> {{"{{helpwanted"}}}}</li>
+            <li><span class="category">Solution</span> <a href="{{"{{more"}}}}">{{"{{solution"}}}}</a></li>
+            <li><span class="category">Tech</span> {{"{{tech"}}}}</li>
+            <li><span class="category">Lang</span> {{"{{lang"}}}}</li>
           </ul>
+          <p>{{"{{address"}}}}<br>
+            {{"{{city"}}}}{{"{{#state"}}}}, {{"{{state"}}}}{{"{{/state"}}}}{{"{{#postcode"}}}}, {{"{{postcode"}}}}{{"{{/postcode"}}}}</p>
         {{"{{/rows"}}}}
       </script>
 
@@ -335,7 +313,8 @@ $ learnyounode</pre>
           tableOptions = {
             "data": gData,
             "tableDiv": "#hackSpotsTable",
-            "filterDiv": "#tableFilter"
+            "filterDiv": "#tableFilter",
+            "pagination": 7
           }
           // make the table, and the search bar
           Sheetsee.makeTable(tableOptions);
@@ -443,6 +422,14 @@ $ learnyounode</pre>
           $('.spotRow').first().click();
         })
       </script>
-    </div>
+    </main>
+    <script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+        analytics.load("rJ1NNJ4fWsQFYAmQ6BZ6q8ZyLHGZGBj1");
+        analytics.page()
+      }}();
+    </script>
   </body>
 </html>

@@ -3,6 +3,10 @@ permalink: /:title
 url: "http://nodeschool.io/montreal"
 timezone: America/Montreal
 
+languages: ["en", "fr"]
+exclude_from_localizations: ["fonts", "i", "js", "node_modules", "package.json",
+"favicon.ico", "Gemfile", "Gemfile.lock", "robots.txt"]
+
 kramdown:
   input: GFM
 

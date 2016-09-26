@@ -1,0 +1,94 @@
+.projects
+  img
+    width: 100%
+
+  small
+    padding: 10px 0
+
+  a.button
+    border: none
+
+  pre
+    word-wrap: break-word
+    padding: 14px
+    background: #F0F0F0
+
+  .red-text
+    color: $link
+
+  #map
+    height: 300px
+    max-width: 400px
+    min-width: 300px
+    background: #DADADA
+    a
+      border: none
+
+  #tableFilter
+    margin: 12px 0
+    border: none
+    border-bottom: 1px solid #333
+    background-color: transparent
+    padding: 0
+    color: #333
+    height: 22px
+
+  \::selection, ::-moz-selection
+    background: #E5FF1D
+
+  .button
+    padding: 5px 5px
+    background-color: #BEBEBE
+    color: #fff
+    &:hover
+      background: #B9FCFC
+      color: #47CCFC
+
+  .fauxButton
+    padding: 5px 5px
+    background-color: #FF4646
+    color: #fff
+    display: inline
+    .selected
+      background-color: #FF4646
+
+  .leaflet-popup-content h2
+    text-transform: uppercase
+
+  #selectedSpot
+    display: none
+
+  #latestSpot ul, #selectedSpot ul
+    list-style: none
+    margin-top: 12px 0
+    padding: 0
+
+  .category
+    text-transform: uppercase
+    letter-spacing: .2em
+    padding-right: 6px
+
+  #hackSpotsTable
+    cursor: pointer
+    background: #fff
+    overflow-x: auto
+    padding-bottom: 20px
+    table
+      min-width: 900px
+    .tHeader:hover
+      color: #FF4646
+
+  .tHeader::after
+    content: " \2193 \2191 "
+    padding-left: 3px
+
+  .spotRow
+    &:hover
+      color: #FF4646
+    border-left: 3px solid #ff00ff
+
+  .hideRow
+    display: none
+
+  .selectedRow
+    color: #FF4C0D

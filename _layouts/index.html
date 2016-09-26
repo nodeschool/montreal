@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Nodeschool Montréal Chapter">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script type="text/javascript" src='js/jquery.js '></script>
+    <script type="text/javascript" src='js/tabletop1.3.4.js'></script>
+    <script type="text/javascript" src='js/sheetsee.js'></script>
+    <script type="text/javascript" src='js/leaflet.markercluster.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.css' rel='stylesheet' />
     <title>Nodeschool Montréal</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
     <link href="styles.css" rel="stylesheet">
@@ -15,6 +20,7 @@
     <![endif]-->
   </head>
   <body>
+    <script type="text/javascript" src="https://js.tito.io/v1" async></script>
     <div id="fb-root"></div>
     <script>
       (function(d, s, id) {
@@ -46,11 +52,11 @@
         <li><a href="#codeofconduct" class="ir code" data-text="Code of Conduct">Code of Conduct</a></li>
       </ul>
     </nav>
-    <main class="main cf">
+    <main class="main">
       <section class="panel text">
         <div class="container">
           <div class="header">
-            <a class="logo"><img src="http://i.imgur.com/M0Mh3PZ.jpg" alt="NodeSchool Montréal Logo"></a>
+            <a class="logo pull-right"><img src="http://i.imgur.com/M0Mh3PZ.jpg" alt="NodeSchool Montréal Logo"></a>
             <h1>NodeSchool Montréal</h1>
           </div>
           <p class="about"><strong>NodeSchool</strong> is a selection of open source <a href="http://nodeschool.io/#workshoppers" target="_blank">workshops</a> that teach web software skills. You can do them on your own or in the company of peers and mentors, right here in <strong>Montréal</strong>.</p>
@@ -60,7 +66,7 @@
           <a class="github-button" href="https://github.com/nodeschool/montreal" data-count-href="/nodeschool/montreal/stargazers" data-count-api="/repos/nodeschool/montreal#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star nodeschool/montreal on GitHub">Star</a>
           <div class="event">
             <p id="events" class="title">
-              Next Workshop: <strong>First Day NodeSchool</strong>
+              Next Workshop: <strong>2nd Day NodeSchool</strong>
             </p>
             <p class="schedule">
               <strong>Agenda</strong>
@@ -82,7 +88,7 @@
               </ul>
             </p>
             <p class="register">
-              Wednesday <strong>September 14<sup>th</sup></strong> at 5:30pm
+              Wednesday <strong>October 24<sup>th</sup></strong> at 5:30pm
             </p>
             <p class="location">
               <strong><a href="http://tempslibre.coop/">Temps Libre</a></strong>, 5605 ave. de Gaspé, #106, Montréal, QC H2T 2A4
@@ -90,7 +96,7 @@
             <div class="map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.0944391154517!2d-73.60023448437062!3d45.52830507910178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9196f8d691e3d%3A0x45df797a1e695f5e!2s5605+Avenue+de+Gasp%C3%A9%2C+Montr%C3%A9al%2C+QC+H2T+2A4!5e0!3m2!1sen!2sca!4v1462125098770" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
-            <tito-widget event="nodeschoolmtl/first-day-nodeschool"></tito-widget>
+            <tito-widget event="nodeschoolmtl/2nd-day-nodeschool"></tito-widget>
           </div>
           <p>Workshops are run by volunteers, you too can become an organizer and <a href='https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor' target="_blank">mentor</a>.</p>
           <h3>"What should I expect?"</h3>
@@ -127,16 +133,24 @@ $ learnyounode</pre>
             <div class="mailinglist">
               <form action="//sana.us1.list-manage.com/subscribe/post?u=a16929a7d86b16ecfc960cd42&amp;id=8e533856ad" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <label class="email">
-                  <input type="email" value="" name="EMAIL" class="required email" placeholder="Your email to receive news">
+                  <input type="email" value="" name="EMAIL" class="required email" placeholder="Your email for news">
                 </label>
                 <div style="position: absolute; left: -5000px;"><input type="text" name="b_a16929a7d86b16ecfc960cd42_8e533856ad" tabindex="-1" value=""></div>
                 <input type="submit" value="Get notified" name="subscribe">
               </form>
             </div>
             <h2 id="mentors">Mentors</h2>
+            <p>To become a mentor please <a href="https://github.com/nodeschool/montreal/edit/master/README.md">add your name to the mentors list</a>, and your photo here.</p>
             <div class="list-mentors cf">
+              {% assign row = 0 %}
+              {% assign rowElemIdx = 1 %}
+              {% assign linelen = 5 %}
+
               {% for mentor in site.mentors %}
-                {% cycle '<div class="row">', '', '', '', '' %}
+                {% if rowElemIdx == 1 %}
+                <div class="row">
+                {% endif %}
+
                   <a href="https://twitter.com/{{mentor.twitter}}" target="_blank" class="image-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 300" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <polygon class="hex" points="250,75 250,225 125,300 0,225 0,75 125,0" fill="url('#mentor-{{forloop.index}}')">
@@ -144,39 +158,278 @@ $ learnyounode</pre>
                       </polygon>
                     </svg>
                   </a>
-                {% cycle '', '', '', '', '</div>' %}
+
+                {% if rowElemIdx < linelen %}
+                   {% assign rowElemIdx = rowElemIdx | plus: 1%}
+                {% else %}
+                   {% assign row = row | plus: 1%}
+                   {% assign rowElemIdx = 1 %}
+                   {% assign mod = row | modulo: 2 %}
+
+                   {% if mod == 0 %}
+                     {% assign linelen = 5 %}
+                   {% else %}
+                     {% assign linelen = 4 %}
+                   {% endif %}
+                   </div>
+                {% endif %}
               {% endfor %}
             </div>
-            <p>To become a mentor please <a href="https://github.com/nodeschool/montreal/issues/15">add your name to the mentors list</a>, and even better, send a <strong><a href='https://github.com/nodeschool/montreal/pulls' target="_blank">pull request</a></strong> to add your photo here. You can prepare for the workshop by studying the <a href='https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor' target="_blank">"On Being a Mentor"</a> tips.</p>
+            <p>You can prepare for the workshops by studying the <a href='https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor' target="_blank">"On Being a Mentor"</a> tips.</p>
             <h2 id="community">Community</h2>
-            <p>Show up at any of our workshops and become part of Montreal's vibrant web developer community!</p>
+            <p>Just show up and become part of Montreal's vibrant web developer community!</p>
             <div class="fb-page" data-href="https://www.facebook.com/Nodeschoolmtl/" data-tabs="timeline,events" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
               <blockquote cite="https://www.facebook.com/Nodeschoolmtl/" class="fb-xfbml-parse-ignore">
                 <a href="https://www.facebook.com/Nodeschoolmtl/">NodeSchoolMTL</a>
               </blockquote></div>
             <h2 id="sponsors">Sponsors</h2>
             <div class="list-sponsors cf">
-              <p>The best way to sponsor NodeSchool Montréal is with your time: become a mentor and share your knowledge and expertise.</p>
+              <p>The best way to sponsor NodeSchool Montréal is with your time &mdash; become a mentor and share your knowledge and expertise. The opportunity cost for 2+ hours per mentor totals to over $2000 invested in NodeSchool, each month. Thank you.</p>
               <a href="http://tempslibre.coop/" target="_blank"><img src="i/sponsors/tempslibre.png" width="30%" height="30%"/></a>
               <p>We welcome small cash contributions, regular meeting space, and technical speakers. You receive no mentions or speak-time during workshops. Write to <a href="mailto:nodeschoolmtl@bettermtl.com">nodeschoolmtl@bettermtl.com</a></p>
             </div>
           </div>
-          <footer>
-            <p class="links">
-              Credits: <a href="http://nodeschool.io/toronto">NodeSchool Toronto</a>
-            </p>
-          </footer>
         </div>
       </aside>
     </main>
-    <script type="text/javascript" src="https://js.tito.io/v1" async></script>
+    <main class="main projects">
+      <div class="panel text">
+        <div class="container">
+          <h2>Projects</h2>
+          <p>Another way to accelerate your learning at NodeSchool is to work on real <span title="Web projects built with Node and JavaScript">projects</span>, of course, while in the company of helpful experienced mentors.</p>
+          <div id="latestSpot"></div>
+          <div id="selectedSpot"></div>
+          <div id="map"></div>
+          <span class="resetMap button">Reset Map</span>
+
+          <h3>Motivation</h3>
+          <p>Where do I find someone who can help my team? How do I discover a project worth contributing to? Introducing NodeSchool theams! This listing is an attempt to keep ephemeral projects active and shared amongst the web dev apprentices, the mentors, but also the non-tech business co-founders wishing to stay plugged into the tech community.</p>
+
+          <p>Besides being a list we've wanted to have, it's a fantastic (or so we think) way of using <a href="http://jlord.github.io/sheetsee.js" target="_blank">sheetsee.js</a>. Sheetsee.js helps you hook a Google Spreadsheet (awesome for data and collaboration!) to a website to make data more visual (maps, tables, charts). Fork the <a href="https://github.com/jlord/hack-spots">Hack Spots</a> repo and use in your own projects.</p>
+
+          <h3>Theamed?</h3>
+          <p>Projects tend to die quickly. A team, however, advances their collective skill across multiple small projects. Members stick together, longer. A team who cares about a theme over a series of projects &mdash; a themed team &mdash; is a theam.</p>
+          <p>Do not underestimate theams' ability to change the world!</p>
+          <footer>
+            <p class="links">
+              Happy fork of <a href="http://nodeschool.io/toronto">NodeSchool Toronto</a> merged with <a href="http://jlord.github.io/hack-spots">Hack Spots</a>
+            </p>
+          </footer>
+        </div>
+      </div>
+      <div class="panel side">
+        <div class="container">
+          <input id="tableFilter" type="text" placeholder="Filter by"></input>
+          <span class="clear button">Clear</span>
+          <span class="noMatches">no matches</span>
+          <div id="hackSpotsTable"></div>
+          <div id="theNumberofSpots"></div>
+          <p>This table is hooked up to <a href="https://docs.google.com/spreadsheets/d/1uY_V0bpagVhy8df9-feNH3XXYHNEQbRRXcb1NcSVCu4/edit?usp=sharing" target="_blank">this Google Spreadsheet</a>, which is shared, so you can <a href="https://docs.google.com/forms/d/e/1FAIpQLSekmFlMoBA9VCd7d38QgyBnxfz8HNduNkt44PpDR41SfUczmw/viewform">add your project</a>! For the map you'll need to <a href="http://www.latlong.net/" target="_blank">get the latitude and longitude</a> of where the team usually meets to hack together. Complete information is best, so please try to fill out all the fields.</p>
+        </div>
+      </div>
+
+      <script id="hackSpotsTable" type="text/html">
+        <table>
+          <tr>
+            <th class="tHeader">Problem</th>
+            <th class="tHeader">For Whom</th>
+            <th class="tHeader">Help Wanted</th>
+            <th class="tHeader">Theam</th>
+            <th class="tHeader">Neighbourhood</th>
+            <th></th>
+          </tr>
+          {{"{{#rows"}}}}
+            <tr id='{{"{{rowNumber"}}}}' class="spotRow">
+              <td>{{"{{problem"}}}}</td>
+              <td>{{"{{forwhom"}}}}</td>
+              <td>{{"{{helpwanted"}}}}</td>
+              <td>{{"{{theamname"}}}}</td>
+              <td>{{"{{neighbourhood"}}}}</td>
+              <td>
+                <a class="button" href="https://maps.google.com/maps?q={{"{{address"}}}},{{"{{city"}}}},{{"{{state"}}}}" target="_blank">Map</a>
+              </td>
+            </tr>
+          {{"{{/rows"}}}}
+        </table>
+      </script>
+
+      <script id="latestSpot" type="text/html">
+        {{"{{#rows"}}}}
+          <h3>{{"{{theamname"}}}}</h3>
+          <div><img src="{{"{{photo"}}}}"></div>
+          <h4 class="fauxButton">Newest Theam</h4>
+          <ul>
+            <li><span class="category">Problem</span> {{"{{problem"}}}}</li>
+            <li><span class="category">For Whom</span> {{"{{forwhom"}}}}</li>
+            <li><span class="category">Benefit</span> {{"{{benefit"}}}}</li>
+            <li><span class="category">Help Wanted</span> {{"{{helpwanted"}}}}</li>
+            <li><span class="category">Solution</span> <a href="{{"{{more"}}}}">{{"{{solution"}}}}</a></li>
+            <li><span class="category">Tech</span> {{"{{tech"}}}}</li>
+            <li><span class="category">Lang</span> {{"{{lang"}}}}</li>
+            <li>
+              <span class="category">Lead By:</span> <a href="http://www.twitter.com/{{"{{leadtwitter"}}}}" target="_blank">@{{"{{leadtwitter"}}}}</a>
+            </li>
+          </ul>
+          <p>{{"{{address"}}}}, {{"{{city"}}}}{{"{{#state"}}}}, {{"{{state"}}}}{{"{{/state"}}}}{{"{{#postcode"}}}}, {{"{{postcode"}}}}{{"{{/postcode"}}}}</p>
+        {{"{{/rows"}}}}
+      </script>
+
+      <script id="theNumberofSpots" type="text/html">
+        <p><strong><span class="red-text">{{"{{numberOfSpots"}}}}</span> projects strong!</p>
+      </script>
+
+      <script id="selectedSpot" type="text/html">
+        {{"{{#rows"}}}}
+          <div><img src="{{"{{photo"}}}}"></div>
+          <h4 class="fauxButton">Selected Theam</h4>
+          <h2>{{"{{theamname"}}}}</h2>
+          <ul>
+            <li><span class="category">Problem</span> {{"{{problem"}}}}</li>
+            <li><span class="category">For Whom</span> {{"{{forwhom"}}}}</li>
+            <li><span class="category">Benefit</span> {{"{{benefit"}}}}</li>
+            <li><span class="category">Help Wanted</span> {{"{{helpwanted"}}}}</li>
+            <li><span class="category">Solution</span> <a href="{{"{{more"}}}}">{{"{{solution"}}}}</a></li>
+            <li><span class="category">Tech</span> {{"{{tech"}}}}</li>
+            <li><span class="category">Lang</span> {{"{{lang"}}}}</li>
+          </ul>
+          <p>{{"{{address"}}}}, {{"{{city"}}}}{{"{{#state"}}}}, {{"{{state"}}}}{{"{{/state"}}}}{{"{{#postcode"}}}}, {{"{{postcode"}}}}{{"{{/postcode"}}}}</p>
+        {{"{{/rows"}}}}
+      </script>
+
+      <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+          var gData;
+          var URL = "1uY_V0bpagVhy8df9-feNH3XXYHNEQbRRXcb1NcSVCu4";
+          Tabletop.init({
+            key: URL,
+            callback: showInfo,
+            simpleSheet: true
+          });
+        });
+
+        // so long, so messy
+        function showInfo(gData) {
+          console.log('Spreadsheets', gData);
+          tableOptions = {
+            "data": gData,
+            "tableDiv": "#hackSpotsTable",
+            "filterDiv": "#tableFilter",
+            "pagination": 7
+          }
+          // make the table, and the search bar
+          Sheetsee.makeTable(tableOptions);
+          Sheetsee.initiateTableFilter(tableOptions);
+
+          // create geoJSON with coordinates and other
+          // useful bits from the original data
+          var optionsJSON = ["theamname", "address", "city", "rowNumber"];
+          var geoJSON = Sheetsee.createGeoJSON(gData, optionsJSON);
+
+          // create map, tilelayer (map background), markers and popups
+          var map = Sheetsee.loadMap("map");
+          Sheetsee.addTileLayer(map, 'jllord.n7aml2bc');
+          var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, '<h2>{{"{{ theamname "}}}}</h2>', true);
+
+          // find the latest spot with the most important
+          // info filled in (to prevent map breaking if
+          // someone is currently editing spreadsheet)
+          var newestTheam = findLatestCompleteSpot(gData);
+          var latestSpot = Sheetsee.ich.latestSpot({
+            rows: newestTheam
+          });
+
+          // set it and pan to it
+          $('#latestSpot').html(latestSpot);
+          console.log('newestTheam', newestTheam);
+          map.setView([newestTheam.lat, newestTheam.long], 14);
+
+          // when someone clicks on a row, highlight it and
+          // re-center the map
+          // TODO show popup, change marker color
+          $('.spotRow').live("click", function(event) {
+            $('.spotRow').removeClass("selectedRow")
+            var rowNumber = $(this).closest("tr").attr("id")
+            $('#' + rowNumber).addClass("selectedRow")
+            var dataElement = Sheetsee.getMatches(gData, rowNumber, "rowNumber")
+            var selectedSpot = Sheetsee.ich.selectedSpot({
+              rows: dataElement
+            })
+            $('#latestSpot').css("display", "none")
+            $('#selectedSpot').html(selectedSpot).css("display", "inline")
+            var selectedCoords = [dataElement[0].lat, dataElement[0].long]
+            map.setView(selectedCoords, 14)
+          });
+
+          // so that the first map and info that loads
+          // is complete and doesn't show rows that are
+          // actively being edited by folk
+          function findLatestCompleteSpot(data) {
+            var latestCompleteSpot = [];
+            var startWithLatestRow = data.reverse();
+            startWithLatestRow.forEach(function(row) {
+              if (!row.lat || !row.long || !row.theamname || !row.address || !row.city || !row.state ) {
+                return
+              } else {
+                latestCompleteSpot.push(row);
+              }
+            });
+            return latestCompleteSpot[0];
+          }
+
+          // Add click listener to the markerLayer
+          markerLayer.on('click', function(e) {
+            // clear any selected rows
+            $('.spotRow').removeClass("selectedRow");
+            // get row number of selected marker
+            var rowNumber = e.layer.feature.opts.rowNumber;
+            // find that row in the table and make consider it selected
+            $('#' + rowNumber).addClass("selectedRow");
+            // using row number, get the data for the selected spot
+            var dataElement = Sheetsee.getMatches(gData, rowNumber.toString(), "rowNumber");
+            // take those details and re-write the selected spot section
+            var selectedSpot = Sheetsee.ich.selectedSpot({
+              rows: dataElement
+            })
+            // center the map on the selected element
+            map.panTo([dataElement[0].lat, dataElement[0].long]);
+            // update the spot listing
+            $('#latestSpot').css("display", "none");
+            $('#selectedSpot').html(selectedSpot).css("display", "inline");
+          })
+
+          // reset the map, zoom out, and recenter on 0,0
+          $('.resetMap').click(function() {
+            $('.spotRow').removeClass("selectedRow");
+            $('#latestSpot').css("display", "inline");
+            $('#selectedSpot').css("display", "none");
+            map.setView([0, 0], 1);
+          })
+
+          // find total number of spots added
+          var theNumberofSpots = Sheetsee.ich.theNumberofSpots({
+            numberOfSpots: gData.length
+          });
+          $('#theNumberofSpots').html(theNumberofSpots);
+
+          if(window.location.hash) {
+            $('#tableFilter').val(window.location.hash.substring(1)).keyup();
+            $('.spotRow').first().click();
+          }
+        }
+
+        $(document).on('keyup', '#tableFilter', function() {
+          window.location.hash = $(this).val();
+          $('.spotRow').first().click();
+        })
+      </script>
+    </main>
     <script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script type="text/javascript">
       !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
         analytics.load("rJ1NNJ4fWsQFYAmQ6BZ6q8ZyLHGZGBj1");
         analytics.page()
       }}();
     </script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>

@@ -11,7 +11,7 @@
     <script type="text/javascript" src='/js/sheetsee.js'></script>
     <script type="text/javascript" src='/js/leaflet.markercluster.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.css' rel='stylesheet' />
-    <title>Nodeschool Montréal</title>
+    <title>{% t global.title %}</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
     <link href="/styles.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -44,12 +44,12 @@
     </svg>
     <nav class="nav">
       <ul>
-        <li><a href="#" class="ir home" data-text="Home">Home</a></li>
-        <li><a href="#events" class="ir events" data-text="Next Workshop">Next Workshop</a></li>
-        <li><a href="#mentors" class="ir mentors" data-text="Mentors">Mentors</a></li>
-        <li><a href="#community" class="ir community" data-text="Community">Community</a></li>
-        <li><a href="#photos" class="ir photos" data-text="Photos">Photos</a></li>
-        <li><a href="#codeofconduct" class="ir code" data-text="Code of Conduct">Code of Conduct</a></li>
+        <li><a href="#" class="ir home" data-text="{% t nav.home %}">{% t nav.home %}</a></li>
+        <li><a href="#events" class="ir events" data-text="Next Workshop">{% t nav.next-workshop %}</a></li>
+        <li><a href="#mentors" class="ir mentors" data-text="Mentors">{% t nav.mentors %}</a></li>
+        <li><a href="#community" class="ir community" data-text="Community">{% t nav.community %}</a></li>
+        <li><a href="#photos" class="ir photos" data-text="Photos">{% t nav.photos %}</a></li>
+        <li><a href="#codeofconduct" class="ir code" data-text="Code of Conduct">{% t nav.code-of-conduct %}</a></li>
       </ul>
     </nav>
     <main class="main">
@@ -57,44 +57,35 @@
         <div class="container">
           <div class="header">
             <a class="logo pull-right"><img src="http://i.imgur.com/M0Mh3PZ.jpg" alt="NodeSchool Montréal Logo"></a>
-            <h1>NodeSchool Montréal</h1>
+            <h1>{% t global.title %}</h1>
           </div>
-          <p class="about"><strong>NodeSchool</strong> is a selection of open source <a href="http://nodeschool.io/#workshoppers" target="_blank">workshops</a> that teach web software skills. You can do them on your own or in the company of peers and mentors, right here in <strong>Montréal</strong>.</p>
+          <p class="about">{% t main.about %}</p>
           <a href="https://gitter.im/nodeschool/montreal"><img src="https://camo.githubusercontent.com/fed5b5512498193ce4bba599fd94cd12b9f56491/68747470733a2f2f696d672e736869656c64732e696f2f6769747465722f726f6f6d2f6e776a732f6e772e6a732e737667"/></a>
           <a href="https://twitter.com/NodeSchoolMTL" class="twitter-follow-button" data-show-count="false">Follow @NodeSchoolMTL</a>
           <div class="fb-like" data-href="https://www.facebook.com/Nodeschoolmtl" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
           <a class="github-button" href="https://github.com/nodeschool/montreal" data-count-href="/nodeschool/montreal/stargazers" data-count-api="/repos/nodeschool/montreal#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star nodeschool/montreal on GitHub">Star</a>
           <div class="event">
             <p id="events" class="title">
-              Next Workshop: <strong>2nd Day NodeSchool</strong>
+              {% t nav.next-workshop %}: <strong>{% t event.title %}</strong>
             </p>
             <p class="schedule">
-              <strong>Agenda</strong>
+              <strong>{% t nav.agenda %}</strong>
               <ul class="timeline">
-                <li>
-                  <em>5:30pm</em> Registration and Node environment setup, get your laptop ready!
-                </li>
-                <li>
-                  <em>5:50pm</em> Node basic principles presented by <a
-                  href="https://twitter.com/cassierheaume"><strong>@cassierheaume</strong></a> and <a
-                  href="https://twitter.com/pcuci"><strong>@pcuci</strong></a>
-                </li>
-                <li>
-                  <em>6:00pm</em> Complete any <a href="http://nodeschool.io/#workshoppers">workshopper</a> or work on your own web project, mentors walk around to help
-                </li>
-                <li>
-                  <em>8:00pm</em> Demo your solutions, networking
-                </li>
+                {% for item in site.translations[site.lang]["timeline"] %}
+                  <li>
+                    <em>{{ item[0] }}</em> {{ item[1] }}
+                  </li>
+                {% endfor %}
               </ul>
             </p>
             <p class="register">
-              Wednesday <strong>October 24<sup>th</sup></strong> at 5:30pm
+              {% t event.date %}
             </p>
             <p class="location">
-              <strong><a href="http://tempslibre.coop/">Temps Libre</a></strong>, 5605 ave. de Gaspé, #106, Montréal, QC H2T 2A4
+              {% t event.location%}
             </p>
             <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.0944391154517!2d-73.60023448437062!3d45.52830507910178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9196f8d691e3d%3A0x45df797a1e695f5e!2s5605+Avenue+de+Gasp%C3%A9%2C+Montr%C3%A9al%2C+QC+H2T+2A4!5e0!3m2!1sen!2sca!4v1462125098770" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <iframe src="{% t event.location-map %}" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <tito-widget event="nodeschoolmtl/2nd-day-nodeschool"></tito-widget>
           </div>
@@ -110,7 +101,7 @@
 $ learnyounode</pre>
           </code>
           <p>Having trouble installing Node? No worries - we'll do our best to help you get set up once you arrive at a workshop.</p>
-          <h2 id="photos">Photos</h2>
+          <h2 id="photos">{% t nav.photos %}</h2>
           <div class="list-photos cf">
             {% for i in (30..30) %}
               <div class="row">
@@ -122,7 +113,7 @@ $ learnyounode</pre>
               </div>
             {% endfor %}
           </div>
-          <h2 id="codeofconduct">Code of Conduct</h2>
+          <h2 id="codeofconduct">{% t nav.code-of-conduct %}</h2>
           <p>We promise a safe, harrassment-free learning environment. Please report any concerns immediately to organizers. We follow the <a href="http://confcodeofconduct.com/" target="_blank">conference code of conduct</a>.</p>
         </div>
       </section>
@@ -133,14 +124,14 @@ $ learnyounode</pre>
             <div class="mailinglist">
               <form action="//sana.us1.list-manage.com/subscribe/post?u=a16929a7d86b16ecfc960cd42&amp;id=8e533856ad" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <label class="email">
-                  <input type="email" value="" name="EMAIL" class="required email" placeholder="Your email for news">
+                  <input type="email" value="" name="EMAIL" class="required email" placeholder="{% t side.email-input %}">
                 </label>
                 <div style="position: absolute; left: -5000px;"><input type="text" name="b_a16929a7d86b16ecfc960cd42_8e533856ad" tabindex="-1" value=""></div>
-                <input type="submit" value="Get notified" name="subscribe">
+                <input type="submit" value="{% t side.email-confirm %}" name="subscribe">
               </form>
             </div>
-            <h2 id="mentors">Mentors</h2>
-            <p>To become a mentor please <a href="https://github.com/nodeschool/montreal/edit/master/README.md">add your name to the mentors list</a>, and your photo here.</p>
+            <h2 id="mentors">{% t nav.mentors %}</h2>
+            <p>{% t side.mentors-join %}</p>
             <div class="list-mentors cf">
               {% assign row = 0 %}
               {% assign rowElemIdx = 1 %}
@@ -175,18 +166,18 @@ $ learnyounode</pre>
                 {% endif %}
               {% endfor %}
             </div>
-            <p>You can prepare for the workshops by studying the <a href='https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor' target="_blank">"On Being a Mentor"</a> tips.</p>
-            <h2 id="community">Community</h2>
-            <p>Just show up and become part of Montreal's vibrant web developer community!</p>
+            <p>{% t side.mentors-prepare %}</p>
+            <h2 id="community">{% t nav.community %}</h2>
+            <p>{% t side.community-join %}</p>
             <div class="fb-page" data-href="https://www.facebook.com/Nodeschoolmtl/" data-tabs="timeline,events" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
               <blockquote cite="https://www.facebook.com/Nodeschoolmtl/" class="fb-xfbml-parse-ignore">
                 <a href="https://www.facebook.com/Nodeschoolmtl/">NodeSchoolMTL</a>
               </blockquote></div>
-            <h2 id="sponsors">Sponsors</h2>
+            <h2 id="sponsors">{% t side.sponsors %}</h2>
             <div class="list-sponsors cf">
-              <p>The best way to sponsor NodeSchool Montréal is with your time &mdash; become a mentor and share your knowledge and expertise. The opportunity cost for 2+ hours per mentor totals to over $2000 invested in NodeSchool, each month. Thank you.</p>
+              <p>{%t side.sponsors-mentor %}</p>
               <a href="http://tempslibre.coop/" target="_blank"><img src="/i/sponsors/tempslibre.png" width="30%" height="30%"/></a>
-              <p>We welcome small cash contributions, regular meeting space, and technical speakers. You receive no mentions or speak-time during workshops. Write to <a href="mailto:nodeschoolmtl@bettermtl.com">nodeschoolmtl@bettermtl.com</a></p>
+              <p>{%t side.sponsors-contribute %}</p>
             </div>
           </div>
         </div>

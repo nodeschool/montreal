@@ -1,0 +1,36 @@
+global:
+  title: NodeSchool Montreal
+langs:
+  en: English
+  fr: Français
+nav: # Left-hand navigation
+  home: Home
+  next-workshop: Next Workshop
+  mentors: Mentors
+  community: Community
+  photos: Photos
+  code-of-conduct: Code of Conduct
+  agenda: Agenda
+main: # Center column
+  about: <strong>NodeSchool</strong> is a selection of open source <a href="http://nodeschool.io/#workshoppers" target="_blank">workshops</a> that teach web software skills. You can do them on your own or in the company of peers and mentors, right here in <strong>Montreal</strong>.
+side: # Right-hand side panel
+  email-input: Your email for news
+  email-confirm: Get notified
+  mentors-join: To become a mentor please <a href="https://github.com/nodeschool/montreal/edit/master/README.md">add your name to the mentors list</a>, and your photo here.
+  mentors-prepare: You can prepare for the workshops by studying the <a href='https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor' target="_blank">"On Being a Mentor"</a> tips.
+  community-join: Just show up and become part of Montreal's vibrant web developer community!
+  sponsors: Sponsors
+  sponsors-mentor: The best way to sponsor NodeSchool Montréal is with your time &mdash; become a mentor and share your knowledge and expertise. The opportunity cost for 2+ hours per mentor totals to over $2000 invested in NodeSchool, each month. Thank you.
+  sponsors-contribute: We welcome small cash contributions, regular meeting space, and technical speakers. You receive no mentions or speak-time during workshops. Write to <a href="mailto:nodeschoolmtl@bettermtl.com">nodeschoolmtl@bettermtl.com</a>
+
+# Event-specific
+event:
+  title: 2nd Day NodeSchool
+  date: Wednesday <strong>October 24<sup>th</sup></strong> at 5:30pm
+  location: <strong><a href="http://tempslibre.coop/">Temps Libre</a></strong>, 5605 ave. de Gaspé, &#35;106, Montréal, QC H2T 2A4
+  location-map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.0944391154517!2d-73.60023448437062!3d45.52830507910178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9196f8d691e3d%3A0x45df797a1e695f5e!2s5605+Avenue+de+Gasp%C3%A9%2C+Montr%C3%A9al%2C+QC+H2T+2A4!5e0!3m2!1sen!2sca!4v1462125098770
+timeline:
+  5:30pm: Registration and Node environment setup, get your laptop ready!
+  5:50pm: Node basic principles presented by <a href="https://twitter.com/cassierheaume"><strong>@cassierheaume</strong></a> and <a href="https://twitter.com/pcuci"><strong>@pcuci</strong></a>
+  6:00pm: Complete any <a href="http://nodeschool.io/#workshoppers">workshopper</a> or work on your own web project, mentors walk around to help
+  8:00pm: Demo your solutions, networking

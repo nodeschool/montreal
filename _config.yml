@@ -9,6 +9,7 @@ kramdown:
 # Use the following plug-ins
 gems:
   - jekyll-sitemap
+  - jekyll-multiple-languages-plugin
 
 sass:
   sass_dir: _sass
@@ -52,7 +53,7 @@ mentors:
     twitter: fharper
   - name: rsayar
     display: 'Rami Sayar'
-    twitter: ramisayar    
+    twitter: ramisayar
   - name: matan
     display: 'Matan Kushner'
     twitter: matchai

@@ -4,3 +4,4 @@ _site
 node_modules/
 config.json
 .idea/
+Gemfile.lock

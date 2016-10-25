@@ -29,6 +29,7 @@ Become a better teacher of complicated magical concepts or simply contribute bac
 - Rami Sayar: [@sayar](https://github.com/sayar)
 - Frédéric Harper: [@fharper](https://github.com/fharper)
 - Matan Kushner: [@matchai](https://github.com/matchai)
+- Ziad Saab: [@ziad-saab](https://github.com/ziad-saab)
 - _Add your name here with a [pull request](https://github.com/nodeschool/montreal/pulls)_
 
 ## Take it up a notch!

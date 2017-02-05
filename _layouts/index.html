@@ -94,18 +94,6 @@
 $ learnyounode</pre>
           </code>
           <p>Having trouble installing Node? No worries &mdash; we'll do our best to help you get set up once you arrive.</p>
-          <h2 id="photos">Photos</h2>
-          <div class="list-photos cf">
-            {% for i in (30..30) %}
-              <div class="row">
-                <a href="i/photos/{{i}}.jpg" target="_blank" class="image-wrapper">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 300" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <polygon class="hex" points="250,75 250,225 125,300 0,225 0,75 125,0" fill="url('#photo-{{i}}')"></polygon>
-                  </svg>
-                </a>
-              </div>
-            {% endfor %}
-          </div>
           <h2 id="codeofconduct">Code of Conduct</h2>
           <p>We promise a safe, harrassment-free learning environment. Report any concerns immediately to organizers. We follow the <a href="http://confcodeofconduct.com/" target="_blank">conference code of conduct</a>.</p>
         </div>
@@ -200,6 +188,16 @@ $ learnyounode</pre>
           <p>
             At NodeSchool. Join a team or post a project, and let's get coding!
           </p>
+        </div>
+      </div>
+      <div class="panel side">
+        <div class="container">
+          <input id="tableFilter" type="text" placeholder="Search Projects"></input>
+          <span class="clear button">Clear</span>
+          <span class="noMatches">no matches</span>
+          <div id="projectsTable"></div>
+          <div id="theNumberofSpots"></div>
+          <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSekmFlMoBA9VCd7d38QgyBnxfz8HNduNkt44PpDR41SfUczmw/viewform">Add your project</a> to this table, which is hooked up to <a href="https://docs.google.com/spreadsheets/d/1uY_V0bpagVhy8df9-feNH3XXYHNEQbRRXcb1NcSVCu4/edit?usp=sharing" target="_blank">this Google Spreadsheet</a>. For the map you'll need to <a href="http://www.latlong.net/" target="_blank">get the latitude and longitude</a> of where your team usually meets to hack together. Complete information is best, so please try to fill out all the fields.</p>
           <footer>
             <p class="links">
               The <a href="https://github.com/nodeschool/montreal">code</a> for this website is a fork of <a href="http://nodeschool.io/toronto">NodeSchool Toronto</a> merged with <a href="http://jlord.github.io/hack-spots">Hack Spots</a>, thanks!
@@ -207,18 +205,8 @@ $ learnyounode</pre>
           </footer>
         </div>
       </div>
-      <div class="panel side">
-        <div class="container">
-          <input id="tableFilter" type="text" placeholder="Filter by"></input>
-          <span class="clear button">Clear</span>
-          <span class="noMatches">no matches</span>
-          <div id="hackSpotsTable"></div>
-          <div id="theNumberofSpots"></div>
-          <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSekmFlMoBA9VCd7d38QgyBnxfz8HNduNkt44PpDR41SfUczmw/viewform">Add your project</a> to this table, which is hooked up to <a href="https://docs.google.com/spreadsheets/d/1uY_V0bpagVhy8df9-feNH3XXYHNEQbRRXcb1NcSVCu4/edit?usp=sharing" target="_blank">this Google Spreadsheet</a>. For the map you'll need to <a href="http://www.latlong.net/" target="_blank">get the latitude and longitude</a> of where your team usually meets to hack together. Complete information is best, so please try to fill out all the fields.</p>
-        </div>
-      </div>
 
-      <script id="hackSpotsTable" type="text/html">
+      <script id="projectsTable" type="text/html">
         <table>
           <tr>
             <th class="tHeader">Problem</th>
@@ -226,7 +214,6 @@ $ learnyounode</pre>
             <th class="tHeader">Help Wanted</th>
             <th class="tHeader">Team</th>
             <th class="tHeader">Neighbourhood</th>
-            <th></th>
           </tr>
           {{"{{#rows"}}}}
             <tr id='{{"{{rowNumber"}}}}' class="spotRow">
@@ -235,9 +222,6 @@ $ learnyounode</pre>
               <td>{{"{{helpwanted"}}}}</td>
               <td>{{"{{teamname"}}}}</td>
               <td>{{"{{neighbourhood"}}}}</td>
-              <td>
-                <a class="button" href="https://maps.google.com/maps?q={{"{{address"}}}},{{"{{city"}}}},{{"{{state"}}}}" target="_blank">Map</a>
-              </td>
             </tr>
           {{"{{/rows"}}}}
         </table>
@@ -302,7 +286,7 @@ $ learnyounode</pre>
           console.log('Spreadsheets', gData);
           tableOptions = {
             "data": gData,
-            "tableDiv": "#hackSpotsTable",
+            "tableDiv": "#projectsTable",
             "filterDiv": "#tableFilter",
             "pagination": 7
           }

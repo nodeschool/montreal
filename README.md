@@ -6,9 +6,8 @@
 
 Do the [workshoppers](http://nodeschool.io/#workshoppers) on your own or in person at the [next NodeSchool event](http://nodeschool.io/montreal/). Experienced helpful mentors will help you through challenges.
 
-Done with the workshops? Start a project or join a team and develop your skills to the next level!
+Done with the workshops? Start a project or join a team and develop your skills to the next level.
 
-[![NodeSchool Montreal Logo](http://nodeschool.io/montreal/i/NodeSchoolMTL.svg)](http://nodeschool.io/montreal)
 
 ## Attend
 
@@ -16,20 +15,19 @@ Check out the [NodeSchoolMTL website](http://nodeschool.io/montreal/) and RSVP t
 
 ## Mentor or help out
 
-Become a better teacher of complicated magical concepts or simply contribute back to open source. You know the drill.
+Become a better teacher or simply contribute back to open source. You know the drill.
 
 - Paul Cuciureanu: [@pcuci](http://github.com/pcuci)
-- David Rowley: [@David-Ro](http://github.com/David-Ro)
-- Cassie L. Rhéaume: [@CassieLR](https://github.com/CassieLR)
-- Valeri Vicneanschi: [@vicneanschi](https://github.com/vicneanschi)
-- Shawn Thmpson: [@shawnthompson](https://github.com/shawnthompson)
 - Andre John Mas: [@ajmas](https://github.com/ajmas)
+- Matan Kushner: [@matchai](https://github.com/matchai)
+- Cassie L. Rhéaume: [@CassieLR](https://github.com/CassieLR)
 - Harris Robin Kalash: [@harrisrobin](https://github.com/harrisrobin)
+- David Rowley: [@David-Ro](http://github.com/David-Ro)
 - Jeff Marshall: [@jeffmarshall](https://github.com/jeffmarshall)
 - Rami Sayar: [@sayar](https://github.com/sayar)
-- Frédéric Harper: [@fharper](https://github.com/fharper)
-- Matan Kushner: [@matchai](https://github.com/matchai)
 - Ziad Saab: [@ziad-saab](https://github.com/ziad-saab)
+- Valeri Vicneanschi: [@vicneanschi](https://github.com/vicneanschi)
+- Shawn Thmpson: [@shawnthompson](https://github.com/shawnthompson)
 - _Add your name here with a [pull request](https://github.com/nodeschool/montreal/pulls)_
 
 ## Take it up a notch!

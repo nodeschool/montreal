@@ -62,28 +62,23 @@
           <p class="about"><strong>NodeSchool</strong> is learning web software skills with peers.</p>
           <p>Join a team or do a <a href="http://nodeschool.io/#workshoppers" target="_blank">tutorial</a> on your own. Get help from mentors.</p>
           <div class="event">
-            <p id="events" class="title">
-              Peer Sharing
-            </p>
-            <p class="register">
+            <p id="events" class="title register">
               Wednesday <strong>February 22<sup>nd</sup></strong> 5:30pm-8:33pm
             </p>
             <p class="schedule">
               <strong>Agenda</strong>
               <ul class="timeline">
                 <li>
-                  <em>5:30pm</em> Register and set Node environment up. Get your laptop ready!
+                  <em>5:30pm</em> Get your laptops ready to JavaScript!
                 </li>
                 <li>
-                  <em>5:50pm</em> Team-forming facilitated by <a
-                  href="https://twitter.com/cassierheaume"><strong>@cassierheaume</strong></a> and <a
-                  href="https://twitter.com/pcuci"><strong>@pcuci</strong></a>
+                  <em>5:50pm</em> Share your work-in-progress projects
                 </li>
                 <li>
-                  <em>6:00pm</em> Do any <a href="http://nodeschool.io/#workshoppers">tutorial</a> or work on your own web project; mentors walk around to help
+                  <em>6:00pm</em> Complete a <a href="http://nodeschool.io/#workshoppers">tutorial</a> or work on your own project - ask mentors for help
                 </li>
                 <li>
-                  <em>8:00pm</em> Demo your solutions. Network too.
+                  <em>8:00pm</em> Demos of your work, drinks
                 </li>
               </ul>
             </p>
@@ -97,11 +92,11 @@
           </div>
           <p>Workshops are run by volunteers:  <a href='https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor' target="_blank">mentor</a>.</p>
           <h3>"What should I expect?"</h3>
-          <p>It'ss a self-directed learning environment where you bring your own laptop to learn. Attendees work on the Node workshops from <a href="http://nodeschool.io/#workshopper-list" target="_blank">nodeschool.io</a>, but if you have a personal project you are working on, do it! The goal of NodeSchool is to help people explore and learn Node. Mentors can help you when you hit roadblocks.</p>
-          <h3>"What is a workshopper?"</h3>
-          <p>These are lesson modules used by NodeSchool. All are self guided. You can do them at home. They work offline too.</p>
-          <h3>"How do I run a workshopper?"</h3>
-          <p> Install and run the workshopper you want. For example, to set up and run the Beginner Node Workshopper, open a terminal and type:</p>
+          <p>It's a self-directed learning environment where you bring your own laptop to learn. Attendees work on the Node tutorials from <a href="http://nodeschool.io/#workshopper-list" target="_blank">nodeschool.io</a>, but if you have a personal project you are working on, do it! The goal of NodeSchool is to help people explore and learn Node. Mentors can help you when you hit roadblocks.</p>
+          <h3>"What is a tutorial?"</h3>
+          <p>These are lesson modules created by the NodeSchool community. All are self guided. You can run them at home. The tutorials work offline too.</p>
+          <h3>"How do I run a tutorial?"</h3>
+          <p> To set up and run the Beginner Node Workshopper, open a terminal and type:</p>
           <code class="terminal">
             <pre>$ npm install -g learnyounode
 $ learnyounode</pre>
@@ -140,7 +135,7 @@ $ learnyounode</pre>
           <div class="fb-like" data-href="https://www.facebook.com/Nodeschoolmtl" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
           <a class="github-button" href="https://github.com/nodeschool/montreal" data-count-href="/nodeschool/montreal/stargazers" data-count-api="/repos/nodeschool/montreal#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star nodeschool/montreal on GitHub">Star</a>
           <h2 id="mentors">Mentors</h2>
-          <p>To become a mentor, <a href="https://github.com/nodeschool/montreal/edit/master/README.md">add your name to the mentors list</a> and your photo.</p>
+          <p>To become a mentor, <a href="https://github.com/nodeschool/montreal/edit/master/README.md">add your name to the mentors list</a> and a photo.</p>
           <div class="list-mentors cf">
             {% assign row = 0 %}
             {% assign rowElemIdx = 1 %}
@@ -177,7 +172,7 @@ $ learnyounode</pre>
           </div>
           <p>See <a href='https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor' target="_blank">"On Being a Mentor"</a> tips.</p>
           <h2 id="community">Community</h2>
-          <p>Register by clicking on the blue "Register" bar. Become part of a vibrant web developer community!</p>
+          <p>Register by clicking on the big blue "Register" button. Become part of a vibrant web developer community!</p>
           <div class="fb-page" data-href="https://www.facebook.com/Nodeschoolmtl/" data-tabs="timeline,events" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
             <blockquote cite="https://www.facebook.com/Nodeschoolmtl/" class="fb-xfbml-parse-ignore">
               <a href="https://www.facebook.com/Nodeschoolmtl/">NodeSchoolMTL</a>
@@ -196,20 +191,26 @@ $ learnyounode</pre>
       <div class="panel text">
         <div class="container">
           <h2>Projects</h2>
-          <p>Another way to accelerate your learning at NodeSchool is to work on <span title="Web projects built with Node and JavaScript">projects</span> in the company of mentors.</p>
+          <p>Accelerate your learning: work on a <span title="Web projects built with Node and JavaScript">project team</span>.</p>
           <div id="latestSpot"></div>
           <div id="selectedSpot"></div>
           <div id="map"></div>
           <span class="resetMap button">Reset Map</span>
 
-          <h3>Motivation</h3>
-          <p>Where do I find someone to help my team? Where do I meet the people behind a cool project worth contributing to? We keep active projects alive and shared amongst web dev apprentices and mentors.</p>
-
-          <h3>Teamed?</h3>
-          <p>A team advances its collective skill when several work together over a longer time. In a team you learn in a series of small projects.</p>
+          <h3>Learning Teams?</h3>
+          <p>
+            A team advances its collective skill when several students and mentors work together. As a team you complete a series of small projects quicker.
+          </p>
+          <ul>
+            <li>Where do I find someone to help my team?</li>
+            <li>How do I meet the people behind a cool project worth contributing to?</li>
+          </ul>
+          <p>
+            At NodeSchool. Join a team or post a project, and let's get coding!
+          </p>
           <footer>
             <p class="links">
-              The <a href="https://github.com/nodeschool/montreal">code</a> for this website is a fork of <a href="http://nodeschool.io/toronto">NodeSchool Toronto</a> merged with <a href="http://jlord.github.io/hack-spots">Hack Spots</a>.
+              The <a href="https://github.com/nodeschool/montreal">code</a> for this website is a fork of <a href="http://nodeschool.io/toronto">NodeSchool Toronto</a> merged with <a href="http://jlord.github.io/hack-spots">Hack Spots</a>, thanks!
             </p>
           </footer>
         </div>
@@ -221,7 +222,7 @@ $ learnyounode</pre>
           <span class="noMatches">no matches</span>
           <div id="hackSpotsTable"></div>
           <div id="theNumberofSpots"></div>
-          <p>This table is hooked up to <a href="https://docs.google.com/spreadsheets/d/1uY_V0bpagVhy8df9-feNH3XXYHNEQbRRXcb1NcSVCu4/edit?usp=sharing" target="_blank">this Google Spreadsheet</a>, which is shared, so you can <a href="https://docs.google.com/forms/d/e/1FAIpQLSekmFlMoBA9VCd7d38QgyBnxfz8HNduNkt44PpDR41SfUczmw/viewform">add your project</a>! For the map you'll need to <a href="http://www.latlong.net/" target="_blank">get the latitude and longitude</a> of where your team usually meets to hack together. Complete information is best, so please try to fill out all the fields.</p>
+          <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSekmFlMoBA9VCd7d38QgyBnxfz8HNduNkt44PpDR41SfUczmw/viewform">Add your project</a> to this table, which is hooked up to <a href="https://docs.google.com/spreadsheets/d/1uY_V0bpagVhy8df9-feNH3XXYHNEQbRRXcb1NcSVCu4/edit?usp=sharing" target="_blank">this Google Spreadsheet</a>. For the map you'll need to <a href="http://www.latlong.net/" target="_blank">get the latitude and longitude</a> of where your team usually meets to hack together. Complete information is best, so please try to fill out all the fields.</p>
         </div>
       </div>
 
@@ -231,7 +232,7 @@ $ learnyounode</pre>
             <th class="tHeader">Problem</th>
             <th class="tHeader">For Whom</th>
             <th class="tHeader">Help Wanted</th>
-            <th class="tHeader">Theam</th>
+            <th class="tHeader">Team</th>
             <th class="tHeader">Neighbourhood</th>
             <th></th>
           </tr>
@@ -240,7 +241,7 @@ $ learnyounode</pre>
               <td>{{"{{problem"}}}}</td>
               <td>{{"{{forwhom"}}}}</td>
               <td>{{"{{helpwanted"}}}}</td>
-              <td>{{"{{theamname"}}}}</td>
+              <td>{{"{{teamname"}}}}</td>
               <td>{{"{{neighbourhood"}}}}</td>
               <td>
                 <a class="button" href="https://maps.google.com/maps?q={{"{{address"}}}},{{"{{city"}}}},{{"{{state"}}}}" target="_blank">Map</a>
@@ -252,9 +253,9 @@ $ learnyounode</pre>
 
       <script id="latestSpot" type="text/html">
         {{"{{#rows"}}}}
-          <h3>{{"{{theamname"}}}}</h3>
+          <h3>{{"{{teamname"}}}}</h3>
           <div><img src="{{"{{photo"}}}}"></div>
-          <h4 class="fauxButton">Newest Theam</h4>
+          <h5 class="fauxButton">Newest Team</h5>
           <ul>
             <li><span class="category">Problem</span> {{"{{problem"}}}}</li>
             <li><span class="category">For Whom</span> {{"{{forwhom"}}}}</li>
@@ -272,14 +273,14 @@ $ learnyounode</pre>
       </script>
 
       <script id="theNumberofSpots" type="text/html">
-        <p><strong><span class="red-text">{{"{{numberOfSpots"}}}}</span> projects strong!</p>
+        <p><strong>{{"{{numberOfSpots"}}}}</strong> projects</p>
       </script>
 
       <script id="selectedSpot" type="text/html">
         {{"{{#rows"}}}}
           <div><img src="{{"{{photo"}}}}"></div>
-          <h4 class="fauxButton">Selected Theam</h4>
-          <h2>{{"{{theamname"}}}}</h2>
+          <h4 class="fauxButton">Selected Team</h4>
+          <h2>{{"{{teamname"}}}}</h2>
           <ul>
             <li><span class="category">Problem</span> {{"{{problem"}}}}</li>
             <li><span class="category">For Whom</span> {{"{{forwhom"}}}}</li>
@@ -319,26 +320,26 @@ $ learnyounode</pre>
 
           // create geoJSON with coordinates and other
           // useful bits from the original data
-          var optionsJSON = ["theamname", "address", "city", "rowNumber"];
+          var optionsJSON = ["teamname", "address", "city", "rowNumber"];
           var geoJSON = Sheetsee.createGeoJSON(gData, optionsJSON);
 
           // create map, tilelayer (map background), markers and popups
           var map = Sheetsee.loadMap("map");
           Sheetsee.addTileLayer(map, 'jllord.n7aml2bc');
-          var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, '<h2>{{"{{ theamname "}}}}</h2>', true);
+          var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, '<h2>{{"{{ teamname "}}}}</h2>', true);
 
           // find the latest spot with the most important
           // info filled in (to prevent map breaking if
           // someone is currently editing spreadsheet)
-          var newestTheam = findLatestCompleteSpot(gData);
+          var newestTeam = findLatestCompleteSpot(gData);
           var latestSpot = Sheetsee.ich.latestSpot({
-            rows: newestTheam
+            rows: newestTeam
           });
 
           // set it and pan to it
           $('#latestSpot').html(latestSpot);
-          console.log('newestTheam', newestTheam);
-          map.setView([newestTheam.lat, newestTheam.long], 14);
+          console.log('newestTeam', newestTeam);
+          map.setView([newestTeam.lat, newestTeam.long], 14);
 
           // when someone clicks on a row, highlight it and
           // re-center the map
@@ -364,7 +365,7 @@ $ learnyounode</pre>
             var latestCompleteSpot = [];
             var startWithLatestRow = data.reverse();
             startWithLatestRow.forEach(function(row) {
-              if (!row.lat || !row.long || !row.theamname || !row.address || !row.city || !row.state ) {
+              if (!row.lat || !row.long || !row.teamname || !row.address || !row.city || !row.state ) {
                 return
               } else {
                 latestCompleteSpot.push(row);

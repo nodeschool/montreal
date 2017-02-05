@@ -42,21 +42,13 @@
         {% endfor %}
       </defs>
     </svg>
-    <nav class="nav">
-      <ul>
-        <li><a href="#" class="ir home" data-text="Home">Home</a></li>
-        <li><a href="#events" class="ir events" data-text="Next NodeSchool">Next NodeSchool</a></li>
-        <li><a href="#mentors" class="ir mentors" data-text="Mentors">Mentors</a></li>
-        <li><a href="#community" class="ir community" data-text="Community">Community</a></li>
-        <li><a href="#photos" class="ir photos" data-text="Photos">Photos</a></li>
-        <li><a href="#codeofconduct" class="ir code" data-text="Code of Conduct">Code of Conduct</a></li>
-      </ul>
-    </nav>
     <main class="main">
       <section class="panel text">
         <div class="container">
           <div class="header">
-            <a class="logo pull-right"></a>
+            <a class="logo pull-right">
+              <img src="http://i.imgur.com/M0Mh3PZ.jpg" alt="NodeSchool Montréal Logo">
+            </a>
             <h1>NodeSchool Montréal</h1>
           </div>
           <p class="about"><strong>NodeSchool</strong> is learning web software skills with peers.</p>
@@ -90,7 +82,7 @@
             </div>
             <tito-widget event="nodeschoolmtl/nodeschool-wed-fed-22"></tito-widget>
           </div>
-          <p>Workshops are run by volunteers:  <a href='https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor' target="_blank">mentor</a>.</p>
+          <p>Workshops are run by volunteers, you can  <a href='https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor' target="_blank">mentor</a> too.</p>
           <h3>"What should I expect?"</h3>
           <p>It's a self-directed learning environment where you bring your own laptop to learn. Attendees work on the Node tutorials from <a href="http://nodeschool.io/#workshopper-list" target="_blank">nodeschool.io</a>, but if you have a personal project you are working on, do it! The goal of NodeSchool is to help people explore and learn Node. Mentors can help you when you hit roadblocks.</p>
           <h3>"What is a tutorial?"</h3>
@@ -101,7 +93,7 @@
             <pre>$ npm install -g learnyounode
 $ learnyounode</pre>
           </code>
-          <p>Having trouble installing Node? No worries - we'll do our best to help you get set up once you arrive.</p>
+          <p>Having trouble installing Node? No worries &mdash; we'll do our best to help you get set up once you arrive.</p>
           <h2 id="photos">Photos</h2>
           <div class="list-photos cf">
             {% for i in (30..30) %}

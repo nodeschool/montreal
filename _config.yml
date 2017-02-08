@@ -32,30 +32,30 @@ mentors:
   - name: andre-john
     display: 'André John Mas'
     twitter: ajmas
+    - name: matan
+    display: 'Matan Kushner'
+    twitter: matchai
+  - name: richardlitt
+    display: 'Richard Littauer'
+    twitter: richlitt
   - name: david
     display: 'David Rowley'
     twitter: davidrowley514
+  - name: ziad-saab
+    display: 'Ziad Saab'
+    twitter: ZiadDotHTML
+  - name: nicolas
+    display: 'Nicolas Géré'
+    twitter: nicolasgere
+  - name: harris
+    display: 'Harris Robin Kalash'
+    twitter: LulzHRK
+  - name: rsayar
+    display: 'Rami Sayar'
+    twitter: ramisayar
   - name: valeri
     display: 'Valeri Vicneanschi'
     twitter: vicneanschi
   - name: shawn
     display: 'Shawn Thmpson'
     twitter: plansmash
-  - name: nicolas
-    display: 'Nicolas Géré'
-    twitter: nicolasgere
-  - name: matan
-    display: 'Matan Kushner'
-    twitter: matchai
-  - name: harris
-    display: 'Harris Robin Kalash'
-    twitter: LulzHRK
-  - name: ziad-saab
-    display: 'Ziad Saab'
-    twitter: ZiadDotHTML
-  - name: rsayar
-    display: 'Rami Sayar'
-    twitter: ramisayar
-  - name: richardlitt
-    display: 'Richard Littauer'
-    twitter: richlitt

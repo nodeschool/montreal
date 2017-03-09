@@ -14,26 +14,20 @@
   @media (screen and max-width: $responsive-width)
     margin: 0 -40px
 
+  .title, .mentor
+    display: inline-block
+    width: 100%
+    font-size: 20px
+    line-height: 180%
+    font-weight: 100
+    padding: 0 25px
+    transition: all ease-in-out 0.2s
+    position: relative
+
+  .mentor
+    text-align: right
+
   .title
-    display: inline-block
-    width: 100%
-    font-size: 20px
-    line-height: 180%
-    font-weight: 100
-    padding: 0 25px
-    transition: all ease-in-out 0.2s
-    position: relative
-
-  .register
-    display: inline-block
-    width: 100%
-    font-size: 20px
-    line-height: 180%
-    font-weight: 100
-    padding: 0 25px
-    transition: all ease-in-out 0.2s
-    position: relative
-
     strong
       display: inline-block
       font-weight: 600
@@ -51,23 +45,7 @@
       padding: 0 25px 0 8px
       margin: 0
 
-  .additional
-    padding: 20px 20px 30px 100px
-    margin: 0
-    position: relative
-    font-weight: 100
-    line-height: 200%
-
-    &:before
-      content: '\e6c5'
-      font-family: 'icon'
-      display: block
-      position: absolute
-      top: 50px
-      left: 35px
-      font-size: 32px
-
-  .schedule, .location
+  .location
     line-height: 180%
     padding: 30px 20px 20px 90px
     margin: 0 0 10px 0
@@ -84,46 +62,6 @@
       position: absolute
       top: 30px
       left: 35px
-
-  .schedule
-    border-top: 1px solid rgba($tertiary, 0.35)
-    padding-bottom: 30px
-    margin: 0
-
-    &:before
-      content: '\e702'
-
-  .timeline
-    margin-top: 0
-    padding: 0 15px 0 90px
-    width: 100%
-    display: block
-
-    .row
-      @extend .cf
-      list-style: none
-      display: block
-      width: 100%
-      margin: 0
-      padding: 0
-      line-height: 180%
-      border-bottom: 1px solid rgba($tertiary, 0.35)
-
-      .time, .name
-        display: block
-        float: left
-        padding: 20px
-        text-align: left
-
-      .time
-        width: 30%
-        padding: 20px 10px 20px 30px
-        font-weight: 600
-
-      .name
-        width: 70%
-        font-size: 100
-        border-left: 1px solid rgba($tertiary, 0.35)
 
   .map
     width: 100%

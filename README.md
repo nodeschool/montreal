@@ -29,6 +29,7 @@ Become a better teacher or simply contribute back to open source. You know the d
 - Valeri Vicneanschi: [@vicneanschi](https://github.com/vicneanschi)
 - Shawn Thmpson: [@shawnthompson](https://github.com/shawnthompson)
 - Richard Littauer: [@RichardLitt](https://github.com/RichardLitt)
+- Marek Zaluski: [@marekweb](https://github.com/marekweb)
 - _Add your name here with a [pull request](https://github.com/nodeschool/montreal/pulls)_
 
 ## Take it up a notch!

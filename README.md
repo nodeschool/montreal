@@ -6,7 +6,7 @@
 
 Do the [workshoppers](http://nodeschool.io/#workshoppers) on your own or in person at the [next NodeSchool event](http://nodeschool.io/montreal/). Experienced helpful mentors will help you through challenges.
 
-Done with the workshops? Start a project or join a team and develop your skills to the next level.
+Done with the workshops? Start a project or join a team - develop your skills.
 
 
 ## Attend

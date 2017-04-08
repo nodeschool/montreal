@@ -31,6 +31,7 @@ Become a better teacher or simply contribute back to open source. You know the d
 - Richard Littauer: [@RichardLitt](https://github.com/RichardLitt)
 - Marek Zaluski: [@marekweb](https://github.com/marekweb)
 - Frederic Charette: [@fed135](https://github.com/fed135)
+- Ehren Lillies: [@ehren123](https://github.com/ehren123)
 - _Add your name here with a [pull request](https://github.com/nodeschool/montreal/pulls)_
 
 ## Take it up a notch!

@@ -29,12 +29,15 @@ mentors:
   - name: cassie
     display: 'Cassie L. Rhéaume'
     twitter: cassierheaume
-  - name: andre-john
-    display: 'André John Mas'
-    twitter: ajmas
   - name: matan
     display: 'Matan Kushner'
     twitter: matchai
+  - name: andre-john
+    display: 'André John Mas'
+    twitter: ajmas
+  - name: ruyadorno
+    display: 'Ruy Adorno'
+    twitter: ruyadorno
   - name: david
     display: 'David Rowley'
     twitter: davidrowley514
@@ -56,15 +59,12 @@ mentors:
   - name: shawn
     display: 'Shawn Thmpson'
     twitter: plansmash
-  - name: marekweb
-    display: 'Marek Zaluski'
-    twitter: marekweb
   - name: fcharette
     display: 'Frederic Charette'
     twitter: fed135
   - name: ehren
     display: 'Ehren Lillies'
     twitter: EhrenLillies
-  - name: ruyadorno
-    display: 'Ruy Adorno'
-    twitter: ruyadorno
+  - name: marekweb
+    display: 'Marek Zaluski'
+    twitter: marekweb

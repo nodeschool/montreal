@@ -32,9 +32,9 @@ mentors:
   - name: matan
     display: 'Matan Kushner'
     twitter: matchai
-  - name: andre-john
-    display: 'André John Mas'
-    twitter: ajmas
+  - name: valeri
+    display: 'Valeri Vicneanschi'
+    twitter: vicneanschi
   - name: ruyadorno
     display: 'Ruy Adorno'
     twitter: ruyadorno
@@ -53,18 +53,18 @@ mentors:
   - name: rsayar
     display: 'Rami Sayar'
     twitter: ramisayar
-  - name: fcharette
-    display: 'Frederic Charette'
-    twitter: fed135
+  - name: andre-john
+    display: 'André John Mas'
+    twitter: ajmas
   - name: ehren
     display: 'Ehren Lillies'
     twitter: EhrenLillies
-  - name: valeri
-    display: 'Valeri Vicneanschi'
-    twitter: vicneanschi
-  - name: shawn
-    display: 'Shawn Thmpson'
-    twitter: plansmash
   - name: marekweb
     display: 'Marek Zaluski'
     twitter: marekweb
+  - name: fcharette
+    display: 'Frederic Charette'
+    twitter: fed135
+  - name: shawn
+    display: 'Shawn Thmpson'
+    twitter: plansmash

@@ -17,23 +17,24 @@ Check out the [NodeSchoolMTL website](http://nodeschool.io/montreal/) and RSVP t
 
 Become a better teacher or simply contribute back to open source. You know the drill.
 
+
+- Cassie L. Rhéaume: [@CassieLR](https://github.com/CassieLR)
 - Paul Cuciureanu: [@pcuci](http://github.com/pcuci)
 - Andre John Mas: [@ajmas](https://github.com/ajmas)
 - Matan Kushner: [@matchai](https://github.com/matchai)
-- Cassie L. Rhéaume: [@CassieLR](https://github.com/CassieLR)
-- Harris Robin Kalash: [@harrisrobin](https://github.com/harrisrobin)
-- David Rowley: [@David-Ro](http://github.com/David-Ro)
-- Jeff Marshall: [@jeffmarshall](https://github.com/jeffmarshall)
-- Rami Sayar: [@sayar](https://github.com/sayar)
 - Ziad Saab: [@ziad-saab](https://github.com/ziad-saab)
-- Valeri Vicneanschi: [@vicneanschi](https://github.com/vicneanschi)
-- Shawn Thmpson: [@shawnthompson](https://github.com/shawnthompson)
-- Richard Littauer: [@RichardLitt](https://github.com/RichardLitt)
-- Marek Zaluski: [@marekweb](https://github.com/marekweb)
 - Frederic Charette: [@fed135](https://github.com/fed135)
 - Ehren Lillies: [@ehren123](https://github.com/ehren123)
 - Ruy Adorno: [@ruyadorno](https://github.com/ruyadorno)
 - Mats Ljunggren: [@ljunggren](https://github.com/ljunggren)
+- Harris Robin Kalash: [@harrisrobin](https://github.com/harrisrobin)
+- David Rowley: [@David-Ro](http://github.com/David-Ro)
+- Rami Sayar: [@sayar](https://github.com/sayar)
+- Valeri Vicneanschi: [@vicneanschi](https://github.com/vicneanschi)
+- Shawn Thompson: [@shawnthompson](https://github.com/shawnthompson)
+- Richard Littauer: [@RichardLitt](https://github.com/RichardLitt)
+- Marek Zaluski: [@marekweb](https://github.com/marekweb)
+- Jeff Marshall: [@jeffmarshall](https://github.com/jeffmarshall)
 - _Add your name here with a [pull request](https://github.com/nodeschool/montreal/pulls)_
 
 ## Take it up a notch!

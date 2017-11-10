@@ -14,6 +14,9 @@ before_script:
 # the `install` step will run `bundle install` by default.
 script: ./script/cibuild
 
+after_success:
+  - script//deploy
+
 # branch whitelist, only for GitHub Pages
 branches:
   only:

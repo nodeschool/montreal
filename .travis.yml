@@ -15,7 +15,7 @@ before_script:
 script: ./script/cibuild
 
 after_success:
-  - script//deploy
+  - script/deploy
 
 # branch whitelist, only for GitHub Pages
 branches:
@@ -26,6 +26,8 @@ branches:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+  - ENCRYPTION_LABEL: "f2f3ea99b7d4"
+  - COMMIT_AUTHOR_EMAIL: "nodeschool.montreal+travis@gmail.com"
 
 #sudo: false # route your build to the container-based infrastructure for a faster build
 

@@ -7,7 +7,7 @@ kramdown:
   input: GFM
 
 # Use the following plug-ins
-gems:
+plugins:
   - jekyll-sitemap
 
 sass:

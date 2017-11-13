@@ -28,8 +28,8 @@ branches:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
-  - ENCRYPTION_LABEL: "f2f3ea99b7d4"
-  - COMMIT_AUTHOR_EMAIL: "nodeschool.montreal+travis@gmail.com"
+  - ENCRYPTION_LABEL: "3ce10d3711a5"
+  - COMMIT_AUTHOR_EMAIL: "nodeschoolmtl@bettermtl.com"
 
 #sudo: false # route your build to the container-based infrastructure for a faster build
 

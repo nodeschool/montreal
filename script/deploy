@@ -6,6 +6,7 @@ TARGET_BRANCH="gh-pages-gen"
 
 function doCompile {
   #./compile.sh
+  echo "copy contents of _site/" to out/"
   cp -rf _site/* out
 }
 
@@ -16,10 +17,14 @@ function doCompile {
 #    exit 0
 #fi
 
+echo "Initiating deployment..."
+
 # Save some useful information
 REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
+
+echo "ssh repo: $SSH_REPO"
 
 # Clone the existing gh-pages for this repo into out/
 # Create a new empty branch if gh-pages doesn't exist yet (should only happen on first deply)
@@ -48,6 +53,7 @@ git config user.email "$COMMIT_AUTHOR_EMAIL"
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
 git add -A .
+git status
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
 # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
@@ -63,6 +69,7 @@ ssh-add deploy_key
 
 
 # Now that we're all set up, we can push.
+echo "Pushing to $SSH_REPO $TARGET_BRANCH"
 git push $SSH_REPO $TARGET_BRANCH
    
 #ref: https://gist.github.com/domenic/ec8b0fc8ab45f39403dd

@@ -50,6 +50,9 @@ rm package.json
 rm deploy_key*
 rm README.md
 rm .gitignore
+rm _config.yml
+rm Procfile
+rm .*
 echo "Generated from gh-pages-src branch" > README.md
   
 # If there are no changes to the compiled out (e.g. this is a README update) then just bail.

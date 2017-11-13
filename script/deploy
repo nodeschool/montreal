@@ -52,7 +52,8 @@ rm -f README.md
 rm -f .gitignore
 rm -f _config.yml
 rm -f Procfile
-rm -f .*
+rm -f .travis.yml
+rm -f .editorconfig
 echo "Generated from gh-pages-src branch" > README.md
   
 # If there are no changes to the compiled out (e.g. this is a README update) then just bail.

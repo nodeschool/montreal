@@ -17,6 +17,8 @@ function doCompile {
 #    exit 0
 #fi
 
+echo "Initiating deployment..."
+
 # Save some useful information
 REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}

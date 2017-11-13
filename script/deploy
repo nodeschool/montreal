@@ -6,7 +6,7 @@ TARGET_BRANCH="gh-pages-gen"
 
 function doCompile {
   #./compile.sh
-  echo "copy contents of _site/" to out/"
+  echo "copy contents of _site/ to out/"
   cp -rf _site/* out
 }
 

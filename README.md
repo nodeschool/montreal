@@ -41,7 +41,7 @@ Become a better teacher or simply contribute back to open source. You know the d
 
 1. Star the repo ⭐
 2. Report bugs or improvements in [issues](https://github.com/nodeschool/montreal/issues), we appreciate all sorts of feedback!
-3. Upload your photo to http://nodeschool.io/montreal/ (see the [`gh-pages`](https://github.com/nodeschool/montreal/tree/gh-pages) branch)
+3. Upload your photo to http://nodeschool.io/montreal/ (see the [`gh-pages-src`](https://github.com/nodeschool/montreal/tree/gh-pages-src) branch)
 4. Complete a [core workshopper](http://nodeschool.io/#workshopper-list) on your own before the next event
 5. Join a team, see the list of [active projects](http://nodeschool.io/montreal/)
 6. [Start](https://docs.google.com/forms/d/e/1FAIpQLSekmFlMoBA9VCd7d38QgyBnxfz8HNduNkt44PpDR41SfUczmw/viewform) your own project!

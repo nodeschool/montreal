@@ -34,6 +34,12 @@ by Travis and should not be run locally. When run it
 will do all the magic necessary to take the generated
 site and push it to the gh-pages branch.
 
+Pull Request
+------------
+
+Remember when making your pull request (PR) to do it against
+the [gh-pages-src](https://github.com/nodeschool/montreal/tree/gh-pages-src) branch. Doing anything else will most definitely
+result in a rejected PR.
 
 Event Information
 -----------------

@@ -1,3 +1,5 @@
+![NodeSchool Montréal Logo](http://nodeschool.io/montreal/i/NodeSchoolMTL.svg)
+
 [![NodeSchoolMTL](https://img.shields.io/badge/NodeSchool-MTL-yellow.svg)](http://nodeschool.io/montreal) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/nodeschool/montreal) [![Stories in progress](https://img.shields.io/waffle/label/nodeschool/montreal/in%20progress.svg)](https://waffle.io/nodeschool/montreal)
 
 # NodeSchool Montreal
@@ -35,7 +37,7 @@ Become a better teacher or simply contribute back to open source. You know the d
 - Richard Littauer: [@RichardLitt](https://github.com/RichardLitt)
 - Marek Zaluski: [@marekweb](https://github.com/marekweb)
 - Jeff Marshall: [@jeffmarshall](https://github.com/jeffmarshall)
-- _Add your name here with a [pull request](https://github.com/nodeschool/montreal/pulls)_ - See the document [CONTRIBUTING.md](./contributing), for furhter details.
+- _Add your name here with a [pull request](https://github.com/nodeschool/montreal/pulls) - See the document [CONTRIBUTING.md](./contributing), for furhter details._
 
 ## Take it up a notch!
 

@@ -45,6 +45,7 @@ git config user.name "Travis CI"
 git config user.email "$COMMIT_AUTHOR_EMAIL"
 
 # Remove files we don't want in the deployment branch
+# Certain files confuse gh-pages, which still tries to run Jekyll
 rm -f Gemfile*
 rm -f package.json
 rm -f deploy_key*
@@ -54,7 +55,8 @@ rm -f _config.yml
 rm -f Procfile
 rm -f .travis.yml
 rm -f .editorconfig
-echo "Generated from gh-pages-src branch" > README.md
+rm -f *.sass
+echo "#Published Content\nGenerated from `master` branch (Last updated: $(date "+%Y-%m-%d at %H:%M:%S"))" > README.md
   
 # If there are no changes to the compiled out (e.g. this is a README update) then just bail.
 #if git diff --quiet; then

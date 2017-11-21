@@ -56,7 +56,7 @@ rm -f Procfile
 rm -f .travis.yml
 rm -f .editorconfig
 rm -f *.sass
-echo "#Published Content\nGenerated from `master` branch (Last updated: $(date "+%Y-%m-%d at %H:%M:%S"))" > README.md
+echo "Generated from `master` branch (Last updated: $(date "+%Y-%m-%d at %H:%M:%S %Z"))" > README.md
   
 # If there are no changes to the compiled out (e.g. this is a README update) then just bail.
 #if git diff --quiet; then

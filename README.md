@@ -35,13 +35,13 @@ Become a better teacher or simply contribute back to open source. You know the d
 - Richard Littauer: [@RichardLitt](https://github.com/RichardLitt)
 - Marek Zaluski: [@marekweb](https://github.com/marekweb)
 - Jeff Marshall: [@jeffmarshall](https://github.com/jeffmarshall)
-- _Add your name here with a [pull request](https://github.com/nodeschool/montreal/pulls)_
+- _Add your name here with a [pull request](https://github.com/nodeschool/montreal/pulls)_ - See the document [CONTRIBUTING.md](./contributing), for furhter details.
 
 ## Take it up a notch!
 
 1. Star the repo ⭐
 2. Report bugs or improvements in [issues](https://github.com/nodeschool/montreal/issues), we appreciate all sorts of feedback!
-3. Upload your photo to http://nodeschool.io/montreal/ (see the [`gh-pages-src`](https://github.com/nodeschool/montreal/tree/gh-pages-src) branch)
+3. Upload your photo to http://nodeschool.io/montreal/ (use the [`master`](https://github.com/nodeschool/montreal/tree/master) branch)
 4. Complete a [core workshopper](http://nodeschool.io/#workshopper-list) on your own before the next event
 5. Join a team, see the list of [active projects](http://nodeschool.io/montreal/)
 6. [Start](https://docs.google.com/forms/d/e/1FAIpQLSekmFlMoBA9VCd7d38QgyBnxfz8HNduNkt44PpDR41SfUczmw/viewform) your own project!
@@ -49,3 +49,7 @@ Become a better teacher or simply contribute back to open source. You know the d
 ## Inclusive and respectful
 
 Please observe the [code of conduct](http://confcodeofconduct.com/) while attending NodeSchool.
+
+## Building and Maintaining the Site
+
+See the document [CONTRIBUTING.md](./contributing)

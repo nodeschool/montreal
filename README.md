@@ -54,4 +54,4 @@ Please observe the [code of conduct](http://confcodeofconduct.com/) while attend
 
 ## Building and Maintaining the Site
 
-See the document [CONTRIBUTING.md](./contributing)
+See the document [CONTRIBUTING.md](./CONTRIBUTING.md)

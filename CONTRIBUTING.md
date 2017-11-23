@@ -25,7 +25,7 @@ generated with the help of Travis.
 Generating the Site
 -------------------
 
-One you have made your changes, you can test them, by running
+Once you have made your changes, you can test them by running
 (tested on macOS and Linux):
 
 `script/cibuild`

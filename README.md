@@ -37,6 +37,7 @@ Become a better teacher or simply contribute back to open source. You know the d
 - Richard Littauer: [@RichardLitt](https://github.com/RichardLitt)
 - Marek Zaluski: [@marekweb](https://github.com/marekweb)
 - Jeff Marshall: [@jeffmarshall](https://github.com/jeffmarshall)
+- Jonathan Dupré: [@kareniel](https://github.com/kareniel)
 - _Add your name here with a [pull request](https://github.com/nodeschool/montreal/pulls) - See the document [CONTRIBUTING.md](./contributing), for furhter details._
 
 ## Take it up a notch!

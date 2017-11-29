@@ -68,9 +68,12 @@ mentors:
   - name: shawn
     display: 'Shawn Thmpson'
     twitter: plansmash
-  - name: mats 
+  - name: mats
     display: 'Mats Ljunggren'
-    twitter: boozangcloud 
-  - name: kareniel 
+    twitter: boozangcloud
+  - name: kareniel
     display: 'Jonathan Dupré'
-    twitter: Jonathan_Dupre 
+    twitter: Jonathan_Dupre
+  - name: richardlitt
+    display: 'Richard Littauer'
+    twitter: richlitt

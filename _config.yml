@@ -1,7 +1,7 @@
 markdown: kramdown
 permalink: /:title
-url: "http://nodeschool.io/toronto"
-timezone: America/Toronto
+url: "http://nodeschool.io/montreal"
+timezone: America/Montreal
 
 kramdown:
   input: GFM
@@ -23,39 +23,39 @@ exclude:
   - tasks/
 
 mentors:
-  - name: ricky
-    twitter: rickycodes
-  - name: jeff
-    twitter: jeffjewiss
-  - name: brenna
-    twitter: brnnbrn
-  - name: darcy
-    twitter: darcy
-  - name: rich
-    twitter: richgilbank
-  - name: andrew
-    twitter: andrewdamelio
-  - name: tessa
-    twitter: tessthornton
-  - name: ahmad
-    twitter: ahmadnassri
-  - name: ryan
-    twitter: RChristiani
-  - name: vlad
-    twitter: vladikoff
-  - name: jeremiah
-    twitter: Fishrock123
-  - name: jordan
-    twitter: jrdnndtsch
-  - name: wisam
-    twitter: wisamjs
-  - name: neil
-    twitter: neil_fenton
-  - name: chris
-    twitter: chrismendis
-  - name: pippin
-    twitter: pippinlee
-  - name: vanessa
-    twitter: VanessaYuenn
-  - name: michael
-    twitter: mikemimik
+  - name: pcuci
+    twitter: pcuci
+  - name: cassie
+    twitter: cassierheaume
+  - name: matan
+    twitter: matchai
+  - name: valeri
+    twitter: vicneanschi
+  - name: ruyadorno
+    twitter: ruyadorno
+  - name: david
+    twitter: davidrowley514
+  - name: ziad-saab
+    twitter: ZiadDotHTML
+  - name: harris
+    twitter: LulzHRK
+  - name: nicolas
+    twitter: nicolasgere
+  - name: rsayar
+    twitter: ramisayar
+  - name: andre-john
+    twitter: ajmas
+  - name: ehren
+    twitter: EhrenLillies
+  - name: marekweb
+    twitter: marekweb
+  - name: fcharette
+    twitter: fed135
+  - name: shawn
+    twitter: plansmash
+  - name: mats
+    twitter: boozangcloud
+  - name: kareniel
+    twitter: Jonathan_Dupre
+  - name: richardlitt
+    twitter: richlitt

@@ -1,0 +1,33 @@
+language: ruby
+rvm:
+- 2.3.3
+
+# Intented to deal with html_proofer failing SSL checks
+sudo: required
+before_install:
+ - sudo update-ca-certificates
+
+before_script:
+ - chmod +x ./tasks/cibuild # or do this locally and commit
+ - chmod +x ./tasks/deploy
+
+# Assume bundler is being used, therefore
+# the `install` step will run `bundle install` by default.
+script: ./tasks/cibuild
+
+after_success:
+  - tasks/deploy
+
+# branch whitelist, only for GitHub Pages
+branches:
+  only:
+  - master # test the gh-pages branch
+  - /pages-(.*)/ # test every branch which starts with "pages-"
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+  - ENCRYPTION_LABEL: "3ce10d3711a5"
+  - COMMIT_AUTHOR_EMAIL: "nodeschoolmtl@bettermtl.com"
+
+#sudo: false # route your build to the container-based infrastructure for a faster build

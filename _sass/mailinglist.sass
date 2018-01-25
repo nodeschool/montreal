@@ -1,10 +1,6 @@
-// --------------------------------
-// Event Badge
-// --------------------------------
-
 .mailinglist
   @extend .cf
-  margin: 40px 0 0 -40px
+  margin: 40px 0 30px -40px
   padding: 40px
   width: calc(100% + 80px)
   background: lighten($secondary, 10%)
@@ -49,6 +45,11 @@
     font-size: 20px
     border-radius: 3px
     font-weight: 600
+    transition: background 0.2s, color 0.2s
+
+    &:hover
+      color: $secondary
+      background: $base
 
   .firstname, .lastname
     width: calc(50% - 10px)

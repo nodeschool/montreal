@@ -1,24 +1,18 @@
-![NodeSchool Montréal Logo](./i/NodeSchoolMTL.svg)
+<!-- ![NodeSchool Montreal Logo](./i/nodeschool-montreal-logo.svg) -->
 
-[![NodeSchoolMTL](https://img.shields.io/badge/NodeSchool-MTL-yellow.svg)](http://nodeschool.io/montreal) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/nodeschool/montreal) [![Stories in progress](https://img.shields.io/waffle/label/nodeschool/montreal/in%20progress.svg)](https://waffle.io/nodeschool/montreal)
+<img src="./i/nodeschool-montreal-logo.svg" alt="NodeSchool Montreal Logo" width="200">
 
-# NodeSchool Montreal
+# [NodeSchool Montreal](http://nodeschool.io/Montreal) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/nodeschool/montreal)
 
-**NodeSchool** is open source workshops for you to learn web software skills: [http://nodeschool.io/montreal](http://nodeschool.io/montreal/)
+**NodeSchool** is focused around open source workshops that teach web software skills. Individuals are encouraged to do the [workshoppers](http://nodeschool.io/#workshoppers) on their own or at one of the NodeSchool events. The workshopper tutorials are used as the course curriculum while mentors are here to help attendees work through challenges. Participating in one of the events is easy:
 
-Do the [workshoppers](http://nodeschool.io/#workshoppers) on your own or in person at the [next NodeSchool event](http://nodeschool.io/montreal/). Experienced helpful mentors will help you through challenges.
+### Want to Attend?
 
-Done with the workshops? Start a project or join a team - develop your skills.
+Check out our [website](http://nodeschool.io/montreal/) or [event listings](https://ti.to/nodeschool-montreal) for information on future events and other news.
 
+### Interested in Mentoring or Helping Out?
 
-## Attend
-
-Check out the [NodeSchoolMTL website](http://nodeschool.io/montreal/) and RSVP to the next event.
-
-## Mentor or help out
-
-Become a better teacher or simply contribute back to open source. You know the drill.
-
+If you want to help teach or contribute in anyway, make a [Pull Request](https://github.com/nodeschool/montreal/pulls) and add your name to the list below with relevant contact details. Mentors and Volunteers are currently contacted and confirmed, before each event, via our [Gitter Channel](https://gitter.im/nodeschool/montreal).
 
 - Cassie L. Rhéaume: [@CassieLR](https://github.com/CassieLR)
 - Paul Cuciureanu: [@pcuci](http://github.com/pcuci)
@@ -38,21 +32,11 @@ Become a better teacher or simply contribute back to open source. You know the d
 - Marek Zaluski: [@marekweb](https://github.com/marekweb)
 - Jeff Marshall: [@jeffmarshall](https://github.com/jeffmarshall)
 - Jonathan Dupré: [@kareniel](https://github.com/kareniel)
-- _Add your name here with a [pull request](https://github.com/nodeschool/montreal/pulls) - See the document [CONTRIBUTING.md](./contributing), for furhter details._
 
-## Take it up a notch!
+### Code of Conduct
 
-1. Star the repo ⭐
-2. Report bugs or improvements in [issues](https://github.com/nodeschool/montreal/issues), we appreciate all sorts of feedback!
-3. Upload your photo to http://nodeschool.io/montreal/ (use the [`master`](https://github.com/nodeschool/montreal/tree/master) branch)
-4. Complete a [core workshopper](http://nodeschool.io/#workshopper-list) on your own before the next event
-5. Join a team, see the list of [active projects](http://nodeschool.io/montreal/)
-6. [Start](https://docs.google.com/forms/d/e/1FAIpQLSekmFlMoBA9VCd7d38QgyBnxfz8HNduNkt44PpDR41SfUczmw/viewform) your own project!
+Please read our [code of conduct](http://confcodeofconduct.com/) before contributing to or attending one of our events.
 
-## Inclusive and respectful
+### Contributing to the Website
 
-Please observe the [code of conduct](http://confcodeofconduct.com/) while attending NodeSchool.
-
-## Building and Maintaining the Site
-
-See the document [CONTRIBUTING.md](./CONTRIBUTING.md)
+Check out our [CONTRIBUTING.md](CONTRIBUTING.md) to get started with setting up the repo.

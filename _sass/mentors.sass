@@ -1,3 +1,7 @@
+// --------------------------------
+// Mentors / Gallery / Attendees
+// --------------------------------
+
 .svgs
   height: 0
   width: 0
@@ -5,6 +9,7 @@
   overflow: hidden
 
 .list-sponsors
+  text-align: center
 
   img
     max-width: 40%
@@ -15,6 +20,7 @@
 .list-mentors, .list-photos, .list-attendees, .list-sponsors
   width: 100%
   z-index: 900
+  transform: translate3d( -5%, 0, 0 )
   margin: 50px 0 0 0
   position: relative
 
@@ -39,7 +45,7 @@
     clear: both
     transform: translate3d( 10%, 0, 0 )
 
-    @media(max-width: $responsive-width)
+    @media(max-width: 800px)
       transform: none
 
   &.list-attendees .row:nth-of-type(even)
@@ -109,3 +115,4 @@
         border-left: 25px solid transparent
         border-right: 25px solid transparent
         border-top: 15px solid $highlight
+

@@ -1,3 +1,8 @@
+
+// --------------------------------
+// Base
+// --------------------------------
+
 *, *:before, *:after
   box-sizing: inherit
 
@@ -13,13 +18,6 @@ html, body
 strong
   font-weight: 600
 
-h1
-  font-size: 50px
-  line-height: 140%
-  font-weight: 400
-  letter-spacing: -1px
-  color: $accent
-
 h2, h3
   color: $accent
   font-weight: 400
@@ -34,6 +32,9 @@ h2
   padding: 0 0 0.5em 0
   border-bottom: 1px solid rgba($accent, 0.15)
 
+  @media (screen and max-width: 800px)
+    font-size: 24px
+
 img
   max-width: 100%
 
@@ -46,14 +47,17 @@ p code
   font-size: 1em
 
 a
-  padding-bottom: 2px
   &:link, &:visited
-    color: $link
+    color: $accent
     text-decoration: none
-    border-bottom: 1px solid rgba($accent, 0.35)
+
   &:hover, &:active
-    color: $link
-    text-decoration: none
+    color: $accent
+    text-decoration: underline
+
+// --------------------------------
+// Classes
+// --------------------------------
 
 .ir
   font: 0/0 a
@@ -93,54 +97,129 @@ a
   padding: 0 0 1px 0
   border-bottom: 1px solid rgba(white, 0.35)
 
-article
-  display: block
-  margin: 0
-  max-width: 100%
-  section
-    display: inline-block
-    margin: 0
-    position: static
-    max-width: 60%
-    background: white
-    padding: 30px 70px
-  aside
-    display: inline-block
-    margin: 0
-    position: static
-    padding: 20px 60px 0
-    max-width: 35%
+// --------------------------------
+// Main
+// --------------------------------
+
+.main
+  display: flex
+  transform: translate3d(0,0,0)
+  transition: transform 0.2s
+
+  @media (screen and max-width: 800px)
+    display: block
+
+  .panel
+    display: flex
+    flex: 1 1 50%
+    max-width: 50%
+
+    @media (screen and max-width: 800px)
+      display: block
+      clear: both
+      width: 100%
+      max-width: 100%
+      flex: none
+      float: left
+      height: auto
+
+  // --------------------------------
+  // Right Side
+  // --------------------------------
+
+  .side
     background: $accent
+    position: relative
     color: $highlight
-    h1, h2, h3
-      color: $highlight
+
     p
       a
-        &:link, &:visited
+        color: $highlight
+        padding-bottom: 2px
+        border-bottom: 1px solid rgba($highlight, 0.35)
+        transition: border-color 0.2s
+
+        &:hover
+          text-decoration: none
+          border-color: $highlight
+
+    .container
+      width: 100%
+      height: 100vh
+      position: absolute
+
+      .inner
+        width: 80%
+        position: absolute
+        z-index: 9999
+        left: 10%
+        top: 10%
+
+        @media (screen and max-width: 800px)
+          width: 90%
+          left: 5%
+          top: 5%
+
+      .logo
+
+        img
+          width: 80%
+          max-width: 480px
+          height: auto
+          margin: 0 auto 40px
+          display: block
+
+        &:hover
+          text-decoration: none
+
+        .about
+          margin: 0 auto 60px
+          text-align: center
           color: $highlight
-          border-bottom: 1px solid rgba($highlight, 0.35)
-        &:hover, &:active
-          color: $highlight
+          font-size: 20px
+          font-weight: 300
+          line-height: 200%
 
-@media (screen and max-width: $responsive-width)
-  article
-    section
-      max-width: 100%
-      padding: 60px 40px 60px 40px
-    aside
-      max-width: 100%
-      padding: 60px 40px 60px 40px
-    h1
-      font-size: 32px
-    h2
-      font-size: 24px
+      h2
+        color: $highlight
+        border-color: rgba($highlight, 0.35)
 
+  // --------------------------------
+  // Left Side
+  // --------------------------------
 
-footer
-  margin-top: 50px
+  .text
 
-.pull-right
-  float: right
+    .container
+      width: 100%
+      background: white
+      padding: 60px 80px 60px 160px
 
-.pull-left
-  float: left
+      @media (screen and max-width: 800px)
+        padding: 40px 20px
+
+      .header
+        margin: 0 0 40px
+
+        .logo
+          display: block
+          position: relative
+          width: 40%
+          max-width: 400px
+          margin: 0 auto 20px
+
+          img
+            width: 100%
+            height: auto
+        h1
+          font-size: 50px
+          line-height: 140%
+          text-align: center
+          font-weight: 300
+          margin: 0 auto 60px
+          letter-spacing: -1px
+          color: $accent
+
+          @media (screen and max-width: 800px)
+            font-size: 32px
+            margin: 0 auto 20px

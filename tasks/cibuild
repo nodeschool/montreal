@@ -4,8 +4,6 @@ set -e # halt script on error
 bundle install --path=.gems
 
 bundle exec jekyll build
-#bundle exec htmlproofer ./_site
+# bundle exec htmlproofer ./_site
 
 #ref: https://jekyllrb.com/docs/continuous-integration/travis-ci/
-
-

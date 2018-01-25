@@ -26,12 +26,15 @@
           </image>
         </pattern>
         {% endfor %}
-        {% for i in (1..30) %}
+
+        <!-- TODO: Add once photos are acquired from events -->
+        <!-- {% for i in (1..30) %}
         <pattern id="photo-{{i}}" width="300" height="300" patternUnits="userSpaceOnUse">
           <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="i/photos/{{i}}.jpg" width="250" height="300" preserveAspectRatio="xMidYMid slice">
           </image>
         </pattern>
-        {% endfor %}
+        {% endfor %} -->
+
         {% for value in site.data.attendees %}
         {% for attendee in value[1] %}
         <pattern id="attendee-{{attendee[0]}}" width="300" height="300" patternUnits="userSpaceOnUse">
@@ -53,7 +56,7 @@
         <li><a href="#mentors" class="ir mentors" data-text="Mentors">Mentors</a></li>
         <!-- TODO: Add once event has happened on Tito -->
         <!-- <li><a href="#attendees" class="ir attendees" data-text="Attendees">Attendees</a></li> -->
-        <!-- TODO: Add once photos are acuired from events -->
+        <!-- TODO: Add once photos are acquired from events -->
         <!-- <li><a href="#photos" class="ir photos" data-text="Photos">Photos</a></li> -->
         <li><a href="#codeofconduct" class="ir code" data-text="Code of Conduct">Code of Conduct</a></li>
       </ul>

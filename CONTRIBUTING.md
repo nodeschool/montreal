@@ -1,12 +1,20 @@
 # Contributing to NodeSchool Montreal
 
-### Development
+## Development
 
 We use [Jekyll](https://jekyllrb.com/) to build [http://nodeschool.io/montreal](http://nodeschool.io/montreal). If you want to run the site or develop it locally you'll have to install the gems in our Gemfile.
 
 `gem install bundler`
 
 `bundle`
+
+### Generating the Site
+
+A local development server can be started by running:
+
+`bundle exec jekyll serve`
+
+### Generating the Attendees List
 
 We pull in event information through the [Tito](http://tito.io) embed widget but all the attendees listed are pulled via the [Tito API](http://api.tito.io). In order to update the listing of attendees, you'll have:
 

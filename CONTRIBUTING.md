@@ -4,15 +4,28 @@
 
 We use [Jekyll](https://jekyllrb.com/) to build [http://nodeschool.io/montreal](http://nodeschool.io/montreal). If you want to run the site or develop it locally you'll have to install the gems in our Gemfile.
 
-`gem install bundler`
+Two possible approaches, which will depend on your 
+environment:
 
-`bundle`
+```sh
+bundle install --path=.gems
+bundle exec jekyll build
+```
+
+or 
+
+```sh
+gem install bundler
+bundle
+```
 
 ### Generating the Site
 
 A local development server can be started by running:
 
-`bundle exec jekyll serve`
+```sh
+bundle exec jekyll serve
+```
 
 ### Generating the Attendees List
 

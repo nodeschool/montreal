@@ -8,15 +8,15 @@ before_install:
  - sudo update-ca-certificates
 
 before_script:
- - chmod +x ./tasks/cibuild # or do this locally and commit
- - chmod +x ./tasks/deploy
+ - chmod +x ./script/cibuild # or do this locally and commit
+ - chmod +x ./script/deploy
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
-script: ./tasks/cibuild
+script: ./script/cibuild
 
 after_success:
-  - tasks/deploy
+  - script/deploy
 
 # branch whitelist, only for GitHub Pages
 branches:
@@ -31,3 +31,4 @@ env:
   - COMMIT_AUTHOR_EMAIL: "nodeschoolmtl@bettermtl.com"
 
 #sudo: false # route your build to the container-based infrastructure for a faster build
+

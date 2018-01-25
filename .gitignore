@@ -1,6 +1,4 @@
-.DS_Store
+.idea/
 .sass-cache/
-_site
-node_modules/
-config.json
-Gemfile.lock
+_site/
+.DS_Store

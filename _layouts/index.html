@@ -51,8 +51,10 @@
         <li><a href="#events" class="ir events" data-text="Events">Events</a></li>
         <li><a href="#faq" class="ir faq" data-text="FAQ">Frequently Asked Questions</a></li>
         <li><a href="#mentors" class="ir mentors" data-text="Mentors">Mentors</a></li>
-        <li><a href="#attendees" class="ir attendees" data-text="Attendees">Attendees</a></li>
-        <li><a href="#photos" class="ir photos" data-text="Photos">Photos</a></li>
+        <!-- TODO: Add once event has happened on Tito -->
+        <!-- <li><a href="#attendees" class="ir attendees" data-text="Attendees">Attendees</a></li> -->
+        <!-- TODO: Add once photos are acuired from events -->
+        <!-- <li><a href="#photos" class="ir photos" data-text="Photos">Photos</a></li> -->
         <li><a href="#codeofconduct" class="ir code" data-text="Code of Conduct">Code of Conduct</a></li>
       </ul>
     </nav>
@@ -132,7 +134,7 @@
             <pre>$ learnyounode</pre>
           </code>
 
-          <h2 id="photos">Photos</h2>
+          <!-- <h2 id="photos">Photos</h2>
 
           <div class="list-photos cf">
             {% for i in (1..30) %}
@@ -144,7 +146,7 @@
               </a>
             {% cycle '', '', '', '', '</div>' %}
             {% endfor %}
-          </div>
+          </div> -->
 
           <h2 id="codeofconduct">Code of Conduct</h2>
 
@@ -156,10 +158,6 @@
 
           <!-- Footer -->
           <div class="footer">
-
-            <h2 id="credit">Credits</h2>
-
-            <p class="credit">The NodeSchool Montreal Hex Logo was kindly designed by <a href="http://matchai.me/">Matan Kushner</a>.</p>
 
             <p class="links">
               <a href="https://ti.to/nodeschool-montreal" title="NodeSchool Montreal Event">Events</a>
@@ -200,38 +198,23 @@
               <tito-widget event="nodeschool-montreal/nodeschool-montreal-february-2018"></tito-widget>
               <!-- TODO: Set location and details below -->
               <p class="location">
-                <strong>Location:</strong>&nbsp; Telus Digital Office Event Space, 25 York Street - 5th floor, Toronto, ON
+                <strong>Location:</strong>&nbsp; Shutterstock Montreal, 4398 Rue Saint-Laurent #103 - 1st floor, Montreal, QC
               </p>
               <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.226877068144!2d-79.38312768474817!3d43.64344786107963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d4ba11488b%3A0x32684a124bd8acaf!2s25+York+Street!5e0!3m2!1sen!2sca!4v1516384629168"
-                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.529032904814!2d-73.5851264741594!3d45.51955860957372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91bd2e7dc94cb%3A0xe4c12ebdee646357!2s4398+St+Laurent+Blvd%2C+Montreal%2C+QC+H2W+1Z5!5e0!3m2!1sen!2sca!4v1516848435341"
+                  width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
               </div>
               <p class="schedule">
                 <strong>Schedule</strong>
               </p>
               <ul class="timeline">
                 <li class="row">
-                  <span class="time">12:45am - 1:00pm</span>
+                  <span class="time">5:30pm - 6:00pm</span>
                   <span class="name">Registration</span>
                 </li>
                 <li class="row">
-                  <span class="time">1:00pm - 1:30pm</span>
-                  <span class="name">Presentations:<br>
-                    <strong>TBD</strong>
-                    <!--
-                    <a href="http://twitter.com/vladikoff"><strong>@vladikoff</strong> - Continuous Integration</a><br>
-                    <a href="http://twitter.com/wisamjs"><strong>@wisamjs</strong> - Socket.io + Leap Motion</a><br>
-                    <a href="http://twitter.com/mattdesl"><strong>@mattdesl</strong> - Debugging Node with Electron</a>
-                    -->
-                  </span>
-                </li>
-                <li class="row">
-                  <span class="time">1:30pm - 3:30pm</span>
+                  <span class="time">6:00pm - 10:00pm</span>
                   <span class="name">Workshop Time</span>
-                </li>
-                <li class="row">
-                  <span class="time">3:30pm - 4:00pm</span>
-                  <span class="name">Demos</span>
                 </li>
               </ul>
               <p class="additional">
@@ -260,7 +243,7 @@
               {% endfor %}
             </div>
 
-            <h2 id="attendees">Attendees</h2>
+            <!-- <h2 id="attendees">Attendees</h2>
 
             <div class="list-attendees cf">
               {% for value in site.data.attendees %}
@@ -275,7 +258,7 @@
                 {% cycle '', '', '', '', '', '', '', '</div>' %}
                 {% endfor %}
               {% endfor %}
-            </div>
+            </div> -->
 
           </div>
 
@@ -285,8 +268,8 @@
 
           <div class="list-sponsors cf">
             <!-- TODO: Add sponsors below -->
-            <a href="https://shopify.com">
-              <img src="i/shopify.svg">
+            <a href="https://shutterstock.com">
+              <img src="i/shutterstock.svg">
             </a>
 
           </div>
@@ -301,12 +284,13 @@
 
     <script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-    <script type="text/javascript">
-      // TODO: Add analytics below
-      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
-        analytics.load("rJ1NNJ4fWsQFYAmQ6BZ6q8ZyLHGZGBj1");
-        analytics.page()
-      }}();
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113062175-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-113062175-1');
     </script>
   </body>
 </html>

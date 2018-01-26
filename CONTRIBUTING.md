@@ -2,22 +2,14 @@
 
 ## Development
 
-We use [Jekyll](https://jekyllrb.com/) to build [http://nodeschool.io/montreal](http://nodeschool.io/montreal). If you want to run the site or develop it locally you'll have to install the gems in our Gemfile.
-
-Two possible approaches, which will depend on your 
-environment:
+We use [Jekyll](https://jekyllrb.com/) to build [http://nodeschool.io/montreal](http://nodeschool.io/montreal). If you want to run the site or develop it locally you'll have to install the gems in our Gemfile:
 
 ```sh
 bundle install --path=.gems
 bundle exec jekyll build
 ```
 
-or 
-
-```sh
-gem install bundler
-bundle
-```
+Note, this is the same set of commands used by Travis.
 
 ### Generating the Site
 

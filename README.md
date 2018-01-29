@@ -14,24 +14,24 @@ Check out our [website](http://nodeschool.io/montreal/) or [event listings](http
 
 If you want to help teach or contribute in anyway, make a [Pull Request](https://github.com/nodeschool/montreal/pulls) and add your name to the list below with relevant contact details. Mentors and Volunteers are currently contacted and confirmed, before each event, via our [Gitter Channel](https://gitter.im/nodeschool/montreal).
 
-- Cassie L. Rhéaume: [@CassieLR](https://github.com/CassieLR)
-- Paul Cuciureanu: [@pcuci](http://github.com/pcuci)
 - Andre John Mas: [@ajmas](https://github.com/ajmas)
 - Matan Kushner: [@matchai](https://github.com/matchai)
+- Richard Littauer: [@RichardLitt](https://github.com/RichardLitt)
+- Jonathan Dupré: [@kareniel](https://github.com/kareniel)
+- Paul Cuciureanu: [@pcuci](http://github.com/pcuci)
+- Cassie L. Rhéaume: [@CassieLR](https://github.com/CassieLR)
 - Ziad Saab: [@ziad-saab](https://github.com/ziad-saab)
 - Frederic Charette: [@fed135](https://github.com/fed135)
-- Ehren Lillies: [@ehren123](https://github.com/ehren123)
 - Ruy Adorno: [@ruyadorno](https://github.com/ruyadorno)
-- Mats Ljunggren: [@ljunggren](https://github.com/ljunggren)
 - Harris Robin Kalash: [@harrisrobin](https://github.com/harrisrobin)
 - David Rowley: [@David-Ro](http://github.com/David-Ro)
 - Rami Sayar: [@sayar](https://github.com/sayar)
 - Valeri Vicneanschi: [@vicneanschi](https://github.com/vicneanschi)
 - Shawn Thompson: [@shawnthompson](https://github.com/shawnthompson)
-- Richard Littauer: [@RichardLitt](https://github.com/RichardLitt)
 - Marek Zaluski: [@marekweb](https://github.com/marekweb)
+- Ehren Lillies: [@ehren123](https://github.com/ehren123)
+- Mats Ljunggren: [@ljunggren](https://github.com/ljunggren)
 - Jeff Marshall: [@jeffmarshall](https://github.com/jeffmarshall)
-- Jonathan Dupré: [@kareniel](https://github.com/kareniel)
 
 ### Code of Conduct
 

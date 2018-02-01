@@ -2,7 +2,7 @@
 
 <img src="./i/nodeschool-montreal-logo.svg" alt="NodeSchool Montreal Logo" width="200">
 
-# [NodeSchool Montreal](http://nodeschool.io/Montreal) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/nodeschool/montreal)
+# [NodeSchool Montreal](http://nodeschool.io/montreal) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/nodeschool/montreal)
 
 **NodeSchool** is focused around open source workshops that teach web software skills. Individuals are encouraged to do the [workshoppers](http://nodeschool.io/#workshoppers) on their own or at one of the NodeSchool events. The workshopper tutorials are used as the course curriculum while mentors are here to help attendees work through challenges. Participating in one of the events is easy:
 

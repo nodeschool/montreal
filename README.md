@@ -32,6 +32,7 @@ If you want to help teach or contribute in anyway, make a [Pull Request](https:/
 - Ehren Lillies: [@ehren123](https://github.com/ehren123)
 - Mats Ljunggren: [@ljunggren](https://github.com/ljunggren)
 - Jeff Marshall: [@jeffmarshall](https://github.com/jeffmarshall)
+- Xavier Drdak: [@xdrdak](https://github.com/xdrdak)
 
 ### Code of Conduct
 

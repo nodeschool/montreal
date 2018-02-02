@@ -33,6 +33,7 @@ If you want to help teach or contribute in anyway, make a [Pull Request](https:/
 - Mats Ljunggren: [@ljunggren](https://github.com/ljunggren)
 - Jeff Marshall: [@jeffmarshall](https://github.com/jeffmarshall)
 - Xavier Drdak: [@xdrdak](https://github.com/xdrdak)
+- Razvan Lada-Moldovan: [@devraz](https://github.com/devraz)
 
 ### Code of Conduct
 

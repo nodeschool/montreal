@@ -25,40 +25,60 @@ exclude:
 mentors:
   - name: pcuci
     twitter: pcuci
+    github: pcuci
   - name: cassie
     twitter: cassierheaume
+    github: CassieLR
   - name: matan
     twitter: matchai
+    github: matchai
   - name: valeri
     twitter: vicneanschi
+    github: vicneanschi
   - name: ruyadorno
     twitter: ruyadorno
+    github: ruyadorno
   - name: david
     twitter: davidrowley514
+    github: David-Ro
   - name: ziad-saab
+    github: ziad-saab
   - name: harris
     twitter: LulzHRK
+    github: harrisrobin
   - name: nicolas
     twitter: nicolasgere
+    github: nicolasgere
   - name: rsayar
     twitter: ramisayar
+    github: sayar
   - name: andre-john
     twitter: ajmas
+    github: ajmas
   - name: ehren
     twitter: EhrenLillies
+    github: ehren123
   - name: marekweb
     twitter: marekweb
+    github: marekweb
   - name: fcharette
     twitter: fed135
+    github: fed135
   - name: shawn
     twitter: plansmash
+    github: shawnthompson
   - name: mats
     twitter: boozangcloud
+    github: ljunggren
   - name: kareniel
     twitter: Jonathan_Dupre
+    github: kareniel
   - name: richardlitt
     twitter: richlitt
+    github: RichardLitt
   - name: xavier
     twitter: XDrdak
+    github: xdrdak
   - name: razvan
     twitter: RazvanLM
+    github: devraz

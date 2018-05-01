@@ -34,6 +34,7 @@ If you want to help teach or contribute in anyway, make a [Pull Request](https:/
 - Jeff Marshall: [@jeffmarshall](https://github.com/jeffmarshall)
 - Xavier Drdak: [@xdrdak](https://github.com/xdrdak)
 - Razvan Lada-Moldovan: [@devraz](https://github.com/devraz)
+- Conan Lai: [@aconanlai](https://github.com/aconanlai)
 
 ### Code of Conduct
 

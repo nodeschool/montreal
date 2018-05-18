@@ -35,6 +35,7 @@ If you want to help teach or contribute in anyway, make a [Pull Request](https:/
 - Xavier Drdak: [@xdrdak](https://github.com/xdrdak)
 - Razvan Lada-Moldovan: [@devraz](https://github.com/devraz)
 - Conan Lai: [@aconanlai](https://github.com/aconanlai)
+- Tiffany Le-Nguyen: [@sirMerr](https://github.com/sirMerr)
 
 ### Code of Conduct
 

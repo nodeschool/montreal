@@ -7,11 +7,10 @@
     "url": "https://github.com/nodeschool/montreal"
   },
   "devDependencies": {
-    "async": "^1.5.0",
+    "async": "^3.1.0",
     "colors": "^1.1.2",
     "gravatar": "^1.4.0",
-    "lodash": "^3.10.1",
-    "superagent": "^1.4.0"
+    "superagent": "^5.1.0"
   },
   "scripts": {
     "update-attendees": "node ./tasks/update-attendees.js"

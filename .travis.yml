@@ -1,6 +1,5 @@
 language: ruby
-rvm:
-- 2.3.3
+# version of ruby via .ruby-version file
 
 # Intented to deal with html_proofer failing SSL checks
 sudo: required

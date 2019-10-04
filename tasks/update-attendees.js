@@ -1,13 +1,68 @@
+// use Node.js 10.x+
 
-// Setup
-var fs          = require( 'fs' );
-var config      = require( '../config' );
-var async       = require( 'async' );
-var request     = require( 'superagent' );
-var lodash      = require( 'lodash' );
-var gravatar    = require( 'gravatar' );
-var colors      = require( 'colors' );
-var attendees   = {};
+const fs          = require( 'fs' );
+const superagent  = require( 'superagent' );
+const gravatar    = require( 'gravatar' );
+
+const config      = require( '../config' );
+
+async function asyncForEach(list, handler) {
+    for (let i=0; i<list.length; i++) {
+        await handler(list[i], i);
+    }
+}
+
+async
+async function getEvents() {
+    const attendees = {};
+    try {
+        const res = await (superagent
+            .get('https://api.tito.io/timeline?auth_token=' + config.auth_token)
+            .set('accept', 'application/json'));
+
+        const events = res.body.events;
+        await asyncForEach(events, async (event) => {
+            const res = await (superagent
+                .get(event.api_url + '/registrations?auth_token=' + config.auth_token)
+                .set('accept', 'application/json'));
+
+           res.body.registrations.forEach(( attendee ) => {
+               if( !attendees[ attendee.email ] ) {
+                   attendees[ attendee.email ] = 0;
+               }
+               attendees[ attendee.email ]++;
+          });
+        });
+
+        // Process the attendees
+        let sorted = 0;
+        let id = 0;
+        await asyncForEach(attendees, async (attendee) => {
+            const image = gravatar.url( email, { s: '300', r: 'x', d: '404' }, true );
+            // check image exists
+            const response = superagent.get( image );
+            if (response.status === 200) {
+                sorted.push( [ id, image, count ] );
+                id++;
+            }
+        });
+
+        sorted.sort( function( a, b ) {
+          return b[ 2 ] - a[ 2 ];
+        });
+
+        // Write to file
+        const content = JSON.stringify( { attendees: sorted } );
+        fs.writeFileSync( './_data/attendees.json', content );
+
+        console.log( './_data/attendees.json'.yellow + ' was updated successfully!'.green )
+    } catch (error) {
+        console.error(`Error: ${error}`);
+        process.exit(1);
+    }
+}
+
+getEvents();
 
 // Get events
 request
@@ -31,8 +86,8 @@ request
         });
     }, function () {
       // Sort by events attended
-      var sorted = [];
-      var id = 0;
+      const sorted = [];
+      let id = 0;
       async.forEachOf( attendees, function( count, email, callback ) {
         var image = gravatar.url( email, { s: '300', r: 'x', d: '404' }, true );
         request.get( image )
@@ -47,10 +102,7 @@ request
         sorted.sort( function( a, b ) {
           return b[ 2 ] - a[ 2 ]
         });
-        // Write to file
-        var content = JSON.stringify( { attendees: sorted } );
-        fs.writeFileSync( './_data/attendees.json', content );
-        console.log( './_data/attendees.json'.yellow + ' was updated successfully!'.green )
+
       });
     });
   });

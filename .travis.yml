@@ -1,5 +1,6 @@
 language: ruby
 # version of ruby via .ruby-version file
+cache: bundler
 
 # Intented to deal with html_proofer failing SSL checks
 sudo: required
@@ -26,7 +27,7 @@ branches:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
-  - ENCRYPTION_LABEL: "3ce10d3711a5"
+  - ENCRYPTION_LABEL: "1cd127da4a82"
   - COMMIT_AUTHOR_EMAIL: "nodeschoolmtl@bettermtl.com"
 
 #sudo: false # route your build to the container-based infrastructure for a faster build

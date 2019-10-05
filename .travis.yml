@@ -1,5 +1,6 @@
 language: ruby
 # version of ruby via .ruby-version file
+cache: bundler
 
 # Intented to deal with html_proofer failing SSL checks
 sudo: required
